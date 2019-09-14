@@ -2,6 +2,18 @@
   "name": "react-redux-app-boilerplate",
   "version": "0.0.1",
   "description": "A starter boilerplate for your app using react, redux, webpack, css modules",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awibox/react-redux-app-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "cssmodules"
+  ],
+  "author": "awibox",
+  "license": "MIT",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
