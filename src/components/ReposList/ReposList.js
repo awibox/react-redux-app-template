@@ -19,7 +19,7 @@ export default function(props) {
                 }
                 return (
                     <div key={repo.id} className={styles.item}>
-                        <Link to={repo.html_url} className={styles.name}>{repo.name}</Link>
+                        <Link to={repo.html_url} target="_blank" className={styles.name}>{repo.name}</Link>
                         <div className={styles.githubIcon}> <i className="fa fa-github" aria-hidden="true"></i></div>
                         <div className={styles.desc}>{repo.description}</div>
                         <div className={styles.panel}>
