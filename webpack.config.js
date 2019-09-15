@@ -4,7 +4,7 @@ var NODE_ENV = process.env.NODE_ENV || 'development';
 var autoprefixer = require('autoprefixer');
 
 const htmlPlugin = new HtmlWebpackPlugin({
-    template: "./src/index.html",
+    template: "./src/templates/index.html",
     fileName: "./index.html"
 });
 
@@ -62,23 +62,58 @@ module.exports = {
             },
             {
                 test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url?limit=10000&mimetype=application/font-woff"
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 10000
+                        },
+                    },
+                ]
             },
             {
                 test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url?limit=10000&mimetype=application/font-woff"
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 10000
+                        },
+                    },
+                ]
             },
             {
                 test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url?limit=10000&mimetype=application/octet-stream"
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 10000
+                        },
+                    },
+                ]
             },
             {
                 test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "file"
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            limit: 10000
+                        },
+                    },
+                ]
             },
             {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "url?limit=10000&mimetype=image/svg+xml"
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 10000
+                        },
+                    },
+                ]
             }
         ]
     },
