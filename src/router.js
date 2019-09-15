@@ -1,16 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
-// Layouts
-import MainLayout from './layouts/main';
+import Header from './components/Header/Header';
+import './styles/build.scss';
+import styles from './styles/container.scss';
 
 // Pages
 import HomeComponent from './pages/Home/Home';
+import Repos from "./pages/Repos/Repos";
 
 export default (
     <Router>
-        <Route component={MainLayout}>
-            <Route exact path="/" component={ HomeComponent } />
-        </Route>
+        <div className="app">
+            <Header />
+            <main className={styles.content}>
+                <div className={styles.wrapper}>
+                    <Route exact path="/" component={HomeComponent} />
+                    <Route path="/repos" component={Repos} />
+                </div>
+            </main>
+        </div>
     </Router>
 );
