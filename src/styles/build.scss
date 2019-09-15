@@ -1,4 +1,4 @@
-@import 'variables';
+@import './variables';
 
 * {margin: 0;padding: 0;}
 header, nav, section, article, aside, footer, figcaption, figure, details, hgroup {display: block;}
@@ -25,7 +25,3 @@ input {vertical-align: middle;}
 
 .clear {clear: both;}
 .clearfix:after {display: block;content: "";clear: both;}
-
-@import 'styles';
-@import 'retina';
-@import 'responsive';
