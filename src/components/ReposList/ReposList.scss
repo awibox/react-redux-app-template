@@ -37,6 +37,7 @@
 }
 
 .stars {
+  @extend .property;
   float: right;
 
   .fa {
@@ -45,6 +46,7 @@
 }
 
 .size {
+  @extend .property;
   margin-left: 50px;
 }
 
