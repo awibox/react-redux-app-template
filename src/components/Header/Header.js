@@ -8,7 +8,7 @@ export default class HomeComponent extends Component {
             <header className={styles.header}>
                 <div className={styles.wrapper}>
                     <Link className={styles.logo} to="/"></Link>
-                    <Link className={styles.name} to="/">BEM-builder</Link>
+                    <Link className={styles.name} to="/">react-redux-app-boilerplate</Link>
                     <aside className={styles.menu}>
                         <Link className={styles.menuItem} to="/" activeClassName={styles.menuItemActive}>About</Link>
                         <Link className={styles.menuItem} to="/repos"
