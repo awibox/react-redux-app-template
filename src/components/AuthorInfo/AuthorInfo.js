@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import styles from './AuthorInfo.scss';
 
 // Using "Stateless Functional Components"
@@ -7,7 +6,6 @@ export default function (props) {
   const avatar_url = {
     backgroundImage: 'url(' + props.author.avatar_url + ')',
   };
-  console.log('this.props', props)
   return (
     <div className="data-list">
       <div className={styles.authorInfo}>
@@ -18,6 +16,7 @@ export default function (props) {
           </div>
         </div>
         <div className={styles.infoText}>{props.author.company} - {props.author.bio}</div>
+        <a href={props.author.html_url} target="_blank" >Github page</a>
       </div>
     </div>
   );
