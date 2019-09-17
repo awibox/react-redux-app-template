@@ -5,12 +5,11 @@ import {getAuthor} from '../../actions/author';
 import store from '../../store';
 
 class AuthorContainer extends Component {
-
     componentDidMount() {
-        getAuthor();
+        this.props.getAuthor();
     }
-
     render() {
+        console.log('this.props', this.props);
         const {author} = this.props;
         return (
             <AuthorInfo author={author}/>
@@ -18,6 +17,6 @@ class AuthorContainer extends Component {
     }
 }
 
-const mapStateToProps = store => ({author: store.authorState.author});
+const mapStateToProps = state => ({author: state.authorState.author});
 
-export default connect(mapStateToProps)(AuthorContainer);
+export default connect(mapStateToProps, { getAuthor })(AuthorContainer);

@@ -1,19 +1,18 @@
 import * as types from '../actions/types';
 
 const initialState = {
-  author: []
+    author: []
 };
 
-const authorReducer = function(state = initialState, action) {
+export default function (state = initialState, action) {
+    switch (action.type) {
+        case types.GET_AUTHOR_SUCCESS:
+            return {
+                ...state,
+                author: action.payload
+            };
+        default:
+            return state;
 
-  switch(action.type) {
-
-    case types.GET_AUTHOR_SUCCESS:
-      return Object.assign({}, state, { author: action.author });
-  }
-
-  return state;
-
-};
-
-export default authorReducer;
+    }
+}
