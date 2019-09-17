@@ -15,7 +15,7 @@ export default class HomeComponent extends Component {
                         <Link className={styles.menuItem} to="/author">Author</Link>
                     </aside>
                     <div className={styles.menuMobile}>
-                        {/*<i className="fa fa-list"></i>*/}
+                        <i className="fa fa-list"></i>
                     </div>
                 </div>
             </header>
