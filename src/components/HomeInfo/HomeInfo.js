@@ -9,9 +9,6 @@ export default function (props) {
       avatar_url = props.home.owner[data];
     }
   }
-  const companyImage = {
-    backgroundImage: 'url(' + avatar_url + ')',
-  };
   for (let data in props.releases) {
     if (props.releases[data].published_at > published_at) {
       published_at = props.releases[data].published_at;
@@ -22,7 +19,6 @@ export default function (props) {
   return (
     <div className="data-list">
       <div className={styles.homeInfo}>
-          <div className={styles.logo} style={companyImage}></div>
           <h1 className={styles.name}>{props.home.name}
             <div className={styles.version}>v {lastRelease} {prerelease ? 'Beta' : ''}</div>
           </h1>
