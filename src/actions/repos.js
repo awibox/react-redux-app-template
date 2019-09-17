@@ -1,6 +1,11 @@
+import {GET_REPOS_SUCCESS} from './types';
 import axios from 'axios';
 import store from '../store';
-import { getReposSuccess} from '../actions/reposActions';
+
+const getReposSuccess = repos => ({
+    type: GET_REPOS_SUCCESS,
+    repos
+});
 
 export function getRepos() {
     return axios.get('https://api.github.com/users/awibox/repos')
