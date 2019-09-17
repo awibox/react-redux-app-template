@@ -1,5 +1,4 @@
 import axios from 'axios';
-import store from '../store';
 import {GET_HOME_SUCCESS, GET_HOME_RELEASES} from '../actions/types';
 
 const getHomeSuccess = home => ({
@@ -12,18 +11,16 @@ const getHomeReleases = releases => ({
     releases
 });
 
-export function getHome() {
-    return axios.get('https://api.github.com/repos/awibox/react-redux-app-boilerplate')
+export const getHome = () => dispatch => {
+    axios.get('https://api.github.com/repos/awibox/react-redux-app-boilerplate')
         .then(response => {
-            store.dispatch(getHomeSuccess(response.data));
-            return response;
+            dispatch(getHomeSuccess(response.data));
         });
-}
+};
 
-export function getReleases() {
+export const getReleases = () => dispatch => {
     return axios.get('https://api.github.com/repos/awibox/react-redux-app-boilerplate/releases')
         .then(response => {
-            store.dispatch(getHomeReleases(response.data));
-            return response;
+            dispatch(getHomeReleases(response.data));
         });
-}
+};
