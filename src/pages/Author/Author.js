@@ -2,14 +2,11 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import AuthorInfo from '../../components/AuthorInfo/AuthorInfo';
 import {getAuthor} from '../../actions/author';
-import store from '../../store';
 
 class AuthorContainer extends Component {
-
     componentDidMount() {
-        getAuthor();
+        this.props.getAuthor();
     }
-
     render() {
         const {author} = this.props;
         return (
@@ -18,6 +15,6 @@ class AuthorContainer extends Component {
     }
 }
 
-const mapStateToProps = store => ({author: store.authorState.author});
+const mapStateToProps = state => ({author: state.authorState.author});
 
-export default connect(mapStateToProps)(AuthorContainer);
+export default connect(mapStateToProps, { getAuthor })(AuthorContainer);
