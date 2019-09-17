@@ -1,6 +1,11 @@
 import axios from 'axios';
 import store from '../store';
-import { getAuthorSuccess} from '../actions/authorActions';
+import {GET_AUTHOR_SUCCESS} from '../actions/types';
+
+const getAuthorSuccess = author => ({
+    type: GET_AUTHOR_SUCCESS,
+    author
+});
 
 export function getAuthor() {
     return axios.get('https://api.github.com/users/awibox')

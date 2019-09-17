@@ -1,27 +1,23 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import AuthorInfo from '../../components/AuthorInfo/AuthorInfo';
-import * as authorApi from '../../api/authorApi';
+import {getAuthor} from '../../actions/author';
 import store from '../../store';
 
-class AuthorInfoContainer extends Component {
+class AuthorContainer extends Component {
 
-  componentDidMount() {
-    authorApi.getAuthor();
-  }
+    componentDidMount() {
+        getAuthor();
+    }
 
-  render() {
-    return (
-      <AuthorInfo author={this.props.author} />
-    );
-  }
+    render() {
+        const {author} = this.props;
+        return (
+            <AuthorInfo author={author}/>
+        );
+    }
+}
 
-};
+const mapStateToProps = store => ({author: store.authorState.author});
 
-const mapStateToProps = function(store) {
-  return {
-    author: store.authorState.author
-  };
-};
-
-export default connect(mapStateToProps)(AuthorInfoContainer);
+export default connect(mapStateToProps)(AuthorContainer);

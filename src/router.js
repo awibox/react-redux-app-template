@@ -7,7 +7,7 @@ import styles from './styles/container.scss';
 // Pages
 import HomeComponent from './pages/Home/Home';
 import Repos from "./pages/Repos/Repos";
-import Author from "./pages/Author/Author";
+import AuthorContainer from "./pages/Author/Author";
 
 export default (
     <Router>
@@ -17,7 +17,7 @@ export default (
                 <div className={styles.wrapper}>
                     <Route exact path="/" component={HomeComponent} />
                     <Route path="/repos" component={Repos} />
-                    <Route path="/author" component={Author} />
+                    <Route path="/author" component={AuthorContainer} />
                 </div>
             </main>
         </div>
