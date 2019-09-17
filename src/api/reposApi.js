@@ -1,6 +1,6 @@
 import axios from 'axios';
 import store from '../store';
-import { getReposSuccess} from '../actions/reposActions';
+import { getReposSuccess} from '../actions/repos';
 
 export function getRepos() {
     return axios.get('https://api.github.com/users/awibox/repos')
