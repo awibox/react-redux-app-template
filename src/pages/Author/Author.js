@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import AuthorInfo from '../../components/AuthorInfo/AuthorInfo';
-import * as authorApi from '../../actions/author';
+import {getAuthor} from '../../actions/author';
 import store from '../../store';
 
 class AuthorContainer extends Component {
 
     componentDidMount() {
-        authorApi.getAuthor().then(r => {
-            console.log('r', r);
-        });
+        getAuthor();
     }
 
     render() {
@@ -20,8 +18,6 @@ class AuthorContainer extends Component {
     }
 }
 
-const mapStateToProps = store => ({
-    author: store.authorState.author
-});
+const mapStateToProps = store => ({author: store.authorState.author});
 
 export default connect(mapStateToProps)(AuthorContainer);

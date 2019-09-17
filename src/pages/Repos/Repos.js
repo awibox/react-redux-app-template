@@ -1,27 +1,23 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import ReposList from '../../components/ReposList/ReposList';
-import * as reposApi from '../../api/reposApi';
+import {getRepos} from '../../actions/repos';
 import store from '../../store';
 
 class ReposComponent extends Component {
 
     componentDidMount() {
-        reposApi.getRepos();
+        getRepos();
     }
 
     render() {
+        const {repos} = this.props;
         return (
-            <ReposList repos={this.props.repos} />
+            <ReposList repos={repos}/>
         );
     }
+}
 
-};
-
-const mapStateToProps = function(store) {
-    return {
-        repos: store.reposState.repos
-    };
-};
+const mapStateToProps = (store) => ({repos: store.reposState.repos});
 
 export default connect(mapStateToProps)(ReposComponent);
