@@ -1,22 +1,24 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import AuthorInfo from '../../components/AuthorInfo/AuthorInfo';
-import * as authorApi from '../../api/authorApi';
+import * as authorApi from '../../actions/author';
 import store from '../../store';
 
-class AuthorInfoContainer extends Component {
+class AuthorContainer extends Component {
 
   componentDidMount() {
-    authorApi.getAuthor();
+    authorApi.getAuthor().then(r => {
+      console.log('r', r);
+    });
   }
 
   render() {
+    const {author} = this.props;
     return (
-      <AuthorInfo author={this.props.author} />
+      <AuthorInfo author={author} />
     );
   }
-
-};
+}
 
 const mapStateToProps = function(store) {
   return {
@@ -24,4 +26,4 @@ const mapStateToProps = function(store) {
   };
 };
 
-export default connect(mapStateToProps)(AuthorInfoContainer);
+export default connect(mapStateToProps)(AuthorContainer);
