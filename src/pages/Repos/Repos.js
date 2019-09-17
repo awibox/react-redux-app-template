@@ -11,7 +11,6 @@ class ReposComponent extends Component {
     }
 
     render() {
-        console.log("WORKKKK")
         return (
             <ReposList repos={this.props.repos} />
         );
