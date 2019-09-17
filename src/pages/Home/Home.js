@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import HomeInfo from '../../components/HomeInfo/HomeInfo';
 import {getHome, getReleases} from '../../actions/home';
-import store from '../../store';
 
 class HomeComponent extends Component {
 
     componentDidMount() {
+        const {getHome, getReleases} = this.props;
         getHome();
         getReleases();
     }
@@ -20,9 +20,9 @@ class HomeComponent extends Component {
 
 }
 
-const mapStateToProps = (store) => ({
-    home: store.homeState.home,
-    releases: store.homeState.releases
+const mapStateToProps = (state) => ({
+    home: state.homeState.home,
+    releases: state.homeState.releases
 });
 
-export default connect(mapStateToProps)(HomeComponent);
+export default connect(mapStateToProps, {getHome, getReleases})(HomeComponent);
