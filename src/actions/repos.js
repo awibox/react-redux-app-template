@@ -1,6 +1,9 @@
-import {GET_REPOS_SUCCESS} from './types';
 import axios from 'axios';
+import {GET_REPOS_SUCCESS} from './types';
 import {getError} from "./error";
+import {gitHubApiUrl} from '../../configs/config';
+
+const END_POINT = 'users';
 
 const getReposSuccess = repos => ({
     type: GET_REPOS_SUCCESS,
@@ -8,7 +11,7 @@ const getReposSuccess = repos => ({
 });
 
 export const getRepos = () => dispatch => {
-    axios.get('https://api.github.com/users/awibox/repos')
+    axios.get(`${gitHubApiUrl}/${END_POINT}/awibox/repos`)
         .then(response => {
             dispatch(getReposSuccess(response.data));
         }).catch(err => {
