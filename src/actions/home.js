@@ -1,7 +1,7 @@
 import axios from 'axios';
-import {GET_HOME_SUCCESS, GET_HOME_RELEASES} from '../actions/types';
+import {GET_HOME_SUCCESS, GET_HOME_RELEASES} from 'actions/types';
 import {getError} from "./error";
-import {gitHubApiUrl} from '../../configs/config';
+import {gitHubApiUrl} from 'config';
 
 const END_POINT = 'repos';
 
