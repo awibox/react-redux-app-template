@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {GET_AUTHOR_SUCCESS} from '../actions/types';
+import {getError} from "./error";
 
 const getAuthorSuccess = author => ({
     type: GET_AUTHOR_SUCCESS,
@@ -11,5 +12,7 @@ export const getAuthor = () => dispatch => {
         .then(response => {
             const {data} = response;
             dispatch(getAuthorSuccess(data));
+        }).catch(err => {
+            dispatch(getError(err.response.data))
         });
 };
