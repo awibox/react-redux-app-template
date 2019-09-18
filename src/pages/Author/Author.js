@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux';
-import AuthorInfo from '../../components/AuthorInfo/AuthorInfo';
-import {getAuthor} from '../../actions/author';
+import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
+import {getAuthor} from 'actions/author';
 
 class AuthorContainer extends Component {
     componentDidMount() {

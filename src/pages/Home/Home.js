@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from "prop-types";
 import {connect} from 'react-redux';
-import HomeInfo from '../../components/HomeInfo/HomeInfo';
-import {getHome, getReleases} from '../../actions/home';
+import HomeInfo from 'components/HomeInfo/HomeInfo';
+import {getHome, getReleases} from 'actions/home';
 
 class HomeContainer extends Component {
 

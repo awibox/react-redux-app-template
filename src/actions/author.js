@@ -1,7 +1,7 @@
 import axios from 'axios';
-import {GET_AUTHOR_SUCCESS} from '../actions/types';
+import {GET_AUTHOR_SUCCESS} from 'actions/types';
 import {getError} from "./error";
-import {gitHubApiUrl, authorAccount} from '../../configs/config';
+import {gitHubApiUrl, authorAccount} from 'config';
 
 const END_POINT = 'users';
 
