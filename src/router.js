@@ -5,8 +5,8 @@ import Header from './components/Header/Header';
 import styles from './styles/container.scss';
 
 // Pages
-import HomeComponent from './pages/Home/Home';
-import Repos from "./pages/Repos/Repos";
+import HomeContainer from './pages/Home/Home';
+import ReposContainer from "./pages/Repos/Repos";
 import AuthorContainer from "./pages/Author/Author";
 
 export default (
@@ -15,8 +15,8 @@ export default (
             <Header />
             <main className={styles.content}>
                 <div className={styles.wrapper}>
-                    <Route exact path="/" component={HomeComponent} />
-                    <Route path="/repos" component={Repos} />
+                    <Route exact path="/" component={HomeContainer} />
+                    <Route path="/repos" component={ReposContainer} />
                     <Route path="/author" component={AuthorContainer} />
                 </div>
             </main>
