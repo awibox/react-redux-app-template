@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import ReposList from '../../components/ReposList/ReposList';
-import {getRepos} from '../../actions/repos';
+import ReposList from 'components/ReposList/ReposList';
+import {getRepos} from 'actions/repos';
 import PropTypes from "prop-types";
 
 class ReposContainer extends Component {
