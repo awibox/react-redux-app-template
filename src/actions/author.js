@@ -1,6 +1,9 @@
 import axios from 'axios';
 import {GET_AUTHOR_SUCCESS} from '../actions/types';
 import {getError} from "./error";
+import {gitHubApiUrl, authorAccount} from '../../configs/config';
+
+const END_POINT = 'user';
 
 const getAuthorSuccess = author => ({
     type: GET_AUTHOR_SUCCESS,
@@ -8,7 +11,7 @@ const getAuthorSuccess = author => ({
 });
 
 export const getAuthor = () => dispatch => {
-    axios.get('https://api.github.com/users/awibox')
+    axios.get(`${gitHubApiUrl}/${END_POINT}/${authorAccount}`)
         .then(response => {
             const {data} = response;
             dispatch(getAuthorSuccess(data));
