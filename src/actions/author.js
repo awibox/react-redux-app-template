@@ -3,7 +3,7 @@ import {GET_AUTHOR_SUCCESS} from '../actions/types';
 import {getError} from "./error";
 import {gitHubApiUrl, authorAccount} from '../../configs/config';
 
-const END_POINT = 'user';
+const END_POINT = 'users';
 
 const getAuthorSuccess = author => ({
     type: GET_AUTHOR_SUCCESS,
