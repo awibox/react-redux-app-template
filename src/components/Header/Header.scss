@@ -11,8 +11,8 @@ $indent: 15px;
 }
 
 .wrapper {
-  width: $minDesktopWidth;
-  min-width: $minMobileWidth;
+  width: 100%;
+  min-width: $widthScreenMobileSmall;
   margin: 0 auto;
   box-sizing: border-box;
   &:after {
@@ -45,12 +45,13 @@ $indent: 15px;
 
 .menu {
   float: right;
+  display: flex;
+  flex-flow: row;
   padding: 0 $indent/2;
 }
 
 .menuItem {
   color: #4078c0;
-  display: inline-block;
   padding: 7px $indent/2;
   text-decoration: none;
   font-size: 14px;
@@ -74,3 +75,14 @@ $indent: 15px;
   cursor: pointer;
 }
 
+@media (max-width: $widthScreenTabletPortrait) {
+  .menuMobile {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    flex-flow: column;
+  }
+}
