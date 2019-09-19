@@ -1,8 +1,8 @@
 @import './variables';
 
 .wrapper {
-  width: $minDesktopWidth;
-  min-width: $minMobileWidth;
+  width: 100%;
+  min-width: $widthScreenMobileSmall;
   margin: 0 auto;
   box-sizing: border-box;
   &:after {
