@@ -31,7 +31,7 @@ export default class NavBar extends Component {
                 <div className={styles.navMobile} onClick={this.toggleMobileMenu}>
                     <i className="fa fa-list"></i>
                 </div>
-                <div className={classNames(styles.navMobileMenu, { [styles.hide]: this.state.openNavMenu })}>
+                <div className={classNames(styles.navMobileMenu, { [styles.show]: this.state.openNavMenu })}>
                     <Links />
                 </div>
             </div>
