@@ -7,7 +7,11 @@ import ReposCard from 'components/ReposCard/ReposCard';
 import Title from "components/Title/Title";
 
 class ReposContainer extends Component {
-
+    static propTypes = {
+        getRepos: PropTypes.func.isRequired,
+        repos: PropTypes.array.isRequired,
+    };
+    
     componentDidMount() {
         this.props.getRepos();
     }
@@ -36,11 +40,6 @@ class ReposContainer extends Component {
         );
     }
 }
-
-ReposContainer.propTypes = {
-    getRepos: PropTypes.func.isRequired,
-    repos: PropTypes.array.isRequired,
-};
 
 const mapStateToProps = (store) => ({repos: store.reposState.repos});
 

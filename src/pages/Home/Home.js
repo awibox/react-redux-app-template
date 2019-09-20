@@ -5,12 +5,19 @@ import HomeInfo from 'components/HomeInfo/HomeInfo';
 import {getHome, getReleases} from 'actions/home';
 
 class HomeContainer extends Component {
+    static propTypes = {
+        getHome: PropTypes.func.isRequired,
+        getReleases: PropTypes.func.isRequired,
+        home: PropTypes.any.isRequired,
+        releases: PropTypes.array.isRequired
+    };
 
     componentDidMount() {
         const {getHome, getReleases} = this.props;
         getHome();
         // getReleases();
     }
+
     render() {
         const {home, releases} = this.props;
         return (
@@ -19,13 +26,6 @@ class HomeContainer extends Component {
     }
 
 }
-
-HomeContainer.propTypes = {
-    getHome: PropTypes.func.isRequired,
-    getReleases: PropTypes.func.isRequired,
-    home: PropTypes.any.isRequired,
-    releases: PropTypes.array.isRequired,
-};
 
 const mapStateToProps = (state) => ({
     home: state.homeState.home,

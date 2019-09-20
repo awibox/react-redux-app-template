@@ -5,9 +5,15 @@ import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
 import {getAuthor} from 'actions/author';
 
 class AuthorContainer extends Component {
+    static propTypes = {
+        author: PropTypes.any.isRequired,
+        getAuthor: PropTypes.func.isRequired
+    };
+
     componentDidMount() {
         this.props.getAuthor();
     }
+
     render() {
         const {author} = this.props;
         return (
@@ -15,11 +21,6 @@ class AuthorContainer extends Component {
         );
     }
 }
-
-AuthorContainer.propTypes = {
-    author: PropTypes.any.isRequired,
-    getAuthor: PropTypes.func.isRequired
-};
 
 const mapStateToProps = state => ({author: state.authorState.author});
 

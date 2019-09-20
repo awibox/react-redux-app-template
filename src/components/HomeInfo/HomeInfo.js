@@ -1,12 +1,19 @@
 import React, {Component} from 'react';
 import styles from './HomeInfo.scss';
 import Button from "../Button/Button";
+import PropTypes from "prop-types";
 
 // Using "Stateless Functional Components"
 export default class HomeContainer extends Component {
+  static propTypes = {
+    home: PropTypes.any.isRequired,
+    buttonClick: PropTypes.func.isRequired,
+  };
+
   buttonClick(url) {
     window.open(url);
   }
+
   render() {
     const {home, buttonClick} = this.props;
     return (
