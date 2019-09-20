@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './ReposList.scss';
+import Title from "../Title/Title";
 
 // Using "Stateless Functional Components"
 export default function(props) {
     return (
         <div>
+            <Title>Repositories</Title>
             {props.repos.map(repo => {
                 let languageStyle;
                 if (repo.language === 'JavaScript') {
