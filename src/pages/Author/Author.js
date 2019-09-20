@@ -15,13 +15,16 @@ class AuthorContainer extends Component {
     }
 
     render() {
-        const {author} = this.props;
+        const {author, errors} = this.props;
         return (
-            <AuthorInfo author={author}/>
+            <div>
+                {typeof errors.message !== 'undefined' && <div>{errors.message}</div>}
+                <AuthorInfo author={author}/>
+            </div>
         );
     }
 }
 
-const mapStateToProps = state => ({author: state.authorState.author});
+const mapStateToProps = store => ({author: store.authorState.author, errors: store.errors});
 
 export default connect(mapStateToProps, { getAuthor })(AuthorContainer);
