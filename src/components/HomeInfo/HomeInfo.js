@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Redirect} from 'react-router-dom';
 import styles from './HomeInfo.scss';
 import Button from "../Button/Button";
 

@@ -7,7 +7,7 @@ export default class HomeComponent extends Component {
     render() {
         return (
             <header className={styles.header}>
-                <Link className={styles.logoBlock} to="/home">
+                <Link className={styles.logoBlock} to="/">
                     <span className={styles.logo}>
                         <i className="fa fa-gears"></i>
                     </span>
