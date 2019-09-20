@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 
 import Header from 'components/Header/Header';
 import styles from 'styles/container.scss';
@@ -15,7 +15,8 @@ export default (
             <Header />
             <main className={styles.content}>
                 <div className={styles.wrapper}>
-                    <Route exact path="/" component={HomeContainer} />
+                    <Redirect path="/" to="/home" />
+                    <Route path="/home" component={HomeContainer} />
                     <Route path="/repos" component={ReposContainer} />
                     <Route path="/author" component={AuthorContainer} />
                 </div>

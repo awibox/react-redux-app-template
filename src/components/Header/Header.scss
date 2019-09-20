@@ -1,88 +1,36 @@
 @import '../../styles/variables';
 
-$background: #f5f5f5;
-$indent: 15px;
-
 .header {
-  background: $background;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.wrapper {
+  background: $headerBackground;
   width: 100%;
   min-width: $widthScreenMobileSmall;
-  margin: 0 auto;
+  border-bottom: 1px solid $headerBorderColor;
+  display: flex;
+  flex-flow: row;
   box-sizing: border-box;
-  &:after {
-    display: block;
-    content: "";
-    clear: both;
-  }
+  justify-content: space-between;
+}
+
+.logoBlock {
+  padding: 10px 0;
+  margin-left: $headerIndent;
+  display: flex;
+  flex-flow: row;
 }
 
 .logo {
   width: 32px;
   height: 32px;
-  background-image: url(https://avatars.githubusercontent.com/u/23641337?v=3);
-  background-size: cover;
-  float: left;
-  margin-left: $indent;
-  border-radius: 2px;
+  font-size: 32px;
+  color: $headerTextColor;
 }
 
 .name {
-  float: left;
   font-size: 22px;
   line-height: 32px;
   height: 32px;
   font-weight: 100;
-  margin: 0 $indent;
-  color: #000;
+  margin-left: $headerIndent;
+  color: $headerTextColor;
   text-decoration: none;
-}
-
-.menu {
-  float: right;
-  display: flex;
-  flex-flow: row;
-  padding: 0 $indent/2;
-}
-
-.menuItem {
-  color: #4078c0;
-  padding: 7px $indent/2;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 100;
-}
-
-.menuItemActive {
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.menuMobile {
-  display: none;
-  float: right;
-  font-size: 22px;
-  line-height: 22px;
-  color: #999;
-  padding: 5px 0 4px;
-  margin: 0 20px;
-  cursor: pointer;
-}
-
-@media (max-width: $widthScreenTabletPortrait) {
-  .menuMobile {
-    display: block;
-  }
-  .menu {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    flex-flow: column;
-  }
 }
