@@ -16,7 +16,8 @@ export default (
             <main className={styles.content}>
                 <div className={styles.wrapper}>
                     <Route exact path="/" component={HomeContainer} />
-                    <Route path="/repos" component={ReposContainer} />
+                    <Route exact path="/repos" component={ReposContainer} />
+                    <Route path="/repos/:user" component={ReposContainer} />
                     <Route path="/author" component={AuthorContainer} />
                 </div>
             </main>

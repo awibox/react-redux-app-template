@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styles from './HomeInfo.scss';
 import Button from "../Button/Button";
 import PropTypes from "prop-types";
+import Card from "../Card/Card";
 
 // Using "Stateless Functional Components"
 export default class HomeContainer extends Component {
@@ -17,7 +18,7 @@ export default class HomeContainer extends Component {
     const {home} = this.props;
     return (
         <div className={styles.homeInfo}>
-          <div className={styles.homeCard}>
+          <Card>
             <div className={styles.homeLogo}>
               <div className={styles.image}>
                 <i className="fa fa-gears"></i>
@@ -30,7 +31,7 @@ export default class HomeContainer extends Component {
                 </Button>
               </div>
             </div>
-          </div>
+          </Card>
         </div>
     );
   }
