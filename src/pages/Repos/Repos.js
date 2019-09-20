@@ -33,7 +33,7 @@ class ReposContainer extends Component {
                         }
                     }
                     return (
-                        <ReposCard repo={repo} style={languageStyle} />
+                        <ReposCard key={repo.id + '_' + repo.name} repo={repo}  style={languageStyle} />
                     );
                 })}
             </div>
