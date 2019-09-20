@@ -19,17 +19,18 @@ class HomeContainer extends Component {
     }
 
     render() {
-        const {home, releases} = this.props;
+        const {home, errors} = this.props;
         return (
-            <HomeInfo home={home}/>
+            <div>
+                {typeof errors.message !== 'undefined' && <div>{errors.message}</div>}
+                <HomeInfo home={home}/>
+            </div>
+
         );
     }
 
 }
 
-const mapStateToProps = (state) => ({
-    home: state.homeState.home,
-    releases: state.homeState.releases
-});
+const mapStateToProps = store => ({home: store.homeState.home, releases: store.homeState.releases, errors: store.errors});
 
 export default connect(mapStateToProps, {getHome, getReleases})(HomeContainer);
