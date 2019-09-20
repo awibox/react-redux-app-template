@@ -21,15 +21,19 @@ class ReposContainer extends Component {
             this.props.getRepos(user);
         }
     }
-
+    changeUser(user) {
+        if(typeof user !== 'undefined') {
+            this.props.getRepos(user);
+        }
+    }
     render() {
         const {repos} = this.props;
         return (
             <div>
                 <Title>Repositories</Title>
                 <Card>
-                    <Link to={'/repos/awibox'}>awibox</Link>
-                    <Link to={'/repos/angular'}>angular</Link>
+                    <Link to={'/repos/awibox'} onClick={() => this.changeUser('awibox')}>awibox</Link><br/>
+                    <Link to={'/repos/angular'} onClick={() => this.changeUser('angular')}>angular</Link>
                 </Card>
                 {repos.length > 0 && repos.map(repo => {
                     let languageStyle;
