@@ -14,7 +14,7 @@
 }
 
 .homeLogo {
-  display: inline-flex;
+  display: flex;
   flex-flow: column;
   .image {
     font-size: 128px;
@@ -42,4 +42,8 @@
   line-height: 22px;
   text-align: left;
   margin-left: 5px;
+}
+
+.button {
+  padding-bottom: 20px;
 }
