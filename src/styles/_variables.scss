@@ -13,3 +13,10 @@ $widthScreenDisplayLarge:     1920px;
 $bodyFont:          14px/18px Roboto, Arial, Tahoma, Verdana, sans-serif;
 $bodyFontSize:      14px;
 $indent:            30px;
+
+// Header
+$headerBackground: -webkit-linear-gradient(bottom, #23b7e5 0%, #51c6ea 100%);
+$headerBorderColor: rgba(0,0,0,.2);
+$headerTextColor: #fff;
+$headerIndent: 15px;
+$navActiveBackground: -webkit-linear-gradient(top, #23b7e5 0%, #51c6ea 100%);
