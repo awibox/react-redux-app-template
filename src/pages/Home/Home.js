@@ -9,7 +9,7 @@ class HomeContainer extends Component {
     componentDidMount() {
         const {getHome, getReleases} = this.props;
         getHome();
-        getReleases();
+        // getReleases();
     }
 
     render() {

@@ -18,7 +18,7 @@
 }
 .navMenuItem {
   color: $headerTextColor;
-  padding: 17px $indent/2;
+  padding: 17px $defaultIndent;
   text-decoration: none;
   font-size: 16px;
   user-select: none;
@@ -65,7 +65,7 @@
       box-shadow: -1px 1px 3px $headerBorderColor;
       .navMenuItem {
         border: 1px solid #e4eaec;
-        padding: 15px $indent;
+        padding: $defaultIndent $defaultIndent*2;
         color: #555555;
         &.navMenuItemActive {
           background: #eaebec;
