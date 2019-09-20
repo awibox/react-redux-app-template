@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import ReposList from 'components/ReposList/ReposList';
-import {getRepos} from 'actions/repos';
 import PropTypes from "prop-types";
+import {connect} from 'react-redux';
+import {getRepos} from 'actions/repos';
+
+import ReposCard from 'components/ReposCard/ReposCard';
+import Title from "components/Title/Title";
 
 class ReposContainer extends Component {
 
@@ -13,7 +15,24 @@ class ReposContainer extends Component {
     render() {
         const {repos} = this.props;
         return (
-            <ReposList repos={repos}/>
+            <div>
+                <Title>Repositories</Title>
+                {repos.map(repo => {
+                    let languageStyle;
+                    if (repo.language === 'JavaScript') {
+                        languageStyle = {
+                            color: '#f1e05a'
+                        }
+                    } else if (repo.language === 'TypeScript'){
+                        languageStyle = {
+                            color: '#2b7489'
+                        }
+                    }
+                    return (
+                        <ReposCard repo={repo} style={languageStyle} />
+                    );
+                })}
+            </div>
         );
     }
 }
