@@ -13,7 +13,11 @@ class ReposContainer extends Component {
     };
     
     componentDidMount() {
-        this.props.getRepos();
+        const {user} = this.props.match.params;
+        if(typeof user !== 'undefined') {
+            this.props.getRepos(user);
+        }
+
     }
 
     render() {
@@ -21,7 +25,7 @@ class ReposContainer extends Component {
         return (
             <div>
                 <Title>Repositories</Title>
-                {repos.map(repo => {
+                {repos.length > 0 && repos.map(repo => {
                     let languageStyle;
                     if (repo.language === 'JavaScript') {
                         languageStyle = {

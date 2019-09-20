@@ -10,8 +10,8 @@ const getReposSuccess = repos => ({
     repos
 });
 
-export const getRepos = () => dispatch => {
-    axios.get(`${gitHubApiUrl}/${END_POINT}/awibox/repos`)
+export const getRepos = user => dispatch => {
+    axios.get(`${gitHubApiUrl}/${END_POINT}/${user}/repos`)
         .then(response => {
             dispatch(getReposSuccess(response.data));
         }).catch(err => {
