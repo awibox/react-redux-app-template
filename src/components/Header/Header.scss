@@ -16,6 +16,7 @@
   margin-left: $headerIndent;
   display: flex;
   flex-flow: row;
+  text-decoration: none;
 }
 
 .logo {
@@ -32,5 +33,4 @@
   font-weight: 100;
   margin-left: $headerIndent;
   color: $headerTextColor;
-  text-decoration: none;
 }
