@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 import PropTypes from "prop-types";
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {getRepos} from 'actions/repos';
 
+
 import ReposCard from 'components/ReposCard/ReposCard';
 import Title from "components/Title/Title";
+import Card from "components/Card/Card";
 
 class ReposContainer extends Component {
     static propTypes = {
@@ -17,7 +20,6 @@ class ReposContainer extends Component {
         if(typeof user !== 'undefined') {
             this.props.getRepos(user);
         }
-
     }
 
     render() {
@@ -25,6 +27,10 @@ class ReposContainer extends Component {
         return (
             <div>
                 <Title>Repositories</Title>
+                <Card>
+                    <Link to={'/repos/awibox'}>awibox</Link>
+                    <Link to={'/repos/angular'}>angular</Link>
+                </Card>
                 {repos.length > 0 && repos.map(repo => {
                     let languageStyle;
                     if (repo.language === 'JavaScript') {
