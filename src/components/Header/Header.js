@@ -7,12 +7,12 @@ export default class HomeComponent extends Component {
     render() {
         return (
             <header className={styles.header}>
-                <div className={styles.logoBlock}>
-                    <Link className={styles.logo} to="/">
+                <Link className={styles.logoBlock} to="/home">
+                    <span className={styles.logo}>
                         <i className="fa fa-gears"></i>
-                    </Link>
-                    <Link className={styles.name} to="/">React Redux App</Link>
-                </div>
+                    </span>
+                    <span className={styles.name}>React Redux App</span>
+                </Link>
                 <NavBar />
             </header>
         );

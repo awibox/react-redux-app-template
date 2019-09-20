@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 const Links = () => (
     <aside className={styles.navMenu}>
-        <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to="/home">About</NavLink>
+        <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to="/home">Home page</NavLink>
         <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to="/repos">Repositories</NavLink>
         <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to="/author">Author</NavLink>
     </aside>
