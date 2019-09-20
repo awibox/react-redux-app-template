@@ -23,10 +23,11 @@ class ReposContainer extends Component {
     }
 
     render() {
-        const {repos} = this.props;
+        const {repos, errors} = this.props;
         return (
             <div>
                 <Title>Repositories</Title>
+                {typeof errors.message !== 'undefined' && <div>{errors.message}</div>}
                 <Card>
                     <Link to={'/repos/awibox'}>awibox</Link>
                     <Link to={'/repos/angular'}>angular</Link>
@@ -51,6 +52,6 @@ class ReposContainer extends Component {
     }
 }
 
-const mapStateToProps = (store) => ({repos: store.reposState.repos});
+const mapStateToProps = store => ({repos: store.reposState.repos, errors: store.errors});
 
 export default connect(mapStateToProps, {getRepos})(ReposContainer);
