@@ -7,7 +7,6 @@ import PropTypes from "prop-types";
 export default class HomeContainer extends Component {
   static propTypes = {
     home: PropTypes.any.isRequired,
-    buttonClick: PropTypes.func.isRequired,
   };
 
   buttonClick(url) {
@@ -15,7 +14,7 @@ export default class HomeContainer extends Component {
   }
 
   render() {
-    const {home, buttonClick} = this.props;
+    const {home} = this.props;
     return (
         <div className={styles.homeInfo}>
           <div className={styles.homeCard}>
