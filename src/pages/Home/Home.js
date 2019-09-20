@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from "prop-types";
 import {connect} from 'react-redux';
-import HomeInfo from 'components/HomeInfo/HomeInfo';
 import {getHome, getReleases} from 'actions/home';
+
+import HomeInfo from 'components/HomeInfo/HomeInfo';
+import Alert from "components/Alert/Alert";
 
 class HomeContainer extends Component {
     static propTypes = {
@@ -22,7 +24,7 @@ class HomeContainer extends Component {
         const {home, errors} = this.props;
         return (
             <div>
-                {typeof errors.message !== 'undefined' && <div>{errors.message}</div>}
+                {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
                 <HomeInfo home={home}/>
             </div>
 

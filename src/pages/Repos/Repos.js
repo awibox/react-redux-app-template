@@ -8,6 +8,7 @@ import {getRepos} from 'actions/repos';
 import ReposCard from 'components/ReposCard/ReposCard';
 import Title from "components/Title/Title";
 import Card from "components/Card/Card";
+import Alert from "components/Alert/Alert";
 
 class ReposContainer extends Component {
     static propTypes = {
@@ -30,8 +31,8 @@ class ReposContainer extends Component {
         const {repos, errors} = this.props;
         return (
             <div>
+                {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
                 <Title>Repositories</Title>
-                {typeof errors.message !== 'undefined' && <div>{errors.message}</div>}
                 <Card>
                     <Link to={'/repos/awibox'} onClick={() => this.changeUser('awibox')}>awibox</Link><br/>
                     <Link to={'/repos/angular'} onClick={() => this.changeUser('angular')}>angular</Link>
