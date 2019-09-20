@@ -5,7 +5,7 @@ import styles from './ReposCard.scss';
 export default (props) => {
     const {repo, style} = props;
     return (
-        <div key={repo.id} className={styles.repo}>
+        <div className={styles.repo}>
             <a href={repo.html_url} target="_blank" className={styles.name}>{repo.name}</a>
             <div className={styles.githubIcon}> <i className="fa fa-github" aria-hidden="true"></i></div>
             <div className={styles.desc}>{repo.description}</div>
