@@ -1,15 +1,37 @@
+@import '../../styles/variables';
+
+
 .homeInfo {
   text-align: center;
   padding: 46px 0;
 }
 
-.name {
-  display: inline-block;
-  line-height: 56px;
-  font-size: 56px;
-  font-weight: 100;
-  vertical-align: top;
-  padding-top: 10px;
+.homeCard {
+  padding: $indent;
+  background: #fff;
+}
+
+.homeLogo {
+  display: inline-flex;
+  flex-flow: column;
+  .image {
+    font-size: 128px;
+    padding: $indent;
+  }
+  .name {
+    line-height: 56px;
+    font-size: 56px;
+    font-weight: 100;
+    padding-top: 10px;
+  }
+  .text {
+    padding: 20px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 100;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .version {
@@ -17,13 +39,4 @@
   line-height: 22px;
   text-align: left;
   margin-left: 5px;
-}
-
-.text {
-  padding: 20px;
-  font-size: 20px;
-  color: #333;
-  font-weight: 100;
-  line-height: 30px;
-  margin-bottom: 30px;
 }
