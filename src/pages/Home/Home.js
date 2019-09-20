@@ -11,11 +11,10 @@ class HomeContainer extends Component {
         getHome();
         // getReleases();
     }
-
     render() {
         const {home, releases} = this.props;
         return (
-            <HomeInfo home={home} releases={releases}/>
+            <HomeInfo home={home}/>
         );
     }
 
