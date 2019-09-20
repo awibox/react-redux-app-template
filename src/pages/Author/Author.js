@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux';
-import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
 import {getAuthor} from 'actions/author';
+
+import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
+import Alert from "components/Alert/Alert";
 
 class AuthorContainer extends Component {
     static propTypes = {
@@ -18,7 +20,7 @@ class AuthorContainer extends Component {
         const {author, errors} = this.props;
         return (
             <div>
-                {typeof errors.message !== 'undefined' && <div>{errors.message}</div>}
+                {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
                 <AuthorInfo author={author}/>
             </div>
         );
