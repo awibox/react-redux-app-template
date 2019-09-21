@@ -30,7 +30,6 @@ class HomeContainer extends Component {
 
         );
     }
-
 }
 
 const mapStateToProps = store => ({home: store.homeState.home, releases: store.homeState.releases, errors: store.errors});
