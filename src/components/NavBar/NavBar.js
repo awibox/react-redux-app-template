@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import styles from './NavBar.scss';
 import classNames from 'classnames';
+import {routes} from 'router';
 
 const Links = () => (
     <aside className={styles.navMenu}>
         <NavLink exact className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to="/">Home page</NavLink>
-        <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to="/repos">Repositories</NavLink>
-        <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to="/author">Author</NavLink>
+        <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to={routes.repos}>Repositories</NavLink>
+        <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to={routes.author}>Author</NavLink>
     </aside>
 );
 

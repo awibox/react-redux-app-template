@@ -4,6 +4,7 @@ import {NavLink} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {getRepos} from 'actions/repos';
 import {UserArray} from 'config';
+import {routes} from 'router';
 // Components
 import ReposCard from 'components/ReposCard/ReposCard';
 import Title from "components/Title/Title";
@@ -45,7 +46,7 @@ class ReposContainer extends Component {
                             <NavLink className={styles.link}
                                      activeClassName={styles.linkActive}
                                      key={user}
-                                     to={`/repos/${user}`}
+                                     to={`${routes.repos}/${user}`}
                                      onClick={() => this.changeUser(user)}>
                                 <User>{user}</User>
                             </NavLink>
