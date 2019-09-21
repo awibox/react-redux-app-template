@@ -5,13 +5,36 @@
   flex-flow: column;
 }
 
+.reposList {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-left: -$defaultIndent;
+}
+
 .link {
-  color: #4078c0;
+  color: #3D5E61;
   font-size: 16px;
   text-decoration: none;
+  padding: $defaultIndent;
+  &:hover {
+    background: #f2f2f2;
+  }
+  &.linkActive {
+    background: #e4eaec;
+  }
 }
+
+
 
 .users {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+@media(max-width: $widthScreenTabletSmall) {
+  .users {
+    flex-flow: column;
+  }
 }
