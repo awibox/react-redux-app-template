@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
 import PropTypes from "prop-types";
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {getRepos} from 'actions/repos';
-
+import {UserArray} from 'config';
+// Components
 import ReposCard from 'components/ReposCard/ReposCard';
 import Title from "components/Title/Title";
 import Card from "components/Card/Card";
 import Alert from "components/Alert/Alert";
 import User from "components/User/User";
-
+// Styles
 import styles from './Repos.scss';
-
-const UserArray = ['awibox', 'angular'];
 
 class ReposContainer extends Component {
     static propTypes = {
@@ -43,13 +42,18 @@ class ReposContainer extends Component {
                 <Card className={styles.users}>
                     {UserArray.map(user => {
                         return (
-                            <Link className={styles.link} to={`/repos/${user}`} onClick={() => this.changeUser(user)}>
+                            <NavLink className={styles.link}
+                                     activeClassName={styles.linkActive}
+                                     key={user}
+                                     to={`/repos/${user}`}
+                                     onClick={() => this.changeUser(user)}>
                                 <User>{user}</User>
-                            </Link>
+                            </NavLink>
                         );
                     })}
                 </Card>
                 {repos.length > 0 && <Title>Repositories of {user}</Title>}
+                <div className={styles.reposList}>
                 {repos.length > 0 && repos.map(repo => {
                     let languageStyle;
                     if (repo.language === 'JavaScript') {
@@ -65,6 +69,7 @@ class ReposContainer extends Component {
                         <ReposCard key={repo.id + '_' + repo.name} repo={repo} style={languageStyle}/>
                     );
                 })}
+                </div>
             </div>
         );
     }
