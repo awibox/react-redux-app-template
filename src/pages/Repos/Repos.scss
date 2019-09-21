@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.repos {
+  display: flex;
+  flex-flow: column;
+}
+
+.link {
+  color: #4078c0;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.users {
+  display: flex;
+  flex-flow: column;
+}
