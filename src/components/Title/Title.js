@@ -1,4 +1,5 @@
 import React from 'react';
+// Styles
 import styles from './Title.scss';
 
 export default (props) => (

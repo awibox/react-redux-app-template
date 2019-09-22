@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux';
 import {getAuthor} from 'actions/author';
-
+// Components
 import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
 import Alert from "components/Alert/Alert";
 
