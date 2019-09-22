@@ -1,22 +1,31 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var path = require('path');
-var NODE_ENV = process.env.NODE_ENV || 'development';
-var autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const path = require('path');
+const NODE_ENV = process.env.NODE_ENV || 'development';
+const autoprefixer = require('autoprefixer');
 
 const htmlPlugin = new HtmlWebpackPlugin({
-    template: "./src/templates/index.html",
+    template: "./templates/index.html",
     fileName: "./index.html"
 });
 
+const devMode = NODE_ENV === 'development';
+
+console.log('NODE_ENV', NODE_ENV, 'devMode', devMode);
+
 module.exports = {
+    context: path.resolve(__dirname, 'src'),
     mode: 'development',
-    entry: './src/index.js',
+    entry: './index.js',
     output: {
         path: __dirname + '/public',
         filename: './js/main.js',
-        publicPath: '/'
+        publicPath: '/',
+        chunkFilename: './js/[name].js'
     },
-    devtool: NODE_ENV == 'development' ? "inline-source-map" : null,
+    devtool: devMode ? "inline-source-map" : false,
     resolve: {
         extensions: ['.js', '.jsx'],
         modules: [path.resolve(__dirname, 'src'), 'node_modules']
@@ -30,12 +39,25 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: process.env.NODE_ENV === 'development',
+                        },
+                    },
+                    'css-loader'
+                ],
             },
             {
                 test: /\.(sass|scss)$/,
                 use: [
-                    'style-loader',
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: process.env.NODE_ENV === 'development',
+                        },
+                    },
                     {
                         loader: require.resolve("css-loader"),
                         options: {
@@ -119,7 +141,19 @@ module.exports = {
             }
         ]
     },
-    plugins: [htmlPlugin],
+    plugins: [
+        htmlPlugin,
+        new MiniCssExtractPlugin({
+            filename: devMode ? './css/[name].css' : './css/[name].[hash].css',
+            chunkFilename: devMode ? './css/[name].css' : './css/[name].[hash].css',
+        }),
+    ],
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        },
+        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    },
     devServer: {
         historyApiFallback: true
     }
