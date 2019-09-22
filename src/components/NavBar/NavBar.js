@@ -4,14 +4,6 @@ import styles from './NavBar.scss';
 import classNames from 'classnames';
 import {routes} from 'router';
 
-const Links = () => (
-    <aside className={styles.navMenu}>
-        <NavLink exact className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to="/">Home page</NavLink>
-        <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to={routes.repos}>Repositories</NavLink>
-        <NavLink className={styles.navMenuItem} activeClassName={styles.navMenuItemActive} to={routes.author}>Author</NavLink>
-    </aside>
-);
-
 export default class NavBar extends Component {
     constructor(props) {
         super(props);
@@ -23,17 +15,38 @@ export default class NavBar extends Component {
     toggleMobileMenu () {
         this.setState({openNavMenu: !this.state.openNavMenu});
     }
+    renderLinks() {
+       return (
+           <aside className={styles.navMenu}>
+               <NavLink exact className={styles.navMenuItem}
+                        activeClassName={styles.navMenuItemActive}
+                        onClick={() => this.closeMenu()}
+                        to="/">Home page</NavLink>
+               <NavLink className={styles.navMenuItem}
+                        activeClassName={styles.navMenuItemActive}
+                        onClick={() => this.closeMenu()}
+                        to={routes.repos}>Repositories</NavLink>
+               <NavLink className={styles.navMenuItem}
+                        activeClassName={styles.navMenuItemActive}
+                        onClick={() => this.closeMenu()}
+                        to={routes.author}>Author</NavLink>
+           </aside>
+       );
+    }
+    closeMenu() {
+        this.setState({openNavMenu: false})
+    }
     render() {
         return (
             <div className={styles.nav}>
                 <div className={styles.navDesktopMenu}>
-                    <Links />
+                    {this.renderLinks()}
                 </div>
                 <div className={classNames(styles.navMobile, { [styles.navMobileActive]: this.state.openNavMenu })} onClick={this.toggleMobileMenu}>
                     <i className="fa fa-list"></i>
                 </div>
                 <div className={classNames(styles.navMobileMenu, { [styles.show]: this.state.openNavMenu })}>
-                    <Links />
+                    {this.renderLinks()}
                 </div>
             </div>
         );
