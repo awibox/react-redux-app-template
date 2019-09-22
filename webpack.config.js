@@ -13,11 +13,9 @@ const htmlPlugin = new HtmlWebpackPlugin({
 
 const devMode = NODE_ENV === 'development';
 
-console.log('NODE_ENV', NODE_ENV, 'devMode', devMode);
-
 module.exports = {
     context: path.resolve(__dirname, 'src'),
-    mode: 'development',
+    mode: devMode ? 'development' : 'production',
     entry: './index.js',
     output: {
         path: __dirname + '/public',
