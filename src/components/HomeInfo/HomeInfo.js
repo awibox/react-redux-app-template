@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import styles from './HomeInfo.scss';
-import Button from "../Button/Button";
 import PropTypes from "prop-types";
+// Components
+import Button from "../Button/Button";
 import Card from "../Card/Card";
+// Styles
+import styles from './HomeInfo.scss';
 
 // Using "Stateless Functional Components"
 export default class HomeContainer extends Component {
