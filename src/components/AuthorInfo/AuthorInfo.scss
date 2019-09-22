@@ -1,34 +1,29 @@
 .authorInfo {
   text-align: center;
-  padding: 46px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
+  width: 150px;
+  height: 150px;
   background-size: cover;
-  vertical-align: top;
-  margin: 0 20px;
+  background-repeat: no-repeat;
+  margin: 30px auto;
 }
 
 .title {
-  font-size: 0;
-}
-
-.titleText {
-  display: inline-block;
   line-height: 56px;
   font-size: 56px;
   font-weight: 100;
   vertical-align: top;
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .titleVersion {
   font-size: 18px;
   line-height: 22px;
-  text-align: left;
   margin-left: 5px;
 }
 
@@ -38,5 +33,9 @@
   color: #333;
   font-weight: 100;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding-bottom: 20px;
 }

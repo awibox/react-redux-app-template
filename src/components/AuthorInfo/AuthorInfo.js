@@ -1,24 +1,34 @@
-import React from 'react';
+import React, {Component} from 'react';
+import PropTypes from "prop-types";
+// Components
+import Button from "../Button/Button";
+import Card from "../Card/Card";
 // Styles
 import styles from './AuthorInfo.scss';
 
-// Using "Stateless Functional Components"
-export default function (props) {
-  const avatar_url = {
-    backgroundImage: 'url(' + props.author.avatar_url + ')',
-  };
-  return (
-    <div className="data-list">
-      <div className={styles.authorInfo}>
-        <div className={styles.title}>
-          <div className={styles.logo} style={avatar_url}></div>
-          <div className={styles.titleText}>{props.author.name}
-            <div className={styles.titleVersion}>{props.author.location}</div>
-          </div>
-        </div>
-        <div className={styles.infoText}>{props.author.company} - {props.author.bio}</div>
-        <a href={props.author.html_url} target="_blank" >Github page</a>
-      </div>
-    </div>
-  );
+export default class AuthorInfo extends Component {
+    static propTypes = {
+        author: PropTypes.any.isRequired
+    };
+
+    buttonClick(url) {
+        window.open(url);
+    }
+
+    render() {
+        const {author} = this.props;
+        return (
+            <Card className={styles.authorInfo}>
+                <div className={styles.logo} style={{backgroundImage: 'url(' + author.avatar_url + ')'}}></div>
+                <div className={styles.title}>{author.name}</div>
+                <div className={styles.titleVersion}>{author.location}</div>
+                <div className={styles.infoText}>{author.company} - {author.bio}</div>
+                <div className={styles.button}>
+                    <Button icon="fa-github" onClick={() => this.buttonClick(author.html_url)}>
+                        Github page
+                    </Button>
+                </div>
+            </Card>
+        )
+    };
 }
