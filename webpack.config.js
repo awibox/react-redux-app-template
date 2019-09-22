@@ -13,7 +13,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: __dirname + '/public',
-        filename: './main.js',
+        filename: './js/main.js',
         publicPath: '/'
     },
     devtool: NODE_ENV == 'development' ? "inline-source-map" : null,
@@ -25,7 +25,8 @@ module.exports = {
         rules: [
             {
                 test: /\.jsx?$/,
-                loader: 'babel-loader'
+                loader: 'babel-loader',
+                query: {compact: false}
             },
             {
                 test: /\.css$/i,
