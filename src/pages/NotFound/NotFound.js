@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-// Styles
-import styles from './NoMatchPage.scss';
+// Components
 import Card from "components/Card/Card";
+// Styles
+import styles from './NotFound.scss';
 
-export default class NoMatchPage extends Component {
+export default class NotFound extends Component {
     render() {
         return (
             <Card className={styles.notFound}>
