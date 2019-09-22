@@ -85,51 +85,36 @@ module.exports = {
                 ],
             },
             {
-                test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            limit: 10000
-                        },
-                    },
-                ]
-            },
-            {
-                test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            limit: 10000
-                        },
-                    },
-                ]
-            },
-            {
-                test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            limit: 10000
-                        },
-                    },
-                ]
-            },
-            {
-                test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(jpe?g|png|gif|svg)$/i,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
-                            limit: 10000
-                        },
+                            query: {
+                                name:'assets/[name].[ext]'
+                            }
+                        }
                     },
-                ]
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            query: {
+                                mozjpeg: {
+                                    progressive: true,
+                                },
+                                gifsicle: {
+                                    interlaced: true,
+                                },
+                                optipng: {
+                                    optimizationLevel: 7,
+                                }
+                            }
+                        }
+                    }
+                ],
             },
             {
-                test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(eot|ttf|woff|woff2)$/,
                 use: [
                     {
                         loader: 'url-loader',
