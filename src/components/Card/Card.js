@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+// Styles
 import styles from './Card.scss';
 
 export default (props) => (

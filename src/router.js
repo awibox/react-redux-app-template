@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-
+// Components
 import Header from 'components/Header/Header';
-import styles from 'styles/container.scss';
-
 // Pages
 import HomeContainer from 'pages/Home/Home';
 import ReposContainer from "pages/Repos/Repos";
 import AuthorContainer from "pages/Author/Author";
-import NoMatchPage from "pages/NoMatchPage/NoMatchPage";
+import NotFound from "pages/NotFound/NotFound";
+// Styles
+import styles from 'styles/container.scss';
 
 export const routes = {
     repos: '/repos',
@@ -26,7 +26,7 @@ export default (
                         <Route exact path={routes.repos} component={ReposContainer} />
                         <Route path={routes.repos + '/:user'} component={ReposContainer} />
                         <Route path={routes.author} component={AuthorContainer} />
-                        <Route component={NoMatchPage}/>
+                        <Route component={NotFound}/>
                     </Switch>
                 </div>
             </main>

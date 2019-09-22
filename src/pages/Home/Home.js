@@ -1,23 +1,20 @@
 import React, {Component} from 'react';
 import PropTypes from "prop-types";
 import {connect} from 'react-redux';
-import {getHome, getReleases} from 'actions/home';
-
+import {getHome} from 'actions/home';
+// Components
 import HomeInfo from 'components/HomeInfo/HomeInfo';
 import Alert from "components/Alert/Alert";
 
 class HomeContainer extends Component {
     static propTypes = {
         getHome: PropTypes.func.isRequired,
-        getReleases: PropTypes.func.isRequired,
-        home: PropTypes.any.isRequired,
-        releases: PropTypes.array.isRequired
+        home: PropTypes.any.isRequired
     };
 
     componentDidMount() {
-        const {getHome, getReleases} = this.props;
+        const {getHome} = this.props;
         getHome();
-        // getReleases();
     }
 
     render() {
@@ -32,6 +29,6 @@ class HomeContainer extends Component {
     }
 }
 
-const mapStateToProps = store => ({home: store.homeState.home, releases: store.homeState.releases, errors: store.errors});
+const mapStateToProps = store => ({home: store.homeState.home, errors: store.errors});
 
-export default connect(mapStateToProps, {getHome, getReleases})(HomeContainer);
+export default connect(mapStateToProps, {getHome})(HomeContainer);

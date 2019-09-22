@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import styles from './Header.scss';
+// Components
 import NavBar from 'components/NavBar/NavBar';
+// Styles
+import styles from './Header.scss';
 
 export default class HomeComponent extends Component {
     render() {

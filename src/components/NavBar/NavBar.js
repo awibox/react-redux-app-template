@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import styles from './NavBar.scss';
-import classNames from 'classnames';
 import {routes} from 'router';
+import classNames from 'classnames';
+// Styles
+import styles from './NavBar.scss';
 
 export default class NavBar extends Component {
     constructor(props) {

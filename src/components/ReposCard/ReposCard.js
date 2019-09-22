@@ -1,6 +1,8 @@
 import React from 'react';
-import styles from './ReposCard.scss';
+// Components
 import Card from "../Card/Card";
+// Styles
+import styles from './ReposCard.scss';
 
 // Using "Stateless Functional Components"
 export default (props) => {

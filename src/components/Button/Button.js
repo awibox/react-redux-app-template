@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './Button.scss';
 import classNames from 'classnames';
+// Styles
+import styles from './Button.scss';
 
 export default (props) => {
     const {icon, children, onClick} = props;

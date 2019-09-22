@@ -1,4 +1,5 @@
 import React from 'react';
+// Styles
 import styles from './AuthorInfo.scss';
 
 // Using "Stateless Functional Components"
