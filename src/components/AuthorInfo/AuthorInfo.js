@@ -8,7 +8,14 @@ import styles from './AuthorInfo.scss';
 
 export default class AuthorInfo extends Component {
     static propTypes = {
-        author: PropTypes.any.isRequired
+        author: PropTypes.shape({
+            avatar_url: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            location: PropTypes.string.isRequired,
+            company: PropTypes.string.isRequired,
+            bio: PropTypes.string.isRequired,
+            html_url: PropTypes.string.isRequired
+        })
     };
 
     buttonClick(url) {

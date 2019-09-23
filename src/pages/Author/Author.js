@@ -8,7 +8,14 @@ import Alert from "components/Alert/Alert";
 
 class AuthorContainer extends Component {
     static propTypes = {
-        author: PropTypes.any.isRequired,
+        author: PropTypes.shape({
+            avatar_url: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            location: PropTypes.string.isRequired,
+            company: PropTypes.string.isRequired,
+            bio: PropTypes.string.isRequired,
+            html_url: PropTypes.string.isRequired
+        }),
         getAuthor: PropTypes.func.isRequired
     };
 
