@@ -1,7 +1,15 @@
 import {GET_REPOS_SUCCESS} from 'actions/types';
 
 const initialState = {
-  repos: []
+  repos: [{
+    html_url: '',
+    name: '',
+    description: '',
+    language: '',
+    id: 0,
+    size: 0,
+    stargazers_count: 0
+  }]
 };
 
 const reposReducer = function(state = initialState, action) {
