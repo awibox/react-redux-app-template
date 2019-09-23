@@ -9,16 +9,15 @@ import Alert from "components/Alert/Alert";
 class HomeContainer extends Component {
     static propTypes = {
         getHome: PropTypes.func.isRequired,
-        home: PropTypes.array
+        home: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            html_url: PropTypes.string.isRequired
+        })
     };
 
     static defaultProps = {
         getHome: () => {},
-        home: {
-            name: '',
-            description: '',
-            html_url: ''
-        }
     };
 
     componentDidMount() {

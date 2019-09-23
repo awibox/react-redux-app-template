@@ -13,7 +13,7 @@ export default class HomeContainer extends Component {
             name: PropTypes.string.isRequired,
             description: PropTypes.string.isRequired,
             html_url: PropTypes.string.isRequired
-        }),
+        })
     };
 
     buttonClick(url) {
