@@ -41,6 +41,23 @@ class ReposContainer extends Component {
         }
     }
 
+    languageStyle(language) {
+        switch(language) {
+            case 'JavaScript':
+                return {color: '#f1e05a'};
+            case 'TypeScript':
+                return {color: '#2b7489'};
+            case 'Ruby':
+                return {color: '#701516'};
+            case 'HTML':
+                return {color: '#e34c26'};
+            case 'CSS':
+                return {color: '#563d7c'};
+            default:
+                return {};
+        }
+    }
+
     render() {
         const {repos, errors} = this.props;
         const {user} = this.props.match.params;
@@ -63,21 +80,11 @@ class ReposContainer extends Component {
                 </Card>
                 {typeof user !== 'undefined' && <Title>Repositories of {user}</Title>}
                 <div className={styles.reposList}>
-                {typeof user !== 'undefined' && repos.map(repo => {
-                    let languageStyle;
-                    if (repo.language === 'JavaScript') {
-                        languageStyle = {
-                            color: '#f1e05a'
-                        }
-                    } else if (repo.language === 'TypeScript') {
-                        languageStyle = {
-                            color: '#2b7489'
-                        }
-                    }
-                    return (
-                        <ReposCard key={repo.id + '_' + repo.name} repo={repo} style={languageStyle}/>
-                    );
-                })}
+                    {typeof user !== 'undefined' && repos.map(repo => {
+                        return (
+                            <ReposCard key={repo.id + '_' + repo.name} repo={repo} style={this.languageStyle(repo.language)}/>
+                        );
+                    })}
                 </div>
             </div>
         );
