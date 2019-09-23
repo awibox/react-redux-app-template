@@ -56,7 +56,7 @@ class ReposContainer extends Component {
                                      key={user}
                                      to={`${routes.repos}/${user}`}
                                      onClick={() => this.changeUser(user)}>
-                                <User>{user}</User>
+                                <User>{user}</User> 
                             </NavLink>
                         );
                     })}
@@ -65,14 +65,15 @@ class ReposContainer extends Component {
                 <div className={styles.reposList}>
                 {typeof user !== 'undefined' && repos.map(repo => {
                     let languageStyle;
-                    if (repo.language === 'JavaScript') {
-                        languageStyle = {
-                            color: '#f1e05a'
-                        }
-                    } else if (repo.language === 'TypeScript') {
-                        languageStyle = {
-                            color: '#2b7489'
-                        }
+                    switch(repo.language) {
+                        case 'JavaScript':
+                            languageStyle = {color: '#f1e05a'};
+                            break;
+                        case 'TypeScript':
+                            languageStyle = {color: '#2b7489'};
+                            break;
+                        default:
+                            break;
                     }
                     return (
                         <ReposCard key={repo.id + '_' + repo.name} repo={repo} style={languageStyle}/>
