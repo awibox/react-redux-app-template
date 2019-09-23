@@ -17,7 +17,15 @@ import styles from './Repos.scss';
 class ReposContainer extends Component {
     static propTypes = {
         getRepos: PropTypes.func.isRequired,
-        repos: PropTypes.array.isRequired,
+        repos: PropTypes.arrayOf(PropTypes.shape({
+            html_url: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            description: PropTypes.string,
+            language: PropTypes.string,
+            id: PropTypes.number.isRequired,
+            size: PropTypes.number,
+            stargazers_count: PropTypes.number
+        })),
     };
 
     componentDidMount() {
@@ -53,9 +61,9 @@ class ReposContainer extends Component {
                         );
                     })}
                 </Card>
-                {repos.length > 0 && <Title>Repositories of {user}</Title>}
+                {typeof user !== 'undefined' && <Title>Repositories of {user}</Title>}
                 <div className={styles.reposList}>
-                {repos.length > 0 && repos.map(repo => {
+                {typeof user !== 'undefined' && repos.map(repo => {
                     let languageStyle;
                     if (repo.language === 'JavaScript') {
                         languageStyle = {

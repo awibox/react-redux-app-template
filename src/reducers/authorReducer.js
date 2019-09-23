@@ -1,7 +1,14 @@
 import {GET_AUTHOR_SUCCESS} from 'actions/types';
 
 const initialState = {
-    author: []
+    author: {
+        avatar_url: '',
+        name: '',
+        location: '',
+        company: '',
+        bio: '',
+        html_url: ''
+    }
 };
 
 export default function (state = initialState, action) {

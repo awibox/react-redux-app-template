@@ -9,7 +9,11 @@ import styles from './HomeInfo.scss';
 // Using "Stateless Functional Components"
 export default class HomeContainer extends Component {
     static propTypes = {
-        home: PropTypes.any.isRequired,
+        home: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            html_url: PropTypes.string.isRequired
+        })
     };
 
     buttonClick(url) {
