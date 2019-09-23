@@ -1,7 +1,7 @@
 import {GET_HOME_SUCCESS} from 'actions/types';
 
 const initialState = {
-  home: []
+  home: {}
 };
 
 const homeReducer = function(state = initialState, action) {
