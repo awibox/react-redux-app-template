@@ -25,14 +25,13 @@
   }
 }
 
-
-
 .users {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   padding: 0;
 }
+
 @media(max-width: $widthScreenTabletSmall) {
   .users {
     flex-flow: column;
