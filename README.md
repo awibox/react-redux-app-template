@@ -1,4 +1,4 @@
-![react-redux-app-boilerplate](https://repository-images.githubusercontent.com/208453250/fb881a80-de58-11e9-9b1e-921cac6bf60c)
+![react-redux-app-boilerplate](https://repository-images.githubusercontent.com/208453250/42fbbe80-decc-11e9-895e-987e17e554d8)
 
 ## Installation
 
