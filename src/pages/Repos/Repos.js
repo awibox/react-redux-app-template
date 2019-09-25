@@ -43,18 +43,12 @@ class ReposContainer extends Component {
 
     languageStyle(language) {
         switch(language) {
-            case 'JavaScript':
-                return {color: '#f1e05a'};
-            case 'TypeScript':
-                return {color: '#2b7489'};
-            case 'Ruby':
-                return {color: '#701516'};
-            case 'HTML':
-                return {color: '#e34c26'};
-            case 'CSS':
-                return {color: '#563d7c'};
-            default:
-                return {};
+            case 'JavaScript': return {color: '#f1e05a'};
+            case 'TypeScript': return {color: '#2b7489'};
+            case 'Ruby': return {color: '#701516'};
+            case 'HTML': return {color: '#e34c26'};
+            case 'CSS': return {color: '#563d7c'};
+            default: return {};
         }
     }
 
