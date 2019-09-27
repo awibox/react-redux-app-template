@@ -88,9 +88,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            query: {
-                                name:'assets/[name].[ext]'
-                            }
+                            name:'assets/[name].[ext]'
                         }
                     },
                     {
@@ -117,7 +115,8 @@ module.exports = {
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 10000
+                            limit: 10000,
+                            name: 'assets/fonts/[name].[ext]'
                         },
                     },
                 ]
