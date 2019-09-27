@@ -1,16 +1,22 @@
 {
   "name": "react-redux-app-boilerplate",
   "version": "1.0.0",
-  "description": "A starter boilerplate for your app using react, redux, webpack, css modules",
+  "description": "The boilerplate that will help you quickly start developing your project using React.",
   "repository": {
     "type": "git",
     "url": "https://github.com/awibox/react-redux-app-boilerplate.git"
   },
   "keywords": [
     "react",
-    "redux",
+    "redux-thunk",
+    "css-modules",
     "webpack",
-    "cssmodules"
+    "boilerplate",
+    "react-router",
+    "yarn",
+    "react16",
+    "scss",
+    "prop-types"
   ],
   "author": "awibox",
   "license": "MIT",
