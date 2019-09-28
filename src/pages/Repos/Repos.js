@@ -16,7 +16,15 @@ import styles from './Repos.scss';
 
 class ReposContainer extends Component {
   static propTypes = {
+    errors: PropTypes.shape({
+      message: PropTypes.string,
+    }),
     getRepos: PropTypes.func.isRequired,
+    match: PropTypes.shape({
+      params: PropTypes.shape({
+        user: PropTypes.string,
+      }),
+    }),
     repos: PropTypes.arrayOf(PropTypes.shape({
       html_url: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
@@ -26,14 +34,6 @@ class ReposContainer extends Component {
       size: PropTypes.number,
       stargazers_count: PropTypes.number,
     })),
-    errors: PropTypes.shape({
-      message: PropTypes.string,
-    }),
-    match: PropTypes.shape({
-      params: PropTypes.shape({
-        user: PropTypes.string,
-      }),
-    }),
   };
 
   componentDidMount() {
