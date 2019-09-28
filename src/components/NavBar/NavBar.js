@@ -1,23 +1,25 @@
-import React, {Component} from 'react';
-import {NavLink} from 'react-router-dom';
-import {routes} from 'router';
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import { routes } from 'router';
 import classNames from 'classnames';
 // Styles
 import styles from './NavBar.scss';
 
 export default class NavBar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            openNavMenu: false,
-        };
-        this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
-    }
-    toggleMobileMenu () {
-        this.setState({openNavMenu: !this.state.openNavMenu});
-    }
-    renderLinks() {
-       return (
+  constructor(props) {
+    super(props);
+    this.state = {
+      openNavMenu: false,
+    };
+    this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
+  }
+
+  toggleMobileMenu() {
+    this.setState({ openNavMenu: !this.state.openNavMenu });
+  }
+
+  renderLinks() {
+    return (
            <aside className={styles.navMenu}>
                <NavLink exact className={styles.navMenuItem}
                         activeClassName={styles.navMenuItemActive}
@@ -32,13 +34,15 @@ export default class NavBar extends Component {
                         onClick={() => this.closeMenu()}
                         to={routes.author}><i className="fa fa-address-card"/>Author</NavLink>
            </aside>
-       );
-    }
-    closeMenu() {
-        this.setState({openNavMenu: false})
-    }
-    render() {
-        return (
+    );
+  }
+
+  closeMenu() {
+    this.setState({ openNavMenu: false });
+  }
+
+  render() {
+    return (
             <div className={styles.nav}>
                 <div className={styles.navDesktopMenu}>
                     {this.renderLinks()}
@@ -50,6 +54,6 @@ export default class NavBar extends Component {
                     {this.renderLinks()}
                 </div>
             </div>
-        );
-    }
-};
+    );
+  }
+}
