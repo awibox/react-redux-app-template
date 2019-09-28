@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import styles from './Card.scss';
 
 const Card = (props) => (
-  <div className={classNames(styles.card, { [props.className]: props.className })}>
+  <div className={classNames(styles.card, {[props.className]: props.className})}>
     {props.children}
   </div>
 );
