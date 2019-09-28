@@ -15,78 +15,78 @@ import User from 'components/User/User';
 import styles from './Repos.scss';
 
 class ReposContainer extends Component {
-    static propTypes = {
-      getRepos: PropTypes.func.isRequired,
-      repos: PropTypes.arrayOf(PropTypes.shape({
-        html_url: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired,
-        description: PropTypes.string,
-        language: PropTypes.string,
-        id: PropTypes.number.isRequired,
-        size: PropTypes.number,
-        stargazers_count: PropTypes.number,
-      })),
-      errors: PropTypes.shape({
-        message: PropTypes.string,
+  static propTypes = {
+    getRepos: PropTypes.func.isRequired,
+    repos: PropTypes.arrayOf(PropTypes.shape({
+      html_url: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string,
+      language: PropTypes.string,
+      id: PropTypes.number.isRequired,
+      size: PropTypes.number,
+      stargazers_count: PropTypes.number,
+    })),
+    errors: PropTypes.shape({
+      message: PropTypes.string,
+    }),
+    match: PropTypes.shape({
+      params: PropTypes.shape({
+        user: PropTypes.string,
       }),
-      match: PropTypes.shape({
-        params: PropTypes.shape({
-          user: PropTypes.string,
-        }),
-      }),
-    };
+    }),
+  };
 
-    componentDidMount() {
-      const { user } = this.props.match.params;
-      if (typeof user !== 'undefined') {
-        this.props.getRepos(user);
-      }
+  componentDidMount() {
+    const { user } = this.props.match.params;
+    if (typeof user !== 'undefined') {
+      this.props.getRepos(user);
     }
+  }
 
-    changeUser(user) {
-      if (typeof user !== 'undefined') {
-        this.props.getRepos(user);
-      }
+  changeUser(user) {
+    if (typeof user !== 'undefined') {
+      this.props.getRepos(user);
     }
+  }
 
-    languageStyle = (language) => {
-      switch (language) {
-        case 'JavaScript': return { color: '#f1e05a' };
-        case 'TypeScript': return { color: '#2b7489' };
-        case 'Ruby': return { color: '#701516' };
-        case 'HTML': return { color: '#e34c26' };
-        case 'CSS': return { color: '#563d7c' };
-        default: return {};
-      }
+  languageStyle = (language) => {
+    switch (language) {
+      case 'JavaScript': return { color: '#f1e05a' };
+      case 'TypeScript': return { color: '#2b7489' };
+      case 'Ruby': return { color: '#701516' };
+      case 'HTML': return { color: '#e34c26' };
+      case 'CSS': return { color: '#563d7c' };
+      default: return {};
     }
+  };
 
-    render() {
-      const { repos, errors } = this.props;
-      const { user } = this.props.match.params;
-      return (
-            <div className={styles.repos}>
-                {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
-                <Title>Select the user</Title>
-                <Card className={styles.users}>
-                    {UserArray.map((userName) => (
-                            <NavLink className={styles.link}
-                                     activeClassName={styles.linkActive}
-                                     key={userName}
-                                     to={`${routes.repos}/${userName}`}
-                                     onClick={() => this.changeUser(userName)}>
-                                <User>{userName}</User>
-                            </NavLink>
-                    ))}
-                </Card>
-                {typeof user !== 'undefined' && <Title>Repositories of {user}</Title>}
-                <div className={styles.reposList}>
-                    {typeof user !== 'undefined' && repos.map((repo) => (
-                            <ReposCard key={`${repo.id}_${repo.name}`} repo={repo} style={this.languageStyle(repo.language)}/>
-                    ))}
-                </div>
-            </div>
-      );
-    }
+  render() {
+    const { repos, errors } = this.props;
+    const { user } = this.props.match.params;
+    return (
+      <div className={styles.repos}>
+        {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
+        <Title>Select the user</Title>
+        <Card className={styles.users}>
+          {UserArray.map((userName) => (
+            <NavLink className={styles.link}
+                     activeClassName={styles.linkActive}
+                     key={userName}
+                     to={`${routes.repos}/${userName}`}
+                     onClick={() => this.changeUser(userName)}>
+              <User>{userName}</User>
+            </NavLink>
+          ))}
+        </Card>
+        {typeof user !== 'undefined' && <Title>Repositories of {user}</Title>}
+        <div className={styles.reposList}>
+          {typeof user !== 'undefined' && repos.map((repo) => (
+            <ReposCard key={`${repo.id}_${repo.name}`} repo={repo} style={this.languageStyle(repo.language)}/>
+          ))}
+        </div>
+      </div>
+    );
+  }
 }
 
 const mapStateToProps = (store) => ({ repos: store.reposState.repos, errors: store.errors });

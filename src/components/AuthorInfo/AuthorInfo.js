@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 // Components
 import Button from '../Button/Button';
@@ -21,10 +21,10 @@ export default class AuthorInfo extends Component {
   buttonClick = (url) => window.open(url);
 
   render() {
-    const {author} = this.props;
+    const { author } = this.props;
     return (
       <Card className={styles.authorInfo}>
-        <div className={styles.logo} style={{backgroundImage: `url(${author.avatar_url})`}}></div>
+        <div className={styles.logo} style={{ backgroundImage: `url(${author.avatar_url})` }}></div>
         <div className={styles.title}>{author.name}</div>
         <div className={styles.titleVersion}>{author.location}</div>
         <div className={styles.infoText}>{author.company} - {author.bio}</div>

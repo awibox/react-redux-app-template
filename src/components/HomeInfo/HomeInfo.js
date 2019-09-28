@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 // Components
 import Button from '../Button/Button';
@@ -19,7 +19,7 @@ export default class HomeContainer extends Component {
   buttonClick = (url) => window.open(url);
 
   render() {
-    const {home} = this.props;
+    const { home } = this.props;
     return (
       <div className={styles.homeInfo}>
         <Card>

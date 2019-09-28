@@ -5,9 +5,9 @@ import styles from './Title.scss';
 
 
 const Title = (props) => (
-    <div className={styles.title}>
-        {props.children}
-    </div>
+  <div className={styles.title}>
+    {props.children}
+  </div>
 );
 
 Title.propTypes = {
