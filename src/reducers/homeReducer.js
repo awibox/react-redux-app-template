@@ -1,17 +1,17 @@
-import {GET_HOME_SUCCESS} from 'actions/types';
+import { GET_HOME_SUCCESS } from 'actions/types';
 
 const initialState = {
   home: {
     name: '',
     description: '',
-    html_url: ''
-  }
+    html_url: '',
+  },
 };
 
-const homeReducer = function(state = initialState, action) {
-  switch(action.type) {
+const homeReducer = function (state = initialState, action) {
+  switch (action.type) {
     case GET_HOME_SUCCESS:
-      return {...state, home: action.home};
+      return { ...state, home: action.home };
     default:
       return state;
   }

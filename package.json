@@ -68,6 +68,7 @@
     "build": "NODE_ENV=production webpack --mode production",
     "start": "webpack-dev-server --open",
     "test": "react-scripts test --env=jsdom",
-    "lint": "eslint --report-unused-disable-directives src"
+    "lint": "eslint --report-unused-disable-directives src",
+    "fix": "eslint --fix --report-unused-disable-directives src"
   }
 }
