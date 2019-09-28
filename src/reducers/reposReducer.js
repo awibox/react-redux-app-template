@@ -12,7 +12,7 @@ const initialState = {
   }],
 };
 
-const reposReducer = function (state = initialState, action) {
+const reposReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_REPOS_SUCCESS:
       return { ...state, repos: action.repos };

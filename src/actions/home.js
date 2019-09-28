@@ -5,7 +5,7 @@ import { getError } from './error';
 
 const END_POINT = 'repos';
 
-const getHomeSuccess = (home) => ({
+export const getHomeSuccess = (home) => ({
   type: GET_HOME_SUCCESS,
   home,
 });
