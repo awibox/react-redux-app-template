@@ -1,9 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 // Styles
 import styles from './Alert.scss';
 
-export default (props) => (
-    <div className={styles.alert}>
-        {props.children}
-    </div>
+const Alert = (props) => (
+  <div className={styles.alert}>
+    {props.children}
+  </div>
 );
+
+Alert.propTypes = {
+  children: PropTypes.any,
+};
+
+export default Alert;

@@ -1,28 +1,28 @@
-import React, {Component} from 'react';
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 // Components
-import Button from "../Button/Button";
-import Card from "../Card/Card";
+import Button from '../Button/Button';
+import Card from '../Card/Card';
 // Styles
 import styles from './HomeInfo.scss';
 
 // Using "Stateless Functional Components"
 export default class HomeContainer extends Component {
     static propTypes = {
-        home: PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired,
-            html_url: PropTypes.string.isRequired
-        })
+      home: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        html_url: PropTypes.string.isRequired,
+      }),
     };
 
     buttonClick(url) {
-        window.open(url);
+      window.open(url);
     }
 
     render() {
-        const {home} = this.props;
-        return (
+      const { home } = this.props;
+      return (
             <div className={styles.homeInfo}>
                 <Card>
                     <div className={styles.homeLogo}>
@@ -39,6 +39,6 @@ export default class HomeContainer extends Component {
                     </div>
                 </Card>
             </div>
-        );
+      );
     }
 }
