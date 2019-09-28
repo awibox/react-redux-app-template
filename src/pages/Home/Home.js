@@ -14,15 +14,13 @@ class HomeContainer extends Component {
         description: PropTypes.string.isRequired,
         html_url: PropTypes.string.isRequired,
       }),
-    };
-
-    static defaultProps = {
-      getHome: () => {},
+      errors: PropTypes.shape({
+        message: PropTypes.string,
+      }),
     };
 
     componentDidMount() {
-      const { getHome } = this.props;
-      getHome();
+      this.props.getHome();
     }
 
     render() {
@@ -32,7 +30,6 @@ class HomeContainer extends Component {
                 {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
                 <HomeInfo home={home}/>
             </div>
-
       );
     }
 }

@@ -18,9 +18,7 @@ export default class AuthorInfo extends Component {
       }),
     };
 
-    buttonClick(url) {
-      window.open(url);
-    }
+    buttonClick = (url) => window.open(url);
 
     render() {
       const { author } = this.props;
