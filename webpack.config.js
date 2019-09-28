@@ -3,15 +3,15 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
-const NODE_ENV = process.env.NODE_ENV || 'development';
 const autoprefixer = require('autoprefixer');
+
+const NODE_ENV = process.env.NODE_ENV || 'development';
+const devMode = NODE_ENV === 'development';
 
 const htmlPlugin = new HtmlWebpackPlugin({
     template: "./templates/index.html",
     fileName: "./index.html"
 });
-
-const devMode = NODE_ENV === 'development';
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
