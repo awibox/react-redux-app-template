@@ -25,6 +25,9 @@
   &.navMenuItemActive {
     background: $navActiveBackground;
   }
+  i {
+    margin-right: 7px;
+  }
 }
 
 .navMobile {
