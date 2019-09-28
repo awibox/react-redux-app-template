@@ -22,11 +22,14 @@
   text-decoration: none;
   font-size: 16px;
   user-select: none;
+  white-space: nowrap;
   &.navMenuItemActive {
     background: $navActiveBackground;
   }
   i {
-    margin-right: 7px;
+    margin-right: 5px;
+    min-width: 20px;
+    text-align: center;
   }
 }
 
