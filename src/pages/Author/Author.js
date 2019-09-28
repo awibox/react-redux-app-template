@@ -17,6 +17,9 @@ class AuthorContainer extends Component {
         html_url: PropTypes.string.isRequired,
       }),
       getAuthor: PropTypes.func.isRequired,
+      errors: PropTypes.shape({
+        message: PropTypes.string,
+      }),
     };
 
     componentDidMount() {
