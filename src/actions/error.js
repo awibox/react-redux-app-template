@@ -4,3 +4,5 @@ export const getError = (error) => ({
   type: GET_ERRORS,
   payload: error,
 });
+
+export default getError;

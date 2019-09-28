@@ -26,6 +26,14 @@ class ReposContainer extends Component {
         size: PropTypes.number,
         stargazers_count: PropTypes.number,
       })),
+      errors: PropTypes.shape({
+        message: PropTypes.string,
+      }),
+      match: PropTypes.shape({
+        params: PropTypes.shape({
+          user: PropTypes.string,
+        }),
+      }),
     };
 
     componentDidMount() {
@@ -41,7 +49,7 @@ class ReposContainer extends Component {
       }
     }
 
-    languageStyle(language) {
+    languageStyle = (language) => {
       switch (language) {
         case 'JavaScript': return { color: '#f1e05a' };
         case 'TypeScript': return { color: '#2b7489' };
@@ -60,13 +68,13 @@ class ReposContainer extends Component {
                 {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
                 <Title>Select the user</Title>
                 <Card className={styles.users}>
-                    {UserArray.map((user) => (
+                    {UserArray.map((userName) => (
                             <NavLink className={styles.link}
                                      activeClassName={styles.linkActive}
-                                     key={user}
-                                     to={`${routes.repos}/${user}`}
-                                     onClick={() => this.changeUser(user)}>
-                                <User>{user}</User>
+                                     key={userName}
+                                     to={`${routes.repos}/${userName}`}
+                                     onClick={() => this.changeUser(userName)}>
+                                <User>{userName}</User>
                             </NavLink>
                     ))}
                 </Card>

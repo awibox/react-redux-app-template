@@ -8,7 +8,7 @@ const initialState = {
   },
 };
 
-const homeReducer = function (state = initialState, action) {
+const homeReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_HOME_SUCCESS:
       return { ...state, home: action.home };

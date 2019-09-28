@@ -16,9 +16,7 @@ export default class HomeContainer extends Component {
       }),
     };
 
-    buttonClick(url) {
-      window.open(url);
-    }
+    buttonClick = (url) => window.open(url);
 
     render() {
       const { home } = this.props;

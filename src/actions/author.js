@@ -5,7 +5,7 @@ import { getError } from './error';
 
 const END_POINT = 'users';
 
-const getAuthorSuccess = (author) => ({
+export const getAuthorSuccess = (author) => ({
   type: GET_AUTHOR_SUCCESS,
   payload: author,
 });
