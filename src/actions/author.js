@@ -10,12 +10,11 @@ export const getAuthorSuccess = (author) => ({
   payload: author,
 });
 
-export const getAuthor = () => (dispatch) => {
-  axios.get(`${gitHubApiUrl}/${END_POINT}/${authorAccount}`)
-    .then((response) => {
-      const { data } = response;
-      dispatch(getAuthorSuccess(data));
-    }).catch((err) => {
-      dispatch(getError(err.response.data));
-    });
+export const getAuthor = () => async (dispatch) => {
+  try {
+    const { data } = await axios.get(`${gitHubApiUrl}/${END_POINT}/${authorAccount}`);
+    dispatch(getAuthorSuccess(data));
+  } catch (err) {
+    dispatch(getError(err.response.data));
+  }
 };
