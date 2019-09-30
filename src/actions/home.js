@@ -11,7 +11,7 @@ export const getHomeSuccess = (home) => ({
   home,
 });
 
-export const getHome = () => async (dispatch) => {
+export const getHomeAction = () => async (dispatch) => {
   try {
     const { data } = await axios.get(`${gitHubApiUrl}/${END_POINT}/${authorAccount}/${repoName}`);
     dispatch(getHomeSuccess(data));

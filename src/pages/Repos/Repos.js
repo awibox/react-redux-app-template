@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getRepos } from 'actions/repos';
+import { getReposAction } from 'actions/repos';
 import { UserArray } from 'config';
 import { routes } from 'router';
 // Components
@@ -11,15 +11,18 @@ import Title from 'components/Title/Title';
 import Card from 'components/Card/Card';
 import Alert from 'components/Alert/Alert';
 import User from 'components/User/User';
+// Selectors
+import { getReposSelector } from 'selectors/reposSelectors';
+import { getErrorsSelector } from 'selectors/errorSelectors';
 // Styles
 import styles from './Repos.scss';
 
-class ReposContainer extends Component {
+class ReposContainer extends PureComponent {
   static propTypes = {
     errors: PropTypes.shape({
       message: PropTypes.string,
     }),
-    getRepos: PropTypes.func.isRequired,
+    getReposAction: PropTypes.func.isRequired,
     match: PropTypes.shape({
       params: PropTypes.shape({
         user: PropTypes.string,
@@ -39,13 +42,13 @@ class ReposContainer extends Component {
   componentDidMount() {
     const { user } = this.props.match.params;
     if (typeof user !== 'undefined') {
-      this.props.getRepos(user);
+      this.props.getReposAction(user);
     }
   }
 
   changeUser(user) {
     if (typeof user !== 'undefined') {
-      this.props.getRepos(user);
+      this.props.getReposAction(user);
     }
   }
 
@@ -89,6 +92,9 @@ class ReposContainer extends Component {
   }
 }
 
-const mapStateToProps = (store) => ({ repos: store.reposState.repos, errors: store.errors });
+const mapStateToProps = (state) => ({
+  repos: getReposSelector(state),
+  errors: getErrorsSelector(state),
+});
 
-export default connect(mapStateToProps, { getRepos })(ReposContainer);
+export default connect(mapStateToProps, { getReposAction })(ReposContainer);
