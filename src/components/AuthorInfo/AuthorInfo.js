@@ -9,12 +9,12 @@ import styles from './AuthorInfo.scss';
 export default class AuthorInfo extends Component {
   static propTypes = {
     author: PropTypes.shape({
-      avatar_url: PropTypes.string.isRequired,
+      avatarUrl: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       location: PropTypes.string.isRequired,
       company: PropTypes.string.isRequired,
       bio: PropTypes.string.isRequired,
-      html_url: PropTypes.string.isRequired,
+      htmlUrl: PropTypes.string.isRequired,
     }),
   };
 
@@ -24,12 +24,12 @@ export default class AuthorInfo extends Component {
     const { author } = this.props;
     return (
       <Card className={styles.authorInfo}>
-        <div className={styles.logo} style={{ backgroundImage: `url(${author.avatar_url})` }}></div>
+        <div className={styles.logo} style={{ backgroundImage: `url(${author.avatarUrl})` }}></div>
         <div className={styles.title}>{author.name}</div>
         <div className={styles.titleVersion}>{author.location}</div>
         <div className={styles.infoText}>{author.company} - {author.bio}</div>
         <div className={styles.button}>
-          <Button icon="fa-github" onClick={() => this.buttonClick(author.html_url)}>
+          <Button icon="fa-github" onClick={() => this.buttonClick(author.htmlUrl)}>
             Github page
           </Button>
         </div>

@@ -12,7 +12,7 @@ export default class HomeContainer extends Component {
     home: PropTypes.shape({
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      html_url: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
     }),
   };
 
@@ -30,7 +30,7 @@ export default class HomeContainer extends Component {
             <h1 className={styles.name}>{home.name}</h1>
             <div className={styles.text}>{home.description}</div>
             <div className={styles.button}>
-              <Button icon="fa-github" onClick={() => this.buttonClick(home.html_url)}>
+              <Button icon="fa-github" onClick={() => this.buttonClick(home.url)}>
                 Download with Github
               </Button>
             </div>

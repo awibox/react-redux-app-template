@@ -1,29 +1,32 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getAuthor } from 'actions/author';
+import { getAuthorAction } from 'actions/author';
 // Components
 import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
 import Alert from 'components/Alert/Alert';
+// Selectors
+import { getErrorsSelector } from 'selectors/errorSelectors';
+import { getAuthorSelector } from 'selectors/authorSelectors';
 
 class AuthorContainer extends Component {
   static propTypes = {
     author: PropTypes.shape({
-      avatar_url: PropTypes.string.isRequired,
+      avatarUrl: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       location: PropTypes.string.isRequired,
       company: PropTypes.string.isRequired,
       bio: PropTypes.string.isRequired,
-      html_url: PropTypes.string.isRequired,
+      htmlUrl: PropTypes.string.isRequired,
     }),
-    getAuthor: PropTypes.func.isRequired,
+    getAuthorAction: PropTypes.func.isRequired,
     errors: PropTypes.shape({
       message: PropTypes.string,
     }),
   };
 
   componentDidMount() {
-    this.props.getAuthor();
+    this.props.getAuthorAction();
   }
 
   render() {
@@ -37,6 +40,9 @@ class AuthorContainer extends Component {
   }
 }
 
-const mapStateToProps = (store) => ({ author: store.authorState.author, errors: store.errors });
+const mapStateToProps = (state) => ({
+  author: getAuthorSelector(state),
+  errors: getErrorsSelector(state),
+});
 
-export default connect(mapStateToProps, { getAuthor })(AuthorContainer);
+export default connect(mapStateToProps, { getAuthorAction })(AuthorContainer);
