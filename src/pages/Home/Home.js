@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getHomeAction } from 'actions/home';
+import { getHomeAction } from 'actions/homeActions';
 // Components
 import HomeInfo from 'components/HomeInfo/HomeInfo';
 import Alert from 'components/Alert/Alert';

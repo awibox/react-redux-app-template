@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { GET_HOME_SUCCESS } from 'actions/types';
 import { gitHubApiUrl, authorAccount, repoName } from 'config';
-import { getError } from './error';
+import { getError } from './errorActions';
 
 const END_POINT = 'repos';
 
