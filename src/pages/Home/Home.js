@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getHome } from 'actions/home';
+import { getHomeAction } from 'actions/home';
 // Components
 import HomeInfo from 'components/HomeInfo/HomeInfo';
 import Alert from 'components/Alert/Alert';
+// Selectors
+import { getHomeSelector } from 'selectors/homeSelectors';
+import { getErrorsSelector } from 'selectors/errorSelectors';
 
 class HomeContainer extends Component {
   static propTypes = {
-    getHome: PropTypes.func.isRequired,
+    getHomeAction: PropTypes.func.isRequired,
     home: PropTypes.shape({
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      html_url: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
     }),
     errors: PropTypes.shape({
       message: PropTypes.string,
@@ -20,7 +23,7 @@ class HomeContainer extends Component {
   };
 
   componentDidMount() {
-    this.props.getHome();
+    this.props.getHomeAction();
   }
 
   render() {
@@ -34,6 +37,9 @@ class HomeContainer extends Component {
   }
 }
 
-const mapStateToProps = (store) => ({ home: store.homeState.home, errors: store.errors });
+const mapStateToProps = (state) => ({
+  home: getHomeSelector(state),
+  errors: getErrorsSelector(state),
+});
 
-export default connect(mapStateToProps, { getHome })(HomeContainer);
+export default connect(mapStateToProps, { getHomeAction })(HomeContainer);

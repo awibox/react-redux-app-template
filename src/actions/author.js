@@ -10,7 +10,7 @@ export const getAuthorSuccess = (author) => ({
   payload: author,
 });
 
-export const getAuthor = () => async (dispatch) => {
+export const getAuthorAction = () => async (dispatch) => {
   try {
     const { data } = await axios.get(`${gitHubApiUrl}/${END_POINT}/${authorAccount}`);
     dispatch(getAuthorSuccess(data));
