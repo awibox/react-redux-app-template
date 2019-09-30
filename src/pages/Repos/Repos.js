@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getReposAction } from 'actions/repos';
+import { getReposAction } from 'actions/reposActions';
 import { UserArray } from 'config';
 import { routes } from 'router';
 // Components
