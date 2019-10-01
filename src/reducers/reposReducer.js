@@ -1,7 +1,8 @@
 import { GET_REPOS_SUCCESS } from 'actions/types';
+import { List } from 'immutable';
 
 const initialState = {
-  repos: [{
+  repos: List([{
     html_url: '',
     name: '',
     description: '',
@@ -9,13 +10,16 @@ const initialState = {
     id: 0,
     size: 0,
     stargazers_count: 0,
-  }],
+  }]),
 };
 
 const reposReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_REPOS_SUCCESS:
-      return { ...state, repos: action.repos };
+      return {
+        ...state,
+        repos: List(action.repos),
+      };
     default:
       return state;
   }

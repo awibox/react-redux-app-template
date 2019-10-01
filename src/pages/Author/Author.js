@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 import { getAuthorAction } from 'actions/authorActions';
 // Components
@@ -11,13 +12,13 @@ import { getAuthorSelector } from 'selectors/authorSelectors';
 
 class AuthorContainer extends Component {
   static propTypes = {
-    author: PropTypes.shape({
-      avatarUrl: PropTypes.string.isRequired,
+    author: ImmutablePropTypes.contains({
+      avatar_url: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       location: PropTypes.string.isRequired,
       company: PropTypes.string.isRequired,
       bio: PropTypes.string.isRequired,
-      htmlUrl: PropTypes.string.isRequired,
+      html_url: PropTypes.string.isRequired,
     }),
     getAuthorAction: PropTypes.func.isRequired,
     errors: PropTypes.shape({
