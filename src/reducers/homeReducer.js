@@ -14,7 +14,11 @@ const homeReducer = (state = initialState, action) => {
     case GET_HOME_SUCCESS:
       return {
         ...state,
-        home: Map(action.home),
+        home: Map({
+          name: action.home.name,
+          description: action.home.description,
+          html_url: action.home.html_url,
+        }),
       };
     default:
       return state;
