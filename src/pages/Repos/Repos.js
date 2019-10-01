@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import ImmutablePropTypes from 'react-immutable-proptypes';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getReposAction } from 'actions/reposActions';
@@ -28,15 +29,7 @@ class ReposContainer extends PureComponent {
         user: PropTypes.string,
       }),
     }),
-    repos: PropTypes.arrayOf(PropTypes.shape({
-      html_url: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      description: PropTypes.string,
-      language: PropTypes.string,
-      id: PropTypes.number.isRequired,
-      size: PropTypes.number,
-      stargazers_count: PropTypes.number,
-    })),
+    repos: ImmutablePropTypes.list.isRequired,
   };
 
   componentDidMount() {
