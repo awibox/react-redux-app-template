@@ -24,15 +24,24 @@ export default class NavBar extends Component {
         <NavLink exact className={styles.navMenuItem}
                  activeClassName={styles.navMenuItemActive}
                  onClick={() => this.closeMenu()}
-                 to="/"><i className="fa fa-home"/>Home page</NavLink>
+                 to="/">
+          <i className="fa fa-home"/>
+          <span className={styles.navMenuItemText}>Home page</span>
+        </NavLink>
         <NavLink className={styles.navMenuItem}
                  activeClassName={styles.navMenuItemActive}
                  onClick={() => this.closeMenu()}
-                 to={routes.repos}><i className="fa fa-database"/>Repositories</NavLink>
+                 to={routes.repos}>
+          <i className="fa fa-database"/>
+          <span className={styles.navMenuItemText}>Repositories</span>
+        </NavLink>
         <NavLink className={styles.navMenuItem}
                  activeClassName={styles.navMenuItemActive}
                  onClick={() => this.closeMenu()}
-                 to={routes.author}><i className="fa fa-address-card"/>Author</NavLink>
+                 to={routes.author}>
+          <i className="fa fa-address-card"/>
+          <span className={styles.navMenuItemText}>Author</span>
+        </NavLink>
       </aside>
     );
   }
