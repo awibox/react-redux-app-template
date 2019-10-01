@@ -17,7 +17,14 @@ export default function (state = initialState, action) {
     case GET_AUTHOR_SUCCESS:
       return {
         ...state,
-        author: Map(action.payload),
+        author: Map({
+          avatar_url: action.payload.avatar_url,
+          name: action.payload.name,
+          location: action.payload.location,
+          company: action.payload.company,
+          bio: action.payload.bio,
+          html_url: action.payload.html_url,
+        }),
       };
     default:
       return state;
