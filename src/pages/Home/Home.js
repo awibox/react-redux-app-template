@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 import { getHomeAction } from 'actions/homeActions';
 // Components
@@ -12,10 +13,10 @@ import { getErrorsSelector } from 'selectors/errorSelectors';
 class HomeContainer extends Component {
   static propTypes = {
     getHomeAction: PropTypes.func.isRequired,
-    home: PropTypes.shape({
+    home: ImmutablePropTypes.contains({
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
+      html_url: PropTypes.string.isRequired,
     }),
     errors: PropTypes.shape({
       message: PropTypes.string,
