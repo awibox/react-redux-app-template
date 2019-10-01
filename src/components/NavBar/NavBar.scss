@@ -26,10 +26,8 @@
   &.navMenuItemActive {
     background: $navActiveBackground;
   }
-  i {
-    margin-right: 5px;
-    min-width: 20px;
-    text-align: center;
+  i, .navMenuItemText {
+    margin: 0 3px;
   }
 }
 
