@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buttin with icon 1`] = `
+<div
+  className="btn"
+  onClick={[Function]}
+>
+  "Button" \\'is \\ 'awesome'
+</div>
+`;
+
+exports[`properly escapes quotes 1`] = `
+<div
+  className="btn"
+  onClick={[Function]}
+>
+  "Button" \\'is \\ 'awesome'
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  className="btn"
+  onClick={[Function]}
+>
+  Simple Button
+</div>
+`;
