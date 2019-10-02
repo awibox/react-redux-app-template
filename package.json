@@ -21,6 +21,7 @@
   "author": "awibox",
   "license": "MIT",
   "dependencies": {
+    "autoprefixer": "^9.6.1",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "font-awesome": "^4.7.0",
@@ -42,7 +43,6 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.6.2",
-    "autoprefixer": "^9.6.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
@@ -57,12 +57,15 @@
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^6.0.0",
+    "jest": "^24.9.0",
+    "jest-css-modules-transform": "^2.5.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "path": "^0.12.7",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
+    "react-test-renderer": "^16.10.1",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "terser-webpack-plugin": "^2.1.0",
@@ -74,8 +77,23 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
     "start": "webpack-dev-server --open",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "lint": "eslint --report-unused-disable-directives src",
     "fix": "eslint --fix --report-unused-disable-directives src"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "snapshotResolver": "<rootDir>/jest-snapshot-resolver",
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
+    }
   }
 }
