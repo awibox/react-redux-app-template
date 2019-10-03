@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card correctly renders the div inside 1`] = `
+<div
+  className="card"
+>
+  <div>
+    Card
+  </div>
+</div>
+`;
+
+exports[`Card properly escapes quotes 1`] = `
+<div
+  className="card"
+>
+  "Card" \\'is \\ 'awesome'
+</div>
+`;
+
+exports[`Card renders correctly 1`] = `
+<div
+  className="card"
+>
+  Simple Card
+</div>
+`;
+
+exports[`Card with className 1`] = `
+<div
+  className="card test-card"
+>
+  <div>
+    Card
+  </div>
+</div>
+`;

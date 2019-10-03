@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`buttin with icon 1`] = `
+exports[`Button correctly renders the div inside 1`] = `
+<div
+  className="btn"
+  onClick={[Function]}
+>
+  <div>
+    Title
+  </div>
+</div>
+`;
+
+exports[`Button properly escapes quotes 1`] = `
 <div
   className="btn"
   onClick={[Function]}
@@ -9,20 +20,27 @@ exports[`buttin with icon 1`] = `
 </div>
 `;
 
-exports[`properly escapes quotes 1`] = `
-<div
-  className="btn"
-  onClick={[Function]}
->
-  "Button" \\'is \\ 'awesome'
-</div>
-`;
-
-exports[`renders correctly 1`] = `
+exports[`Button renders correctly 1`] = `
 <div
   className="btn"
   onClick={[Function]}
 >
   Simple Button
+</div>
+`;
+
+exports[`Button with icon 1`] = `
+<div
+  className="btn btnIcon"
+  onClick={[Function]}
+>
+  <span
+    className="icon"
+  >
+    <i
+      className="fa fa-github"
+    />
+  </span>
+  Button is awesome 
 </div>
 `;
