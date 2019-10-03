@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 // Styles
 import styles from './Title.scss';
 
-
 const Title = (props) => (
   <div className={styles.title}>
     {props.children}
