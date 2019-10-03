@@ -16,7 +16,7 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.any.isRequired,
   onClick: PropTypes.func.isRequired,
   icon: PropTypes.string,
 };
