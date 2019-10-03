@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title correctly renders the div inside 1`] = `
+<div
+  className="title"
+>
+  <div>
+    Title
+  </div>
+</div>
+`;
+
+exports[`Title properly escapes quotes 1`] = `
+<div
+  className="title"
+>
+  "Title" \\'is \\ 'awesome'
+</div>
+`;
+
+exports[`Title renders correctly 1`] = `
+<div
+  className="title"
+>
+  Simple Title
+</div>
+`;
