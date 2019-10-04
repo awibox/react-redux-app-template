@@ -4,9 +4,9 @@ import { shallow } from 'enzyme';
 import HomeInfo from './HomeInfo';
 
 const mockData = Map({
-  name: 'Google',
+  name: 'Finder',
   description: 'Search engine',
-  html_url: 'https://google.com',
+  html_url: 'http://localhost:8888/url',
 });
 
 describe('HomeInfo', () => {
