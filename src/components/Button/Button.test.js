@@ -17,6 +17,6 @@ describe('Button', () => {
   });
   it('should have icon', () => {
     const component = shallow(<Button onClick={clickFn} icon={testIcon}>Test button</Button>);
-    expect(component.find('.' + testIcon)).toExist();
+    expect(component.find(`.${testIcon}`)).toExist();
   });
 });
