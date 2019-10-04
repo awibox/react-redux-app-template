@@ -1,6 +1,6 @@
 import React from 'react';
-import User from './User';
 import { shallow } from 'enzyme';
+import User from './User';
 
 describe('User', () => {
   it('should render correctly', () => {
