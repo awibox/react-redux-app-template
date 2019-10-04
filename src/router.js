@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // Components
 import Header from 'components/Header/Header';
 // Pages
@@ -15,8 +15,8 @@ export const routes = {
   author: '/author',
 };
 
-export default (
-    <Router>
+const Router = (
+    <BrowserRouter>
         <div className="app">
             <Header />
             <main className={styles.content}>
@@ -31,5 +31,6 @@ export default (
                 </div>
             </main>
         </div>
-    </Router>
+    </BrowserRouter>
 );
+export default Router;

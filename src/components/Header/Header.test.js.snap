@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeInfo should render correctly 1`] = `
+<header
+  className="header"
+>
+  <Link
+    className="logoBlock"
+    to="/"
+  >
+    <span
+      className="logo"
+    >
+      <i
+        className="fa fa-gears"
+      />
+    </span>
+    <span
+      className="name"
+    >
+      React Redux App
+    </span>
+  </Link>
+  <NavBar />
+</header>
+`;

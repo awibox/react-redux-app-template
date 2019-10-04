@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar should render correctly 1`] = `
+<div
+  className="nav"
+>
+  <div
+    className="navDesktopMenu"
+  >
+    <div
+      className="navMenu"
+    >
+      <NavLink
+        activeClassName="navMenuItemActive"
+        className="navMenuItem"
+        exact={true}
+        onClick={[Function]}
+        to="/"
+      >
+        <i
+          className="fa fa-home"
+        />
+        <span
+          className="navMenuItemText"
+        >
+          Home page
+        </span>
+      </NavLink>
+      <NavLink
+        activeClassName="navMenuItemActive"
+        className="navMenuItem"
+        onClick={[Function]}
+        to="/repos"
+      >
+        <i
+          className="fa fa-database"
+        />
+        <span
+          className="navMenuItemText"
+        >
+          Repositories
+        </span>
+      </NavLink>
+      <NavLink
+        activeClassName="navMenuItemActive"
+        className="navMenuItem"
+        onClick={[Function]}
+        to="/author"
+      >
+        <i
+          className="fa fa-address-card"
+        />
+        <span
+          className="navMenuItemText"
+        >
+          Author
+        </span>
+      </NavLink>
+    </div>
+  </div>
+  <div
+    className="navMobile"
+    onClick={[Function]}
+  >
+    <i
+      className="fa fa-list"
+    />
+  </div>
+  <div
+    className="navMobileMenu"
+  >
+    <div
+      className="navMenu"
+    >
+      <NavLink
+        activeClassName="navMenuItemActive"
+        className="navMenuItem"
+        exact={true}
+        onClick={[Function]}
+        to="/"
+      >
+        <i
+          className="fa fa-home"
+        />
+        <span
+          className="navMenuItemText"
+        >
+          Home page
+        </span>
+      </NavLink>
+      <NavLink
+        activeClassName="navMenuItemActive"
+        className="navMenuItem"
+        onClick={[Function]}
+        to="/repos"
+      >
+        <i
+          className="fa fa-database"
+        />
+        <span
+          className="navMenuItemText"
+        >
+          Repositories
+        </span>
+      </NavLink>
+      <NavLink
+        activeClassName="navMenuItemActive"
+        className="navMenuItem"
+        onClick={[Function]}
+        to="/author"
+      >
+        <i
+          className="fa fa-address-card"
+        />
+        <span
+          className="navMenuItemText"
+        >
+          Author
+        </span>
+      </NavLink>
+    </div>
+  </div>
+</div>
+`;
