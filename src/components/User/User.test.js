@@ -1,22 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import User from './User';
+import { shallow } from 'enzyme';
 
-it('User renders correctly', () => {
-  const tree = renderer
-    .create(<User>Simple User</User>)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-it('User properly escapes quotes', () => {
-  const tree = renderer
-    .create(<User>{"\"User\" \\'is \\ 'awesome'"}</User>)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-it('User correctly renders the div inside', () => {
-  const tree = renderer
-    .create(<User><div>Alert</div></User>)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+describe('User', () => {
+  it('should render correctly', () => {
+    const component = shallow(<User>Test user</User>);
+    expect(component).toMatchSnapshot();
+  });
 });

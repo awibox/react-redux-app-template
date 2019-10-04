@@ -1,27 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Alert correctly renders the div inside 1`] = `
+exports[`Alert should render correctly 1`] = `
 <div
   className="alert"
 >
-  <div>
-    Alert
-  </div>
-</div>
-`;
-
-exports[`Alert properly escapes quotes 1`] = `
-<div
-  className="alert"
->
-  "Alert" \\'is \\ 'awesome'
-</div>
-`;
-
-exports[`Alert renders correctly 1`] = `
-<div
-  className="alert"
->
-  Simple Alert
+  Test alert
 </div>
 `;
