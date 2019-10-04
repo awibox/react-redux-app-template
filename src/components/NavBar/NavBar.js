@@ -20,7 +20,7 @@ export default class NavBar extends Component {
 
   renderLinks() {
     return (
-      <aside className={styles.navMenu}>
+      <div className={styles.navMenu}>
         <NavLink exact className={styles.navMenuItem}
                  activeClassName={styles.navMenuItemActive}
                  onClick={() => this.closeMenu()}
@@ -42,7 +42,7 @@ export default class NavBar extends Component {
           <i className="fa fa-address-card"/>
           <span className={styles.navMenuItemText}>Author</span>
         </NavLink>
-      </aside>
+      </div>
     );
   }
 

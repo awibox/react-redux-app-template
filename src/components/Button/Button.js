@@ -4,7 +4,6 @@ import classNames from 'classnames';
 // Styles
 import styles from './Button.scss';
 
-
 const Button = (props) => {
   const { icon, children, onClick } = props;
   return (
