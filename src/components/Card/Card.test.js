@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './Card';
 import { shallow } from 'enzyme';
+import Card from './Card';
 
 const testClassName = 'test-class';
 
@@ -17,6 +17,6 @@ describe('Card', () => {
   });
   it('should have className', () => {
     const component = shallow(<Card className={testClassName}>Test button</Card>);
-    expect(component.find('.' + testClassName)).toExist();
+    expect(component.find(`.${testClassName}`)).toExist();
   });
 });
