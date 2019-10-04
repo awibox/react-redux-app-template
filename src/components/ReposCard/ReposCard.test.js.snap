@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReposCard should render correctly 1`] = `
+<div
+  className="repo"
+>
+  <Card>
+    <a
+      className="name"
+      href="http://localhost:8888/item"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      First Repo
+    </a>
+    <div
+      className="githubIcon"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-github"
+      />
+    </div>
+    <div
+      className="desc"
+    >
+      Repository
+    </div>
+    <div
+      className="panel"
+    >
+      <div
+        className="property"
+      >
+        <i
+          className="fa fa-circle"
+        />
+         
+        javascript
+      </div>
+      <div
+        className="size"
+      >
+        <i
+          className="fa fa-file-archive-o"
+        />
+         
+        0.01
+         mb
+      </div>
+      <div
+        className="stars"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-star"
+        />
+         
+        10
+      </div>
+    </div>
+  </Card>
+</div>
+`;

@@ -5,7 +5,7 @@ import NavBar from 'components/NavBar/NavBar';
 // Styles
 import styles from './Header.scss';
 
-const HomeComponent = () => (
+const Header = () => (
   <header className={styles.header}>
     <Link className={styles.logoBlock} to="/">
         <span className={styles.logo}>
@@ -16,4 +16,4 @@ const HomeComponent = () => (
     <NavBar/>
   </header>);
 
-export default HomeComponent;
+export default Header;
