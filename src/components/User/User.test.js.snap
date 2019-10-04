@@ -1,36 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`User correctly renders the div inside 1`] = `
+exports[`User should render correctly 1`] = `
 <div
   className="user"
 >
   <i
     className="fa fa-user"
   />
-  <div>
-    Alert
-  </div>
-</div>
-`;
-
-exports[`User properly escapes quotes 1`] = `
-<div
-  className="user"
->
-  <i
-    className="fa fa-user"
-  />
-  "User" \\'is \\ 'awesome'
-</div>
-`;
-
-exports[`User renders correctly 1`] = `
-<div
-  className="user"
->
-  <i
-    className="fa fa-user"
-  />
-  Simple User
+  Test user
 </div>
 `;

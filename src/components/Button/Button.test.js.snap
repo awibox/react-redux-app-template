@@ -1,46 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button correctly renders the div inside 1`] = `
+exports[`Button should render correctly 1`] = `
 <div
   className="btn"
-  onClick={[Function]}
+  onClick={[MockFunction]}
 >
-  <div>
-    Title
-  </div>
-</div>
-`;
-
-exports[`Button properly escapes quotes 1`] = `
-<div
-  className="btn"
-  onClick={[Function]}
->
-  "Button" \\'is \\ 'awesome'
-</div>
-`;
-
-exports[`Button renders correctly 1`] = `
-<div
-  className="btn"
-  onClick={[Function]}
->
-  Simple Button
-</div>
-`;
-
-exports[`Button with icon 1`] = `
-<div
-  className="btn btnIcon"
-  onClick={[Function]}
->
-  <span
-    className="icon"
-  >
-    <i
-      className="fa fa-github"
-    />
-  </span>
-  Button is awesome 
+  Test button
 </div>
 `;

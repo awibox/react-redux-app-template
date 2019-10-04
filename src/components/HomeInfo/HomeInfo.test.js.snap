@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeInfo should render correctly 1`] = `
+<div
+  className="homeInfo"
+>
+  <Card>
+    <div
+      className="homeLogo"
+    >
+      <div
+        className="image"
+      >
+        <i
+          className="fa fa-gears"
+        />
+      </div>
+      <h1
+        className="name"
+      >
+        Google
+      </h1>
+      <div
+        className="text"
+      >
+        Search engine
+      </div>
+      <div
+        className="button"
+      >
+        <Button
+          icon="fa-github"
+          onClick={[Function]}
+        >
+          Download with Github
+        </Button>
+      </div>
+    </div>
+  </Card>
+</div>
+`;
