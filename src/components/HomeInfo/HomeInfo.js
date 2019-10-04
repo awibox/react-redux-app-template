@@ -8,7 +8,7 @@ import Card from '../Card/Card';
 import styles from './HomeInfo.scss';
 
 // Using "Stateless Functional Components"
-export default class HomeContainer extends Component {
+export default class HomeInfo extends Component {
   static propTypes = {
     home: ImmutablePropTypes.contains({
       name: PropTypes.string.isRequired,

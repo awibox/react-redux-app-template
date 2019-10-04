@@ -1,28 +1,22 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import Button from './Button';
 
-it('Button renders correctly', () => {
-  const tree = renderer
-    .create(<Button onClick={() => {}}>Simple Button</Button>)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-it('Button properly escapes quotes', () => {
-  const tree = renderer
-    .create(<Button onClick={() => {}}>{"\"Button\" \\'is \\ 'awesome'"}</Button>)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-it('Button correctly renders the div inside', () => {
-  const tree = renderer
-    .create(<Button onClick={() => {}}><div>Title</div></Button>)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
-it('Button with icon', () => {
-  const tree = renderer
-    .create(<Button icon="fa-github" onClick={() => {}}>Button is awesome </Button>)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+const clickFn = jest.fn();
+const testIcon = 'fa-github';
+
+describe('Button', () => {
+  it('should render correctly', () => {
+    const component = shallow(<Button onClick={clickFn}>Test button</Button>);
+    expect(component).toMatchSnapshot();
+  });
+  it('should call clickFn on button click', () => {
+    const component = shallow(<Button onClick={clickFn}>Test button</Button>);
+    component.find('div.btn').simulate('click');
+    expect(clickFn).toHaveBeenCalled();
+  });
+  it('should have icon', () => {
+    const component = shallow(<Button onClick={clickFn} icon={testIcon}>Test button</Button>);
+    expect(component.find('.' + testIcon)).toExist();
+  });
 });
