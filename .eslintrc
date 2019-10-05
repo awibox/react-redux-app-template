@@ -13,7 +13,7 @@
       "files": [
         "**/*.test.js",
         "**/*.test.jsx",
-        "spec"
+        "spec/*.js"
       ],
       "env": {
         "jest": true
