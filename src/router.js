@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Components
 import Header from 'components/Header/Header';
 // Pages
@@ -15,22 +15,22 @@ export const routes = {
   author: '/author',
 };
 
-const Router = (
-    <BrowserRouter>
-        <div className="app">
-            <Header />
-            <main className={styles.content}>
-                <div className={styles.wrapper}>
-                    <Switch>
-                        <Route exact path="/" component={HomeContainer} />
-                        <Route exact path={routes.repos} component={ReposContainer} />
-                        <Route path={`${routes.repos}/:user`} component={ReposContainer} />
-                        <Route path={routes.author} component={AuthorContainer} />
-                        <Route component={NotFound}/>
-                    </Switch>
-                </div>
-            </main>
+const RouterComponent = () => (
+  <Router>
+    <div className="app">
+      <Header/>
+      <main className={styles.content}>
+        <div className={styles.wrapper}>
+          <Switch>
+            <Route exact path="/" component={HomeContainer}/>
+            <Route exact path={routes.repos} component={ReposContainer}/>
+            <Route path={`${routes.repos}/:user`} component={ReposContainer}/>
+            <Route path={routes.author} component={AuthorContainer}/>
+            <Route component={NotFound}/>
+          </Switch>
         </div>
-    </BrowserRouter>
+      </main>
+    </div>
+  </Router>
 );
-export default Router;
+export default RouterComponent;

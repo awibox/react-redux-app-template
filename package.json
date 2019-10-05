@@ -36,13 +36,13 @@
     "reselect": "^4.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
     "@babel/core": "^7.6.0",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.6.2",
+    "autoprefixer": "^9.6.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
@@ -63,6 +63,7 @@
     "jest": "^24.9.0",
     "jest-css-modules-transform": "^2.5.0",
     "jest-enzyme": "^7.1.1",
+    "jsdom": "^15.1.1",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
@@ -70,7 +71,9 @@
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "react-test-renderer": "^16.10.1",
+    "redux-mock-store": "^1.5.3",
     "sass-loader": "^8.0.0",
+    "sinon": "^7.5.0",
     "style-loader": "^1.0.0",
     "terser-webpack-plugin": "^2.1.0",
     "url-loader": "^2.1.0",
@@ -100,9 +103,12 @@
       "<rootDir>/node_modules/enzyme-to-json/serializer"
     ],
     "setupFiles": [
-      "<rootDir>/spec/jest-setup-tests.js"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/node_modules/jest-enzyme/lib/index.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/node_modules/jest-enzyme/lib/index.js",
+      "<rootDir>/spec/jest-setup-tests.js",
+      "<rootDir>/spec/jest-setup-jsdom.js"
+    ],
     "transform": {
       "^.+\\.js$": "babel-jest",
       ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"

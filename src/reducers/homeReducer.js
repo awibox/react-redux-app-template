@@ -15,9 +15,9 @@ const homeReducer = (state = initialState, action) => {
       return {
         ...state,
         home: Map({
-          name: action.home.name,
-          description: action.home.description,
-          html_url: action.home.html_url,
+          name: action.payload.name,
+          description: action.payload.description,
+          html_url: action.payload.html_url,
         }),
       };
     default:

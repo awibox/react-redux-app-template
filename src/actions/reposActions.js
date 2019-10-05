@@ -7,7 +7,7 @@ const END_POINT = 'users';
 
 export const getReposSuccess = (repos) => ({
   type: GET_REPOS_SUCCESS,
-  repos,
+  payload: repos,
 });
 
 export const getReposAction = (user) => async (dispatch) => {
