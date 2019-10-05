@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repos should render coorectly 1`] = `
+<Connect(ReposContainer)
+  getReposAction={[Function]}
+  match={
+    Object {
+      "params": Object {
+        "user": "test",
+      },
+    }
+  }
+>
+  <div
+    className="repos"
+  >
+    <div
+      className="alert"
+    >
+      Fake error
+    </div>
+    <div
+      className="title"
+    >
+      Select the user
+    </div>
+    <div
+      className="card users"
+    >
+      <a
+        aria-current={null}
+        className="link"
+        href="/repos/awibox"
+        onClick={[Function]}
+      >
+        <div
+          className="user"
+        >
+          <i
+            className="fa fa-user"
+          />
+          awibox
+        </div>
+      </a>
+      <a
+        aria-current={null}
+        className="link"
+        href="/repos/angular"
+        onClick={[Function]}
+      >
+        <div
+          className="user"
+        >
+          <i
+            className="fa fa-user"
+          />
+          angular
+        </div>
+      </a>
+      <a
+        aria-current={null}
+        className="link"
+        href="/repos/facebook"
+        onClick={[Function]}
+      >
+        <div
+          className="user"
+        >
+          <i
+            className="fa fa-user"
+          />
+          facebook
+        </div>
+      </a>
+      <a
+        aria-current={null}
+        className="link"
+        href="/repos/reduxjs"
+        onClick={[Function]}
+      >
+        <div
+          className="user"
+        >
+          <i
+            className="fa fa-user"
+          />
+          reduxjs
+        </div>
+      </a>
+      <a
+        aria-current={null}
+        className="link"
+        href="/repos/webpack"
+        onClick={[Function]}
+      >
+        <div
+          className="user"
+        >
+          <i
+            className="fa fa-user"
+          />
+          webpack
+        </div>
+      </a>
+    </div>
+    <div
+      className="title"
+    >
+      Repositories of 
+      test
+    </div>
+    <div
+      className="reposList"
+    >
+      <div
+        className="repo"
+      >
+        <div
+          className="card"
+        >
+          <a
+            className="name"
+            href="http://localhost:8888/item"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            First Repo
+          </a>
+          <div
+            className="githubIcon"
+          >
+            <i
+              aria-hidden="true"
+              className="fa fa-github"
+            />
+          </div>
+          <div
+            className="desc"
+          >
+            Repository
+          </div>
+          <div
+            className="panel"
+          >
+            <div
+              className="property"
+            >
+              <i
+                className="fa fa-circle"
+                style={Object {}}
+              />
+               
+              javascript
+            </div>
+            <div
+              className="size"
+            >
+              <i
+                className="fa fa-file-archive-o"
+              />
+               
+              0.01
+               mb
+            </div>
+            <div
+              className="stars"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-star"
+              />
+               
+              10
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Connect(ReposContainer)>
+`;
