@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Author should render coorectly 1`] = `
+<Connect(AuthorContainer)
+  getAuthorAction={[Function]}
+>
+  <div>
+    <div
+      className="alert"
+    >
+      Fake error
+    </div>
+    <div
+      className="card authorInfo"
+    >
+      <div
+        className="logo"
+        style={
+          Object {
+            "backgroundImage": "url(http://localhost:8888/avatar)",
+          }
+        }
+      />
+      <div
+        className="title"
+      >
+        John
+      </div>
+      <div
+        className="titleVersion"
+      >
+        USA
+      </div>
+      <div
+        className="infoText"
+      >
+        Google
+         - 
+        Addition information
+      </div>
+      <div
+        className="button"
+      >
+        <div
+          className="btn btnIcon"
+          onClick={[Function]}
+        >
+          <span
+            className="icon"
+          >
+            <i
+              className="fa fa-github"
+            />
+          </span>
+          Github page
+        </div>
+      </div>
+    </div>
+  </div>
+</Connect(AuthorContainer)>
+`;

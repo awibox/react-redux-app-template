@@ -8,7 +8,7 @@ const END_POINT = 'repos';
 
 export const getHomeSuccess = (home) => ({
   type: GET_HOME_SUCCESS,
-  home,
+  payload: home,
 });
 
 export const getHomeAction = () => async (dispatch) => {

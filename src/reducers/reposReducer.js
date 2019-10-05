@@ -18,7 +18,7 @@ const reposReducer = (state = initialState, action) => {
     case GET_REPOS_SUCCESS:
       return {
         ...state,
-        repos: List(action.repos),
+        repos: List(action.payload),
       };
     default:
       return state;
