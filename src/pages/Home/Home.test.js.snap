@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render corectly 1`] = `
+<Connect(HomeContainer)
+  getHomeAction={[Function]}
+>
+  <div>
+    <div
+      className="alert"
+    >
+      Fake error
+    </div>
+    <div
+      className="homeInfo"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="homeLogo"
+        >
+          <div
+            className="image"
+          >
+            <i
+              className="fa fa-gears"
+            />
+          </div>
+          <h1
+            className="name"
+          >
+            Finder
+          </h1>
+          <div
+            className="text"
+          >
+            Search engine
+          </div>
+          <div
+            className="button"
+          >
+            <div
+              className="btn btnIcon"
+              onClick={[Function]}
+            >
+              <span
+                className="icon"
+              >
+                <i
+                  className="fa fa-github"
+                />
+              </span>
+              Download with Github
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Connect(HomeContainer)>
+`;

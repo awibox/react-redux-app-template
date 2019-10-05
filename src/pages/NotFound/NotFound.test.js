@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Header from './Header';
+import NotFound from './NotFound';
 
-describe('Header', () => {
+describe('NotFound', () => {
   it('should render correctly', () => {
-    const component = shallow(<Header />);
+    const component = shallow(<NotFound />);
     expect(component).toMatchSnapshot();
   });
 });

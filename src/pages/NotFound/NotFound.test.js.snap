@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound should render correctly 1`] = `
+<Card
+  className="notFound"
+>
+  <div
+    className="code"
+  >
+    404
+  </div>
+  <p>
+    We couldn't find this page.
+  </p>
+  <p>
+    The page you are looking for does not exists.
+  </p>
+</Card>
+`;
