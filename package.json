@@ -85,7 +85,8 @@
     "start": "webpack-dev-server --open",
     "test": "JEST_CSS_MODULES_TRANSFORM_CONFIG=spec/jest-css-modules-transform-config.js jest",
     "lint": "eslint --report-unused-disable-directives src",
-    "fix": "eslint --fix --report-unused-disable-directives src"
+    "fix": "eslint --fix --report-unused-disable-directives src",
+    "setup": "cp ./.github/hooks/pre-commit ./.git/hooks/pre-commit && chmod +x ./.git/hooks/pre-commit"
   },
   "jest": {
     "testEnvironment": "node",
