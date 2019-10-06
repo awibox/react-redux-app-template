@@ -29,6 +29,16 @@ do
   fi
 done
 
+do
+  jest
+  if [[ "$?" == 0 ]]; then
+    printf "\t\033[32mJest Tests: $FILE\033[0m"
+  else
+    printf "\t\033[41mJest Tests: $FILE\033[0m"
+    PASS=false
+  fi
+done
+
 printf "\nJavascript validation completed!\n"
 
 if ! $PASS; then
