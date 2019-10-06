@@ -8,7 +8,7 @@ import HomeInfo from 'components/HomeInfo/HomeInfo';
 import Alert from 'components/Alert/Alert';
 // Selectors
 import { getHomeSelector } from 'selectors/homeSelectors';
-import {getErrorsSelector } from 'selectors/errorSelectors';
+import { getErrorsSelector } from 'selectors/errorSelectors';
 
 class HomeContainer extends Component {
   static propTypes = {
