@@ -1,13 +1,7 @@
 import { GET_HOME_SUCCESS } from 'actions/types';
 import { Map } from 'immutable';
 
-const initialState = {
-  home: Map({
-    name: '',
-    description: '',
-    html_url: '',
-  }),
-};
+const initialState = {};
 
 const homeReducer = (state = initialState, action) => {
   switch (action.type) {
