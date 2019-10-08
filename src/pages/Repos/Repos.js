@@ -16,6 +16,7 @@ import User from 'components/User/User';
 import { getReposSelector } from 'selectors/reposSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
 // Styles
+import { List } from 'immutable';
 import styles from './Repos.scss';
 
 class ReposContainer extends PureComponent {
@@ -30,6 +31,18 @@ class ReposContainer extends PureComponent {
       }),
     }),
     repos: ImmutablePropTypes.list.isRequired,
+  };
+
+  static defaultProps = {
+    repos: List([{
+      html_url: '',
+      name: '',
+      description: '',
+      language: '',
+      id: 0,
+      size: 0,
+      stargazers_count: 0,
+    }]),
   };
 
   componentDidMount() {
