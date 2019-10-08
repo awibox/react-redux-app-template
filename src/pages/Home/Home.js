@@ -9,6 +9,7 @@ import Alert from 'components/Alert/Alert';
 // Selectors
 import { getHomeSelector } from 'selectors/homeSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
+import { Map } from 'immutable';
 
 class HomeContainer extends Component {
   static propTypes = {
@@ -20,6 +21,14 @@ class HomeContainer extends Component {
     }),
     errors: PropTypes.shape({
       message: PropTypes.string,
+    }),
+  };
+
+  static defaultProps = {
+    home: Map({
+      name: '',
+      description: '',
+      html_url: '',
     }),
   };
 

@@ -9,6 +9,7 @@ import Alert from 'components/Alert/Alert';
 // Selectors
 import { getErrorsSelector } from 'selectors/errorSelectors';
 import { getAuthorSelector } from 'selectors/authorSelectors';
+import { Map } from 'immutable';
 
 class AuthorContainer extends Component {
   static propTypes = {
@@ -23,6 +24,17 @@ class AuthorContainer extends Component {
     getAuthorAction: PropTypes.func.isRequired,
     errors: PropTypes.shape({
       message: PropTypes.string,
+    }),
+  };
+
+  static defaultProps = {
+    author: Map({
+      avatar_url: '',
+      name: '',
+      location: '',
+      company: '',
+      bio: '',
+      html_url: '',
     }),
   };
 
