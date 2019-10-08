@@ -102,8 +102,6 @@
     "snapshotSerializers": [
       "<rootDir>/node_modules/enzyme-to-json/serializer"
     ],
-    "setupFiles": [
-    ],
     "setupFilesAfterEnv": [
       "<rootDir>/node_modules/jest-enzyme/lib/index.js",
       "<rootDir>/spec/jest-setup-tests.js",
