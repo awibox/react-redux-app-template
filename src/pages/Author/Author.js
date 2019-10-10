@@ -3,13 +3,15 @@ import PropTypes from 'prop-types';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 import { getAuthorAction } from 'actions/authorActions';
+import { Map } from 'immutable';
 // Components
 import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
 import Alert from 'components/Alert/Alert';
+import Loader from 'components/Loader/Loader';
 // Selectors
 import { getErrorsSelector } from 'selectors/errorSelectors';
 import { getAuthorSelector } from 'selectors/authorSelectors';
-import { Map } from 'immutable';
+import { getLoadStatusSelector } from 'selectors/loadSelectors';
 
 class AuthorContainer extends Component {
   static propTypes = {
@@ -25,6 +27,7 @@ class AuthorContainer extends Component {
     errors: PropTypes.shape({
       message: PropTypes.string,
     }),
+    isLoading: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -43,11 +46,12 @@ class AuthorContainer extends Component {
   }
 
   render() {
-    const { author, errors } = this.props;
+    const { author, errors, isLoading } = this.props;
     return (
       <div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <AuthorInfo author={author}/>
+        {isLoading && <Loader/>}
       </div>
     );
   }
@@ -56,6 +60,7 @@ class AuthorContainer extends Component {
 const mapStateToProps = (state) => ({
   author: getAuthorSelector(state),
   errors: getErrorsSelector(state),
+  isLoading: getLoadStatusSelector(state),
 });
 
 export default connect(mapStateToProps, { getAuthorAction })(AuthorContainer);
