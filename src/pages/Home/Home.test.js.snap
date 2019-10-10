@@ -56,6 +56,13 @@ exports[`Home should render corectly 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="loader"
+    >
+      <div
+        className="spinnerBorder"
+      />
+    </div>
   </div>
 </Connect(HomeContainer)>
 `;

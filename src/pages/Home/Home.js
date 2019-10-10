@@ -11,7 +11,6 @@ import Loader from 'components/Loader/Loader';
 // Selectors
 import { getHomeSelector } from 'selectors/homeSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
-import { getLoadStatusSelector } from 'selectors/loadSelectors';
 
 class HomeContainer extends Component {
   static propTypes = {
@@ -24,7 +23,6 @@ class HomeContainer extends Component {
     errors: PropTypes.shape({
       message: PropTypes.string,
     }),
-    isLoading: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -40,12 +38,12 @@ class HomeContainer extends Component {
   }
 
   render() {
-    const { home, errors, isLoading } = this.props;
+    const { home, errors } = this.props;
     return (
       <div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <HomeInfo home={home}/>
-        {isLoading && <Loader/>}
+        <Loader/>
       </div>
     );
   }
@@ -54,7 +52,6 @@ class HomeContainer extends Component {
 const mapStateToProps = (state) => ({
   home: getHomeSelector(state),
   errors: getErrorsSelector(state),
-  isLoading: getLoadStatusSelector(state),
 });
 
 export default connect(mapStateToProps, { getHomeAction })(HomeContainer);
