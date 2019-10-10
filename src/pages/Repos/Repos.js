@@ -6,17 +6,19 @@ import { connect } from 'react-redux';
 import { getReposAction } from 'actions/reposActions';
 import { UserArray } from 'config';
 import { routes } from 'router';
+import { List } from 'immutable';
 // Components
 import ReposCard from 'components/ReposCard/ReposCard';
 import Title from 'components/Title/Title';
 import Card from 'components/Card/Card';
 import Alert from 'components/Alert/Alert';
 import User from 'components/User/User';
+import Loader from 'components/Loader/Loader';
 // Selectors
 import { getReposSelector } from 'selectors/reposSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
+import { getLoadStatusSelector } from 'selectors/loadSelectors';
 // Styles
-import { List } from 'immutable';
 import styles from './Repos.scss';
 
 class ReposContainer extends PureComponent {
@@ -31,6 +33,7 @@ class ReposContainer extends PureComponent {
       }),
     }),
     repos: ImmutablePropTypes.list.isRequired,
+    isLoading: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -70,7 +73,7 @@ class ReposContainer extends PureComponent {
   };
 
   render() {
-    const { repos, errors } = this.props;
+    const { repos, errors, isLoading } = this.props;
     const { user } = this.props.match.params;
     return (
       <div className={styles.repos}>
@@ -93,6 +96,7 @@ class ReposContainer extends PureComponent {
             <ReposCard key={`${repo.id}_${repo.name}`} repo={repo} style={this.languageStyle(repo.language)}/>
           ))}
         </div>
+        {isLoading && <Loader/>}
       </div>
     );
   }
@@ -101,6 +105,7 @@ class ReposContainer extends PureComponent {
 const mapStateToProps = (state) => ({
   repos: getReposSelector(state),
   errors: getErrorsSelector(state),
+  isLoading: getLoadStatusSelector(state),
 });
 
 export default connect(mapStateToProps, { getReposAction })(ReposContainer);

@@ -1,7 +1,7 @@
 import { GET_ERRORS } from 'actions/types';
 import reducer from './errorReducer';
 
-describe('author reducer', () => {
+describe('error reducer', () => {
   const mockData = {
     message: 'Error 503',
   };
