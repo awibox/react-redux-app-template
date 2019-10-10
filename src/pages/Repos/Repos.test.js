@@ -29,6 +29,9 @@ describe('Repos', () => {
     errors: {
       message: 'Fake error',
     },
+    load: {
+      isLoading: false,
+    },
     match: {
       params: {
         user: 'test',
@@ -66,8 +69,8 @@ describe('Repos', () => {
   it('should action on dispatching', () => {
     store.dispatch(getReposSuccess(mockData));
     const action = store.getActions();
-    expect(action[0].type).toBe('GET_REPOS_SUCCESS');
-    expect(action[0].payload).toEqual(mockData);
+    expect(action[1].type).toBe('GET_REPOS_SUCCESS');
+    expect(action[1].payload).toEqual(mockData);
     container.unmount();
   });
 });

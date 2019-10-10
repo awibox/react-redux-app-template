@@ -2,7 +2,7 @@ import { GET_REPOS_SUCCESS } from 'actions/types';
 import { List } from 'immutable';
 import reducer from './reposReducer';
 
-describe('home reducer', () => {
+describe('repos reducer', () => {
   const mockData = {
     html_url: 'http://localhost:8888/item',
     name: 'First Repo',
