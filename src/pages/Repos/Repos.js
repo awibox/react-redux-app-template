@@ -17,7 +17,6 @@ import Loader from 'components/Loader/Loader';
 // Selectors
 import { getReposSelector } from 'selectors/reposSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
-import { getLoadStatusSelector } from 'selectors/loadSelectors';
 // Styles
 import styles from './Repos.scss';
 
@@ -33,7 +32,6 @@ class ReposContainer extends PureComponent {
       }),
     }),
     repos: ImmutablePropTypes.list.isRequired,
-    isLoading: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -55,9 +53,10 @@ class ReposContainer extends PureComponent {
     }
   }
 
-  changeUser(user) {
-    if (typeof user !== 'undefined') {
-      this.props.getReposAction(user);
+  changeUser(newUser) {
+    const { user } = this.props.match.params;
+    if (typeof newUser !== 'undefined' && newUser !== user) {
+      this.props.getReposAction(newUser);
     }
   }
 
@@ -73,7 +72,7 @@ class ReposContainer extends PureComponent {
   };
 
   render() {
-    const { repos, errors, isLoading } = this.props;
+    const { repos, errors } = this.props;
     const { user } = this.props.match.params;
     return (
       <div className={styles.repos}>
@@ -96,7 +95,7 @@ class ReposContainer extends PureComponent {
             <ReposCard key={`${repo.id}_${repo.name}`} repo={repo} style={this.languageStyle(repo.language)}/>
           ))}
         </div>
-        {isLoading && <Loader/>}
+        <Loader/>
       </div>
     );
   }
@@ -105,7 +104,6 @@ class ReposContainer extends PureComponent {
 const mapStateToProps = (state) => ({
   repos: getReposSelector(state),
   errors: getErrorsSelector(state),
-  isLoading: getLoadStatusSelector(state),
 });
 
 export default connect(mapStateToProps, { getReposAction })(ReposContainer);

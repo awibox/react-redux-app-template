@@ -9148,6 +9148,11 @@ react-is@^16.8.4, react-is@^16.9.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.1.tgz#0612786bf19df406502d935494f0450b40b8294f"
   integrity sha512-BXUMf9sIOPXXZWqr7+c5SeOKJykyVr2u0UDzEf4LNGc6taGkQe1A9DFD07umCIXz45RLr9oAAwZbAJ0Pkknfaw==
 
+react-promise-tracker@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/react-promise-tracker/-/react-promise-tracker-2.0.5.tgz#01b7cb2819f530ed829232e717c78bf77d39e4bb"
+  integrity sha512-86k2vXybbBFMRpSCaQUCd4JVL7jXUhmqFer0X4zv6P8Bht4+xfqPOTU/brr5IzbbKQrNCr0EEJ8RuYTqH0sj8A==
+
 react-redux@7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.1.0.tgz#72af7cf490a74acdc516ea9c1dd80e25af9ea0b2"

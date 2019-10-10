@@ -11,7 +11,6 @@ import Loader from 'components/Loader/Loader';
 // Selectors
 import { getErrorsSelector } from 'selectors/errorSelectors';
 import { getAuthorSelector } from 'selectors/authorSelectors';
-import { getLoadStatusSelector } from 'selectors/loadSelectors';
 
 class AuthorContainer extends Component {
   static propTypes = {
@@ -27,7 +26,6 @@ class AuthorContainer extends Component {
     errors: PropTypes.shape({
       message: PropTypes.string,
     }),
-    isLoading: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -46,12 +44,12 @@ class AuthorContainer extends Component {
   }
 
   render() {
-    const { author, errors, isLoading } = this.props;
+    const { author, errors } = this.props;
     return (
       <div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <AuthorInfo author={author}/>
-        {isLoading && <Loader/>}
+        <Loader/>
       </div>
     );
   }
@@ -60,7 +58,6 @@ class AuthorContainer extends Component {
 const mapStateToProps = (state) => ({
   author: getAuthorSelector(state),
   errors: getErrorsSelector(state),
-  isLoading: getLoadStatusSelector(state),
 });
 
 export default connect(mapStateToProps, { getAuthorAction })(AuthorContainer);
