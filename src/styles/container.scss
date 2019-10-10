@@ -5,6 +5,7 @@
   min-width: $widthScreenMobileSmall;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: $defaultIndent;
   &:after {
     display: block;
     content: "";
@@ -12,7 +13,4 @@
   }
 }
 .content {
-  .wrapper {
-    padding: $defaultIndent;
-  }
 }

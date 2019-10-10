@@ -55,8 +55,8 @@ describe('Home', () => {
   it('should action on dispatching', () => {
     store.dispatch(getHomeSuccess(mockData));
     const action = store.getActions();
-    expect(action[1].type).toBe('GET_HOME_SUCCESS');
-    expect(action[1].payload).toEqual(mockData);
+    expect(action[0].type).toBe('GET_HOME_SUCCESS');
+    expect(action[0].payload).toEqual(mockData);
     container.unmount();
   });
 });
