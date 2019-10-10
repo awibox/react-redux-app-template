@@ -1,11 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loader should render correctly 1`] = `
-<div
-  className="loader"
->
-  <div
-    className="spinnerBorder"
-  />
-</div>
-`;
+exports[`Loader should render correctly 1`] = `""`;
