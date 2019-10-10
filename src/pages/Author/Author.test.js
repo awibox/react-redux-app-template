@@ -26,6 +26,9 @@ describe('Author', () => {
     errors: {
       message: 'Fake error',
     },
+    load: {
+      isLoading: false,
+    },
     getAuthorAction: () => {},
   };
   const mockStore = configureStore([thunk]);
@@ -56,8 +59,8 @@ describe('Author', () => {
   it('should action on dispatching', () => {
     store.dispatch(getAuthorSuccess(mockData));
     const action = store.getActions();
-    expect(action[0].type).toBe('GET_AUTHOR_SUCCESS');
-    expect(action[0].payload).toEqual(mockData);
+    expect(action[1].type).toBe('GET_AUTHOR_SUCCESS');
+    expect(action[1].payload).toEqual(mockData);
     container.unmount();
   });
 });
