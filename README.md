@@ -1,6 +1,6 @@
 ![react-redux-app-boilerplate](https://repository-images.githubusercontent.com/208453250/42fbbe80-decc-11e9-895e-987e17e554d8)
 
-
+## Table of contents
 * [How to install](#howtoinstall)
 * [Getting started](#gettingstarted)
 * [Run linter](#runlinter)
