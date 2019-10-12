@@ -175,13 +175,13 @@ exports[`Repos should render coorectly 1`] = `
           </div>
         </div>
       </div>
+    </div>
+    <div
+      className="loader"
+    >
       <div
-        className="loader"
-      >
-        <div
-          className="spinnerBorder"
-        />
-      </div>
+        className="spinnerBorder"
+      />
     </div>
   </div>
 </Connect(ReposContainer)>
