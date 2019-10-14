@@ -36,7 +36,7 @@ To launch project you need to execute following command:
 yarn start
 ```
 Open in browser: [http://localhost:8888](http://localhost:8888) <br/>
-You can change the port in the [webpack.config.js](webpack.config.js)
+You can change the port in the [webpack.config.js](webpack.config.js#L141)
 
 <a name="runlinter"></a>
 ## ESlint
@@ -80,14 +80,14 @@ react-redux-app-boilerplate/
 |                                       // and how it should behave when 'installed' 
 |                                       // on the user's mobile device or desktop.
 |
-├──spec/                                // Directory with settings for jest tests
+├──spec/                                // Directory with setup files for jest
 |   └──...                       
 |                      
 ├──src/                                   
 |   ├──actions                          // Redux actions
 │   │   ├──[name]Actions.js   
 │   │   ├──...                   
-│   │   └──types.js                     // Redux Action Type Constants     
+│   │   └──types.js                     // Redux action type constants     
 │   │
 |   ├──components                       // Components that are reused                
 │   │   ├──[Name] 
