@@ -16,4 +16,5 @@ const copyProps = (src, target) => Object.defineProperties(target, {
   ...Object.getOwnPropertyDescriptors(target),
 });
 
+// Run copyProps function
 copyProps(window, global);
