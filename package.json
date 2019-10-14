@@ -73,7 +73,6 @@
     "postcss-loader": "^3.0.0",
     "redux-mock-store": "^1.5.3",
     "sass-loader": "^8.0.0",
-    "sinon": "^7.5.0",
     "style-loader": "^1.0.0",
     "terser-webpack-plugin": "^2.1.0",
     "url-loader": "^2.1.0",
@@ -84,7 +83,7 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
     "start": "webpack-dev-server --open",
-    "test": "JEST_CSS_MODULES_TRANSFORM_CONFIG=spec/jest-css-modules-transform-config.js jest",
+    "test": "jest",
     "lint": "eslint --report-unused-disable-directives src",
     "fix": "eslint --fix --report-unused-disable-directives src",
     "setup": "cp ./.github/hooks/pre-commit ./.git/hooks/pre-commit && chmod +x ./.git/hooks/pre-commit"
@@ -99,14 +98,14 @@
       "node_modules",
       "src"
     ],
-    "snapshotResolver": "<rootDir>/spec/jest-snapshot-resolver",
+    "snapshotResolver": "<rootDir>/spec/jestSnapshotResolver",
     "snapshotSerializers": [
       "<rootDir>/node_modules/enzyme-to-json/serializer"
     ],
     "setupFilesAfterEnv": [
       "<rootDir>/node_modules/jest-enzyme/lib/index.js",
-      "<rootDir>/spec/jest-setup-tests.js",
-      "<rootDir>/spec/jest-setup-jsdom.js"
+      "<rootDir>/spec/jestSetupTests.js",
+      "<rootDir>/spec/jestSetupJsDom.js"
     ],
     "transform": {
       "^.+\\.js$": "babel-jest",
