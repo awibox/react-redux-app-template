@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { projectName } from 'config';
 // Components
 import NavBar from 'components/NavBar/NavBar';
 // Styles
@@ -11,7 +12,7 @@ const Header = () => (
         <span className={styles.logo}>
             <i className="fa fa-gears"></i>
         </span>
-      <span className={styles.name}>React Redux App</span>
+      <span className={styles.name}>{projectName}</span>
     </Link>
     <NavBar/>
   </header>);
