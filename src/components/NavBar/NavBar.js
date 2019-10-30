@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { routes } from 'router';
 import classNames from 'classnames';
+import { navigationItems } from 'config';
 // Styles
 import styles from './NavBar.scss';
 
@@ -21,27 +21,15 @@ export default class NavBar extends Component {
   renderLinks() {
     return (
       <div className={styles.navMenu}>
-        <NavLink exact className={styles.navMenuItem}
-                 activeClassName={styles.navMenuItemActive}
-                 onClick={() => this.closeMenu()}
-                 to="/">
-          <i className="fa fa-home"/>
-          <span className={styles.navMenuItemText}>Home page</span>
-        </NavLink>
-        <NavLink className={styles.navMenuItem}
-                 activeClassName={styles.navMenuItemActive}
-                 onClick={() => this.closeMenu()}
-                 to={routes.repos}>
-          <i className="fa fa-database"/>
-          <span className={styles.navMenuItemText}>Repositories</span>
-        </NavLink>
-        <NavLink className={styles.navMenuItem}
-                 activeClassName={styles.navMenuItemActive}
-                 onClick={() => this.closeMenu()}
-                 to={routes.author}>
-          <i className="fa fa-address-card"/>
-          <span className={styles.navMenuItemText}>Author</span>
-        </NavLink>
+        {navigationItems.map((item) => (
+          <NavLink key={item.route} exact className={styles.navMenuItem}
+                   activeClassName={styles.navMenuItemActive}
+                   onClick={() => this.closeMenu()}
+                   to={item.route}>
+            <i className={`fa fa-${item.icon}`}/>
+            <span className={styles.navMenuItemText}>{item.name}</span>
+          </NavLink>
+        ))}
       </div>
     );
   }
