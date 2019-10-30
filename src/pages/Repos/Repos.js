@@ -4,8 +4,7 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getReposAction } from 'actions/reposActions';
-import { UserArray } from 'config';
-import { routes } from 'router';
+import { UserArray, routes } from 'config';
 import { List } from 'immutable';
 // Components
 import ReposCard from 'components/ReposCard/ReposCard';

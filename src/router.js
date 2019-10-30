@@ -9,11 +9,8 @@ import AuthorContainer from 'pages/Author/Author';
 import NotFound from 'pages/NotFound/NotFound';
 // Styles
 import styles from 'styles/container.scss';
-
-export const routes = {
-  repos: '/repos',
-  author: '/author',
-};
+// Config
+import { routes } from './config';
 
 const RouterComponent = () => (
   <Router>

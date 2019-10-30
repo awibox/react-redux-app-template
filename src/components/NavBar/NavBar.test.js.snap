@@ -14,6 +14,7 @@ exports[`NavBar should render correctly 1`] = `
         activeClassName="navMenuItemActive"
         className="navMenuItem"
         exact={true}
+        key="/"
         onClick={[Function]}
         to="/"
       >
@@ -29,6 +30,8 @@ exports[`NavBar should render correctly 1`] = `
       <NavLink
         activeClassName="navMenuItemActive"
         className="navMenuItem"
+        exact={true}
+        key="/repos"
         onClick={[Function]}
         to="/repos"
       >
@@ -44,6 +47,8 @@ exports[`NavBar should render correctly 1`] = `
       <NavLink
         activeClassName="navMenuItemActive"
         className="navMenuItem"
+        exact={true}
+        key="/author"
         onClick={[Function]}
         to="/author"
       >
@@ -76,6 +81,7 @@ exports[`NavBar should render correctly 1`] = `
         activeClassName="navMenuItemActive"
         className="navMenuItem"
         exact={true}
+        key="/"
         onClick={[Function]}
         to="/"
       >
@@ -91,6 +97,8 @@ exports[`NavBar should render correctly 1`] = `
       <NavLink
         activeClassName="navMenuItemActive"
         className="navMenuItem"
+        exact={true}
+        key="/repos"
         onClick={[Function]}
         to="/repos"
       >
@@ -106,6 +114,8 @@ exports[`NavBar should render correctly 1`] = `
       <NavLink
         activeClassName="navMenuItemActive"
         className="navMenuItem"
+        exact={true}
+        key="/author"
         onClick={[Function]}
         to="/author"
       >
