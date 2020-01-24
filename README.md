@@ -1,8 +1,18 @@
 ![react-redux-app-boilerplate](https://repository-images.githubusercontent.com/208453250/42fbbe80-decc-11e9-895e-987e17e554d8)
 
+<p align="center">
+    <a href="https://travis-ci.org/awibox/react-redux-app-boilerplate">
+        <img src='https://travis-ci.org/awibox/react-redux-app-boilerplate.svg?branch=master' alt='Build' />
+    </a>
+    <a href='https://coveralls.io/github/awibox/react-redux-app-boilerplate?branch=master'>
+        <img src='https://coveralls.io/repos/github/awibox/react-redux-app-boilerplate/badge.svg?branch=master' alt='Coverage Status' />
+    </a>
+    <img src="https://img.shields.io/github/last-commit/awibox/react-redux-app-boilerplate" alt="Last commit">
+    <img src="https://img.shields.io/github/license/awibox/react-redux-app-boilerplate" alt="license">
+</p>
+
 ## Table of contents
 * [How to install](#howtoinstall)
-* [Use like template](#useliketemplate)
 * [Getting started](#gettingstarted)
 * [Run linter](#runlinter)
 * [Run tests](#runtests)
@@ -11,20 +21,15 @@
 
 <a name="howtoinstall"></a>
 ## How to install
-You need to clone repository and go to the project folder.
+You can use this project like template. 
+To do this, you need press button "**Use this template**".
+
+Or clone repository and go to the project folder.
 ```bash
 git clone https://github.com/awibox/react-redux-app-boilerplate.git ProjectName
 cd ProjectName
 ```
-Then to install required dependencies.
-```bash
-yarn install
-```
-<a name="useliketemplate"></a>
-## Use like template
-You can use this project like template. 
-Press button "Use this template".
-Then go to the project directory and install dependencies.
+Then you should install required dependencies.
 ```bash
 yarn install
 ```
