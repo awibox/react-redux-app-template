@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 13.2.0
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules
+install:
+  - yarn install
+script:
+  - yarn lint
+  - yarn build
+after_script:
+  - yarn coveralls
