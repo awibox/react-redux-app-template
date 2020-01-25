@@ -4,7 +4,7 @@
   "description": "The boilerplate that will help you quickly start developing your project using React.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awb-pw/react-redux-app-boilerplate.git"
+    "url": "git+https://github.com/frontend-templates/react-redux-app-boilerplate.git"
   },
   "keywords": [
     "react",
@@ -115,8 +115,8 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/awb-pw/react-redux-app-boilerplate/issues"
+    "url": "https://github.com/frontend-templates/react-redux-app-boilerplate/issues"
   },
-  "homepage": "https://github.com/awb-pw/react-redux-app-boilerplate#readme",
+  "homepage": "https://github.com/frontend-templates/react-redux-app-boilerplate#readme",
   "main": "webpack.config.js"
 }
