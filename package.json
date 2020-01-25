@@ -4,7 +4,7 @@
   "description": "The boilerplate that will help you quickly start developing your project using React.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/awb-pw/react-redux-app-boilerplate.git"
+    "url": "git+https://github.com/awb-pw/react-redux-app-boilerplate.git"
   },
   "keywords": [
     "react",
@@ -113,5 +113,10 @@
       "^.+\\.js$": "babel-jest",
       ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/awb-pw/react-redux-app-boilerplate/issues"
+  },
+  "homepage": "https://github.com/awb-pw/react-redux-app-boilerplate#readme",
+  "main": "webpack.config.js"
 }
