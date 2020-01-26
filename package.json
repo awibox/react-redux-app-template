@@ -26,9 +26,10 @@
     "font-awesome": "^4.7.0",
     "immutable": "^4.0.0-rc.12",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "16.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-immutable-proptypes": "^2.1.0",
+    "react-promise-loader": "^1.0.1",
     "react-promise-tracker": "^2.0.5",
     "react-redux": "7.1.0",
     "react-router-dom": "4.4.0-beta.8",
@@ -91,6 +92,16 @@
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}",
+      "!src/*.{js,jsx,mjs}",
+      "!src/actions/**/*.{js,jsx,mjs}",
+      "!src/data/**/*.{js,jsx,mjs}",
+      "!src/selectors/**/*.{js,jsx,mjs}",
+      "!src/containers/**/*.{js,jsx,mjs}",
+      "!src/pages/**/*.{js,jsx,mjs}",
+      "!src/reducers/index.js"
+    ],
     "testEnvironment": "node",
     "moduleFileExtensions": [
       "js",
