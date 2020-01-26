@@ -4,10 +4,11 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 import { getAuthorAction } from 'actions/authorActions';
 import { Map } from 'immutable';
+import { usePromiseTracker } from 'react-promise-tracker';
+import Loader from 'react-promise-loader';
 // Components
 import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
 import Alert from 'components/Alert/Alert';
-import Loader from 'components/Loader/Loader';
 // Selectors
 import { getErrorsSelector } from 'selectors/errorSelectors';
 import { getAuthorSelector } from 'selectors/authorSelectors';
@@ -49,7 +50,7 @@ class AuthorContainer extends Component {
       <div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <AuthorInfo author={author}/>
-        <Loader/>
+        <Loader promiseTracker={usePromiseTracker} color={'#3d5e61'}/>
       </div>
     );
   }
