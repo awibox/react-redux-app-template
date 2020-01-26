@@ -4,10 +4,11 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 import { getHomeAction } from 'actions/homeActions';
 import { Map } from 'immutable';
+import { usePromiseTracker } from 'react-promise-tracker';
+import Loader from 'react-promise-loader';
 // Components
 import HomeInfo from 'components/HomeInfo/HomeInfo';
 import Alert from 'components/Alert/Alert';
-import Loader from 'components/Loader/Loader';
 // Selectors
 import { getHomeSelector } from 'selectors/homeSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
@@ -43,7 +44,7 @@ class HomeContainer extends Component {
       <div>
         {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
         <HomeInfo home={home}/>
-        <Loader/>
+        <Loader promiseTracker={usePromiseTracker} color={'#3d5e61'}/>
       </div>
     );
   }
