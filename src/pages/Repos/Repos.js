@@ -6,13 +6,14 @@ import { connect } from 'react-redux';
 import { getReposAction } from 'actions/reposActions';
 import { UserArray, routes } from 'config';
 import { List } from 'immutable';
+import { usePromiseTracker } from 'react-promise-tracker';
+import Loader from 'react-promise-loader';
 // Components
 import ReposCard from 'components/ReposCard/ReposCard';
 import Title from 'components/Title/Title';
 import Card from 'components/Card/Card';
 import Alert from 'components/Alert/Alert';
 import User from 'components/User/User';
-import Loader from 'components/Loader/Loader';
 // Selectors
 import { getReposSelector } from 'selectors/reposSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
@@ -94,7 +95,7 @@ class ReposContainer extends PureComponent {
             <ReposCard key={`${repo.id}_${repo.name}`} repo={repo} style={this.languageStyle(repo.language)}/>
           ))}
         </div>
-        <Loader/>
+        <Loader promiseTracker={usePromiseTracker} color={'#3d5e61'}/>
       </div>
     );
   }
