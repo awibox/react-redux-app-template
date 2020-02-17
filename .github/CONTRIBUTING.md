@@ -1,4 +1,4 @@
-# Contributing to react-redux-app-boilerplate
+# Contributing to react-redux-app-template
 :pray: Thank you for wanting to contribute to the development of the project!
 
 

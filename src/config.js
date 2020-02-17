@@ -1,6 +1,6 @@
 // Main
 export const projectName = 'React Redux App';
-export const repoName = 'react-redux-app-boilerplate';
+export const repoName = 'react-redux-app-template';
 export const authorAccount = 'awibox';
 
 // API
