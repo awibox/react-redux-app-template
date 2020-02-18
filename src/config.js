@@ -1,7 +1,7 @@
 // Main
 export const projectName = 'React Redux App';
 export const repoName = 'react-redux-app-template';
-export const authorAccount = 'awibox';
+export const authorAccount = 'frontend-templates';
 
 // API
 export const gitHubApiUrl = 'https://api.github.com';
