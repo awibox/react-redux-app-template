@@ -1,4 +1,4 @@
-![react-redux-app-template](https://repository-images.githubusercontent.com/208453250/42fbbe80-decc-11e9-895e-987e17e554d8)
+![react-redux-app-template](https://repository-images.githubusercontent.com/208453250/35dbd380-52a2-11ea-870e-335ecbd918d2)
 
 <p align="center">
     <a href="https://travis-ci.org/frontend-templates/react-redux-app-template">
