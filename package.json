@@ -1,7 +1,7 @@
 {
   "name": "react-redux-app-template",
   "version": "1.0.0",
-  "description": "The boilerplate that will help you quickly start developing your project using React.",
+  "description": "The template that will help you quickly start developing your project using React.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/frontend-templates/react-redux-app-template.git"
