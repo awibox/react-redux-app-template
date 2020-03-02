@@ -12,5 +12,6 @@ install:
 script:
   - yarn lint
   - yarn build
+  - yarn test
 after_script:
   - yarn coveralls
