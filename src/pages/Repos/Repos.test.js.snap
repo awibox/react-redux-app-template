@@ -30,7 +30,7 @@ exports[`Repos should render coorectly 1`] = `
       <a
         aria-current={null}
         className="link"
-        href="/repos/awibox"
+        href="/repos/frontend-templates"
         onClick={[Function]}
       >
         <div
@@ -39,7 +39,7 @@ exports[`Repos should render coorectly 1`] = `
           <i
             className="fa fa-user"
           />
-          awibox
+          frontend-templates
         </div>
       </a>
       <a
