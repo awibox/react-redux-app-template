@@ -27,81 +27,231 @@ exports[`Repos should render coorectly 1`] = `
     <div
       className="card users"
     >
-      <a
-        aria-current={null}
+      <NavLink
+        activeClassName="linkActive"
         className="link"
-        href="/repos/frontend-templates"
+        key="frontend-templates"
         onClick={[Function]}
+        to="/repos/frontend-templates"
       >
-        <div
-          className="user"
+        <Link
+          aria-current={null}
+          className="link"
+          onClick={[Function]}
+          to={
+            Object {
+              "hash": "",
+              "pathname": "/repos/frontend-templates",
+              "search": "",
+              "state": null,
+            }
+          }
         >
-          <i
-            className="fa fa-user"
-          />
-          frontend-templates
-        </div>
-      </a>
-      <a
-        aria-current={null}
+          <LinkAnchor
+            aria-current={null}
+            className="link"
+            href="/repos/frontend-templates"
+            navigate={[Function]}
+            onClick={[Function]}
+          >
+            <a
+              aria-current={null}
+              className="link"
+              href="/repos/frontend-templates"
+              onClick={[Function]}
+            >
+              <div
+                className="user"
+              >
+                <i
+                  className="fa fa-user"
+                />
+                frontend-templates
+              </div>
+            </a>
+          </LinkAnchor>
+        </Link>
+      </NavLink>
+      <NavLink
+        activeClassName="linkActive"
         className="link"
-        href="/repos/angular"
+        key="angular"
         onClick={[Function]}
+        to="/repos/angular"
       >
-        <div
-          className="user"
+        <Link
+          aria-current={null}
+          className="link"
+          onClick={[Function]}
+          to={
+            Object {
+              "hash": "",
+              "pathname": "/repos/angular",
+              "search": "",
+              "state": null,
+            }
+          }
         >
-          <i
-            className="fa fa-user"
-          />
-          angular
-        </div>
-      </a>
-      <a
-        aria-current={null}
+          <LinkAnchor
+            aria-current={null}
+            className="link"
+            href="/repos/angular"
+            navigate={[Function]}
+            onClick={[Function]}
+          >
+            <a
+              aria-current={null}
+              className="link"
+              href="/repos/angular"
+              onClick={[Function]}
+            >
+              <div
+                className="user"
+              >
+                <i
+                  className="fa fa-user"
+                />
+                angular
+              </div>
+            </a>
+          </LinkAnchor>
+        </Link>
+      </NavLink>
+      <NavLink
+        activeClassName="linkActive"
         className="link"
-        href="/repos/facebook"
+        key="facebook"
         onClick={[Function]}
+        to="/repos/facebook"
       >
-        <div
-          className="user"
+        <Link
+          aria-current={null}
+          className="link"
+          onClick={[Function]}
+          to={
+            Object {
+              "hash": "",
+              "pathname": "/repos/facebook",
+              "search": "",
+              "state": null,
+            }
+          }
         >
-          <i
-            className="fa fa-user"
-          />
-          facebook
-        </div>
-      </a>
-      <a
-        aria-current={null}
+          <LinkAnchor
+            aria-current={null}
+            className="link"
+            href="/repos/facebook"
+            navigate={[Function]}
+            onClick={[Function]}
+          >
+            <a
+              aria-current={null}
+              className="link"
+              href="/repos/facebook"
+              onClick={[Function]}
+            >
+              <div
+                className="user"
+              >
+                <i
+                  className="fa fa-user"
+                />
+                facebook
+              </div>
+            </a>
+          </LinkAnchor>
+        </Link>
+      </NavLink>
+      <NavLink
+        activeClassName="linkActive"
         className="link"
-        href="/repos/reduxjs"
+        key="reduxjs"
         onClick={[Function]}
+        to="/repos/reduxjs"
       >
-        <div
-          className="user"
+        <Link
+          aria-current={null}
+          className="link"
+          onClick={[Function]}
+          to={
+            Object {
+              "hash": "",
+              "pathname": "/repos/reduxjs",
+              "search": "",
+              "state": null,
+            }
+          }
         >
-          <i
-            className="fa fa-user"
-          />
-          reduxjs
-        </div>
-      </a>
-      <a
-        aria-current={null}
+          <LinkAnchor
+            aria-current={null}
+            className="link"
+            href="/repos/reduxjs"
+            navigate={[Function]}
+            onClick={[Function]}
+          >
+            <a
+              aria-current={null}
+              className="link"
+              href="/repos/reduxjs"
+              onClick={[Function]}
+            >
+              <div
+                className="user"
+              >
+                <i
+                  className="fa fa-user"
+                />
+                reduxjs
+              </div>
+            </a>
+          </LinkAnchor>
+        </Link>
+      </NavLink>
+      <NavLink
+        activeClassName="linkActive"
         className="link"
-        href="/repos/webpack"
+        key="webpack"
         onClick={[Function]}
+        to="/repos/webpack"
       >
-        <div
-          className="user"
+        <Link
+          aria-current={null}
+          className="link"
+          onClick={[Function]}
+          to={
+            Object {
+              "hash": "",
+              "pathname": "/repos/webpack",
+              "search": "",
+              "state": null,
+            }
+          }
         >
-          <i
-            className="fa fa-user"
-          />
-          webpack
-        </div>
-      </a>
+          <LinkAnchor
+            aria-current={null}
+            className="link"
+            href="/repos/webpack"
+            navigate={[Function]}
+            onClick={[Function]}
+          >
+            <a
+              aria-current={null}
+              className="link"
+              href="/repos/webpack"
+              onClick={[Function]}
+            >
+              <div
+                className="user"
+              >
+                <i
+                  className="fa fa-user"
+                />
+                webpack
+              </div>
+            </a>
+          </LinkAnchor>
+        </Link>
+      </NavLink>
     </div>
     <div
       className="title"
