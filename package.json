@@ -4,7 +4,7 @@
   "description": "The template that will help you quickly start developing your project using React.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frontend-templates/react-redux-app-template.git"
+    "url": "git+https://github.com/awibox/react-redux-app-template.git"
   },
   "keywords": [
     "react",
@@ -124,8 +124,8 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/frontend-templates/react-redux-app-template/issues"
+    "url": "https://github.com/awibox/react-redux-app-template/issues"
   },
-  "homepage": "https://github.com/frontend-templates/react-redux-app-template#readme",
+  "homepage": "https://github.com/awibox/react-redux-app-template#readme",
   "main": "webpack.config.js"
 }
