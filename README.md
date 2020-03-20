@@ -1,14 +1,14 @@
 ![react-redux-app-template](https://repository-images.githubusercontent.com/208453250/35dbd380-52a2-11ea-870e-335ecbd918d2)
 
 <p align="center">
-    <a href="https://travis-ci.org/frontend-templates/react-redux-app-template">
-        <img src='https://travis-ci.org/frontend-templates/react-redux-app-template.svg?branch=master' alt='Build' />
+    <a href="https://travis-ci.org/awibox/react-redux-app-template">
+        <img src='https://travis-ci.org/awibox/react-redux-app-template.svg?branch=master' alt='Build' />
     </a>
-    <a href='https://coveralls.io/github/frontend-templates/react-redux-app-template?branch=master'>
-        <img src='https://coveralls.io/repos/github/frontend-templates/react-redux-app-template/badge.svg?branch=master' alt='Coverage Status' />
+    <a href='https://coveralls.io/github/awibox/react-redux-app-template?branch=master'>
+        <img src='https://coveralls.io/repos/github/awibox/react-redux-app-template/badge.svg?branch=master' alt='Coverage Status' />
     </a>
-    <img src="https://img.shields.io/github/last-commit/frontend-templates/react-redux-app-template" alt="Last commit">
-    <img src="https://img.shields.io/github/license/frontend-templates/react-redux-app-template" alt="license">
+    <img src="https://img.shields.io/github/last-commit/awibox/react-redux-app-template" alt="Last commit">
+    <img src="https://img.shields.io/github/license/awibox/react-redux-app-template" alt="license">
 </p>
 
 ## Table of contents
@@ -26,7 +26,7 @@ To do this, you need press button "**Use this template**".
 
 Or clone repository and go to the project folder.
 ```bash
-git clone https://github.com/frontend-templates/react-redux-app-template.git ProjectName
+git clone https://github.com/awibox/react-redux-app-template.git ProjectName
 cd ProjectName
 ```
 Then you should install required dependencies.
