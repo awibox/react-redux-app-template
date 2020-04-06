@@ -29,7 +29,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-immutable-proptypes": "^2.2.0",
-    "react-promise-loader": "^1.0.3",
+    "react-promise-loader": "^1.0.4",
     "react-promise-tracker": "^2.1.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
