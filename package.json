@@ -50,7 +50,7 @@
     "babel-jest": "^25.2.6",
     "babel-loader": "^8.1.0",
     "coveralls": "^3.0.11",
-    "css-loader": "^3.5.0",
+    "css-loader": "^3.5.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.4.2",
