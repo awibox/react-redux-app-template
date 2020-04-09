@@ -61,7 +61,7 @@
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.0.4",
     "image-webpack-loader": "^6.0.0",
-    "jest": "^25.2.7",
+    "jest": "^25.3.0",
     "jest-css-modules-transform": "^4.0.0",
     "jest-enzyme": "^7.1.2",
     "jsdom": "^16.2.2",
