@@ -59,7 +59,7 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-react": "^7.14.3",
     "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.0.4",
+    "html-webpack-plugin": "^4.2.0",
     "image-webpack-loader": "^6.0.0",
     "jest": "^25.3.0",
     "jest-css-modules-transform": "^4.0.0",
