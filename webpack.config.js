@@ -27,6 +27,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    alias: {
+      react: path.resolve('./node_modules/react'),
+    },
   },
   module: {
     rules: [
