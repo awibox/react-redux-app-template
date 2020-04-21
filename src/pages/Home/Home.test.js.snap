@@ -5,56 +5,165 @@ exports[`Home should render corectly 1`] = `
   getHomeAction={[Function]}
 >
   <div>
-    <div
-      className="alert"
+    <ForwardRef(render)
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+      css={
+        Object {
+          "background": "#D15130",
+          "border": "1px solid #D15130",
+          "borderRadius": "4px",
+          "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)",
+          "color": "#fff",
+          "marginBottom": "15px",
+          "padding": "15px",
+          "position": "relative",
+          "transition": "all 0.3s cubic-bezier(.25, .8, .25, 1)",
+        }
+      }
+      style={
+        Object {
+          "display": "block",
+        }
+      }
     >
-      Fake error
-    </div>
+      <div
+        className="css-1nrs082"
+        style={
+          Object {
+            "display": "block",
+          }
+        }
+      >
+        Fake error
+      </div>
+    </ForwardRef(render)>
     <div
       className="homeInfo"
     >
-      <div
-        className="card"
+      <ForwardRef(render)
+        __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+        css={
+          Object {
+            "background": "#fff",
+            "border": "1px solid #E5E8EC",
+            "borderRadius": "3px",
+            "borderTop": undefined,
+            "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.12)",
+            "boxSizing": "border-box",
+            "marginBottom": "15px",
+            "overflow": "hidden",
+            "transition": "all 0.3s cubic-bezier(.25, .8, .25, 1)",
+          }
+        }
       >
         <div
-          className="homeLogo"
+          className="css-1an3q4h"
         >
-          <div
-            className="image"
-          >
-            <i
-              className="fa fa-gears"
-            />
-          </div>
-          <h1
-            className="name"
-          >
-            Finder
-          </h1>
-          <div
-            className="text"
-          >
-            Search engine
-          </div>
-          <div
-            className="button"
+          <ForwardRef(render)
+            __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+            css={
+              Object {
+                "padding": "15px",
+              }
+            }
           >
             <div
-              className="btn btnIcon"
-              onClick={[Function]}
+              className="css-1v1qs4"
             >
-              <span
-                className="icon"
+              <div
+                className="homeLogo"
               >
-                <i
-                  className="fa fa-github"
-                />
-              </span>
-              Download with Github
+                <div
+                  className="image"
+                >
+                  <i
+                    className="fa fa-gears"
+                  />
+                </div>
+                <h1
+                  className="name"
+                >
+                  Finder
+                </h1>
+                <div
+                  className="text"
+                >
+                  Search engine
+                </div>
+                <div
+                  className="button"
+                >
+                  <ForwardRef(render)
+                    __EMOTION_TYPE_PLEASE_DO_NOT_USE__="button"
+                    css={
+                      Object {
+                        ":disabled": Object {
+                          ":hover": Object {
+                            "backgroundColor": "#3F88C5",
+                            "color": "#fff",
+                          },
+                          "cursor": "not-allowed",
+                          "opacity": 0.7,
+                        },
+                        ":hover": Object {
+                          "backgroundColor": "#619DCF",
+                          "color": "#fff",
+                          "textDecoration": "none",
+                        },
+                        "backgroundColor": "#3F88C5",
+                        "backgroundImage": "none",
+                        "border": "1px solid transparent",
+                        "borderRadius": "4px",
+                        "boxSizing": "border-box",
+                        "color": "#fff",
+                        "cursor": "pointer",
+                        "display": "inline-block",
+                        "fontSize": "14px",
+                        "fontWeight": 500,
+                        "lineHeight": 1.52857143,
+                        "marginBottom": 0,
+                        "outline": "none",
+                        "padding": "6px 16px",
+                        "position": "relative",
+                        "textAlign": "center",
+                        "transition": "all 0.5s",
+                        "userSelect": "none",
+                        "verticalAlign": "middle",
+                        "whiteSpace": "nowrap",
+                      }
+                    }
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="css-1mjylde"
+                      onClick={[Function]}
+                    >
+                      <ForwardRef(render)
+                        __EMOTION_TYPE_PLEASE_DO_NOT_USE__="span"
+                        css={
+                          Object {
+                            "marginLeft": "-4px",
+                            "marginRight": "8px",
+                          }
+                        }
+                      >
+                        <span
+                          className="css-1dl6nox"
+                        >
+                          <i
+                            className="fa fa-github"
+                          />
+                        </span>
+                      </ForwardRef(render)>
+                      Download with Github
+                    </button>
+                  </ForwardRef(render)>
+                </div>
+              </div>
             </div>
-          </div>
+          </ForwardRef(render)>
         </div>
-      </div>
+      </ForwardRef(render)>
     </div>
     <div
       style={
@@ -95,7 +204,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(0 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -118,7 +227,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(30 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -141,7 +250,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(60 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -164,7 +273,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(90 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -187,7 +296,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(120 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -210,7 +319,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(150 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -233,7 +342,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(180 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -256,7 +365,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(210 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -279,7 +388,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(240 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -302,7 +411,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(270 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -325,7 +434,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(300 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -348,7 +457,7 @@ exports[`Home should render corectly 1`] = `
             transform="rotate(330 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
