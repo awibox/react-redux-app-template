@@ -11,9 +11,8 @@ import Loader from 'react-promise-loader';
 // Components
 import ReposCard from 'components/ReposCard/ReposCard';
 import Title from 'components/Title/Title';
-import Card from 'components/Card/Card';
-import Alert from 'components/Alert/Alert';
 import User from 'components/User/User';
+import { Alert, Card } from 'tigerspack';
 // Selectors
 import { getReposSelector } from 'selectors/reposSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
@@ -76,26 +75,29 @@ class ReposContainer extends PureComponent {
     const { user } = this.props.match.params;
     return (
       <div className={styles.repos}>
-        {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
+        {typeof errors.message !== 'undefined' && <Alert theme={'danger'}>{errors.message}</Alert>}
         <Title>Select the user</Title>
-        <Card className={styles.users}>
-          {UserArray.map((userName) => (
-            <NavLink className={styles.link}
-                     activeClassName={styles.linkActive}
-                     key={userName}
-                     to={`${routes.repos}/${userName}`}
-                     onClick={() => this.changeUser(userName)}>
-              <User>{userName}</User>
-            </NavLink>
-          ))}
+        <Card theme={'light'} padding={0}>
+          <div className={styles.users}>
+            {UserArray.map((userName) => (
+              <NavLink className={styles.link}
+                       activeClassName={styles.linkActive}
+                       key={userName}
+                       to={`${routes.repos}/${userName}`}
+                       onClick={() => this.changeUser(userName)}>
+                <User>{userName}</User>
+              </NavLink>
+            ))}
+          </div>
         </Card>
+        <div style={{ width: '100%', height: '20px' }}></div>
         {typeof user !== 'undefined' && <Title>Repositories of {user}</Title>}
-        <div className={styles.reposList}>
+        <div className={styles.reposList} >
           {typeof user !== 'undefined' && repos.map((repo) => (
             <ReposCard key={`${repo.id}_${repo.name}`} repo={repo} style={this.languageStyle(repo.language)}/>
           ))}
         </div>
-        <Loader promiseTracker={usePromiseTracker} color={'#3d5e61'}/>
+        <Loader promiseTracker={usePromiseTracker} color={'#3F88C5'}/>
       </div>
     );
   }
