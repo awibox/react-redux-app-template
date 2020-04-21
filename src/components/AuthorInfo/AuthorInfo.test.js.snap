@@ -3,6 +3,8 @@
 exports[`AuthorInfo should render correctly 1`] = `
 <Card
   className="authorInfo"
+  padding={15}
+  theme="light"
 >
   <div
     className="logo"
@@ -25,15 +27,17 @@ exports[`AuthorInfo should render correctly 1`] = `
   <div
     className="infoText"
   >
-    Google
-     - 
     Addition information
   </div>
   <div
     className="button"
   >
     <Button
-      icon="fa-github"
+      icon={
+        <i
+          className="fa fa-github"
+        />
+      }
       onClick={[Function]}
     >
       Github page

@@ -3,6 +3,8 @@
 exports[`NotFound should render correctly 1`] = `
 <Card
   className="notFound"
+  padding={15}
+  theme="light"
 >
   <div
     className="code"

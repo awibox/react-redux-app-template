@@ -8,7 +8,7 @@ import { usePromiseTracker } from 'react-promise-tracker';
 import Loader from 'react-promise-loader';
 // Components
 import HomeInfo from 'components/HomeInfo/HomeInfo';
-import Alert from 'components/Alert/Alert';
+import { Alert } from 'tigerspack';
 // Selectors
 import { getHomeSelector } from 'selectors/homeSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
@@ -42,9 +42,9 @@ class HomeContainer extends Component {
     const { home, errors } = this.props;
     return (
       <div>
-        {typeof errors.message !== 'undefined' && <Alert>{errors.message}</Alert>}
+        {typeof errors.message !== 'undefined' && <Alert theme={'danger'}>{errors.message}</Alert>}
         <HomeInfo home={home}/>
-        <Loader promiseTracker={usePromiseTracker} color={'#3d5e61'}/>
+        <Loader promiseTracker={usePromiseTracker} color={'#3F88C5'}/>
       </div>
     );
   }
