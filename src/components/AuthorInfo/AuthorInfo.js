@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 // Components
-import Button from '../Button/Button';
-import Card from '../Card/Card';
+import { Button, Card } from 'tigerspack';
 // Styles
 import styles from './AuthorInfo.scss';
 
@@ -24,13 +23,13 @@ export default class AuthorInfo extends Component {
   render() {
     const { author } = this.props;
     return (
-      <Card className={styles.authorInfo}>
+      <Card theme={'light'} className={styles.authorInfo}>
         <div className={styles.logo} style={{ backgroundImage: `url(${author.get('avatar_url')})` }} />
         <div className={styles.title}>{author.get('name')}</div>
         <div className={styles.titleVersion}>{author.get('location')}</div>
-        <div className={styles.infoText}>{author.get('company')} - {author.get('bio')}</div>
+        <div className={styles.infoText}>{author.get('bio')}</div>
         <div className={styles.button}>
-          <Button icon="fa-github" onClick={() => this.buttonClick(author.get('html_url'))}>
+          <Button icon={<i className="fa fa-github"/>} onClick={() => this.buttonClick(author.get('html_url'))}>
             Github page
           </Button>
         </div>

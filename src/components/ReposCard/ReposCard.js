@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // Components
-import Card from '../Card/Card';
+import { Card } from 'tigerspack';
 // Styles
 import styles from './ReposCard.scss';
 
@@ -11,7 +11,7 @@ const ReposCard = (props) => {
   return (
     <div className={styles.repo}>
       {repo.id > 0
-        && <Card>
+        && <Card theme={'light'}>
           <a href={repo.html_url} rel="noopener noreferrer" target="_blank" className={styles.name}>{repo.name}</a>
           <div className={styles.githubIcon}><i className="fa fa-github" aria-hidden="true"></i></div>
           <div className={styles.desc}>{repo.description}</div>
