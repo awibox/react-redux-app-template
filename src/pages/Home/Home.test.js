@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
 import configureStore from 'redux-mock-store';
 import HomeInfo from 'components/HomeInfo/HomeInfo';
-import Alert from 'components/Alert/Alert';
+import { Alert } from 'tigerspack';
 import { Map } from 'immutable';
 import { getHomeSuccess } from 'actions/homeActions';
 import HomeContainer from './Home';

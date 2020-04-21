@@ -14,245 +14,314 @@ exports[`Repos should render coorectly 1`] = `
   <div
     className="repos"
   >
-    <div
-      className="alert"
+    <ForwardRef(render)
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+      css={
+        Object {
+          "background": "#D15130",
+          "border": "1px solid #D15130",
+          "borderRadius": "4px",
+          "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)",
+          "color": "#fff",
+          "marginBottom": "15px",
+          "padding": "15px",
+          "position": "relative",
+          "transition": "all 0.3s cubic-bezier(.25, .8, .25, 1)",
+        }
+      }
+      style={
+        Object {
+          "display": "block",
+        }
+      }
     >
-      Fake error
-    </div>
+      <div
+        className="css-1nrs082"
+        style={
+          Object {
+            "display": "block",
+          }
+        }
+      >
+        Fake error
+      </div>
+    </ForwardRef(render)>
     <div
       className="title"
     >
       Select the user
     </div>
-    <div
-      className="card users"
+    <ForwardRef(render)
+      __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+      css={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #E5E8EC",
+          "borderRadius": "3px",
+          "borderTop": undefined,
+          "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.12)",
+          "boxSizing": "border-box",
+          "marginBottom": "0px",
+          "overflow": "hidden",
+          "transition": "all 0.3s cubic-bezier(.25, .8, .25, 1)",
+        }
+      }
     >
-      <NavLink
-        activeClassName="linkActive"
-        className="link"
-        key="awibox"
-        onClick={[Function]}
-        to="/repos/awibox"
+      <div
+        className="css-1lf9jjb"
       >
-        <Link
-          aria-current={null}
-          className="link"
-          onClick={[Function]}
-          to={
+        <ForwardRef(render)
+          __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+          css={
             Object {
-              "hash": "",
-              "pathname": "/repos/awibox",
-              "search": "",
-              "state": null,
+              "padding": "0px",
             }
           }
         >
-          <LinkAnchor
-            aria-current={null}
-            className="link"
-            href="/repos/awibox"
-            navigate={[Function]}
-            onClick={[Function]}
+          <div
+            className="css-old1by"
           >
-            <a
-              aria-current={null}
-              className="link"
-              href="/repos/awibox"
-              onClick={[Function]}
+            <div
+              className="users"
             >
-              <div
-                className="user"
+              <NavLink
+                activeClassName="linkActive"
+                className="link"
+                key="awibox"
+                onClick={[Function]}
+                to="/repos/awibox"
               >
-                <i
-                  className="fa fa-user"
-                />
-                awibox
-              </div>
-            </a>
-          </LinkAnchor>
-        </Link>
-      </NavLink>
-      <NavLink
-        activeClassName="linkActive"
-        className="link"
-        key="angular"
-        onClick={[Function]}
-        to="/repos/angular"
-      >
-        <Link
-          aria-current={null}
-          className="link"
-          onClick={[Function]}
-          to={
-            Object {
-              "hash": "",
-              "pathname": "/repos/angular",
-              "search": "",
-              "state": null,
-            }
-          }
-        >
-          <LinkAnchor
-            aria-current={null}
-            className="link"
-            href="/repos/angular"
-            navigate={[Function]}
-            onClick={[Function]}
-          >
-            <a
-              aria-current={null}
-              className="link"
-              href="/repos/angular"
-              onClick={[Function]}
-            >
-              <div
-                className="user"
+                <Link
+                  aria-current={null}
+                  className="link"
+                  onClick={[Function]}
+                  to={
+                    Object {
+                      "hash": "",
+                      "pathname": "/repos/awibox",
+                      "search": "",
+                      "state": null,
+                    }
+                  }
+                >
+                  <LinkAnchor
+                    aria-current={null}
+                    className="link"
+                    href="/repos/awibox"
+                    navigate={[Function]}
+                    onClick={[Function]}
+                  >
+                    <a
+                      aria-current={null}
+                      className="link"
+                      href="/repos/awibox"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="user"
+                      >
+                        <i
+                          className="fa fa-user"
+                        />
+                        awibox
+                      </div>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </NavLink>
+              <NavLink
+                activeClassName="linkActive"
+                className="link"
+                key="angular"
+                onClick={[Function]}
+                to="/repos/angular"
               >
-                <i
-                  className="fa fa-user"
-                />
-                angular
-              </div>
-            </a>
-          </LinkAnchor>
-        </Link>
-      </NavLink>
-      <NavLink
-        activeClassName="linkActive"
-        className="link"
-        key="facebook"
-        onClick={[Function]}
-        to="/repos/facebook"
-      >
-        <Link
-          aria-current={null}
-          className="link"
-          onClick={[Function]}
-          to={
-            Object {
-              "hash": "",
-              "pathname": "/repos/facebook",
-              "search": "",
-              "state": null,
-            }
-          }
-        >
-          <LinkAnchor
-            aria-current={null}
-            className="link"
-            href="/repos/facebook"
-            navigate={[Function]}
-            onClick={[Function]}
-          >
-            <a
-              aria-current={null}
-              className="link"
-              href="/repos/facebook"
-              onClick={[Function]}
-            >
-              <div
-                className="user"
+                <Link
+                  aria-current={null}
+                  className="link"
+                  onClick={[Function]}
+                  to={
+                    Object {
+                      "hash": "",
+                      "pathname": "/repos/angular",
+                      "search": "",
+                      "state": null,
+                    }
+                  }
+                >
+                  <LinkAnchor
+                    aria-current={null}
+                    className="link"
+                    href="/repos/angular"
+                    navigate={[Function]}
+                    onClick={[Function]}
+                  >
+                    <a
+                      aria-current={null}
+                      className="link"
+                      href="/repos/angular"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="user"
+                      >
+                        <i
+                          className="fa fa-user"
+                        />
+                        angular
+                      </div>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </NavLink>
+              <NavLink
+                activeClassName="linkActive"
+                className="link"
+                key="facebook"
+                onClick={[Function]}
+                to="/repos/facebook"
               >
-                <i
-                  className="fa fa-user"
-                />
-                facebook
-              </div>
-            </a>
-          </LinkAnchor>
-        </Link>
-      </NavLink>
-      <NavLink
-        activeClassName="linkActive"
-        className="link"
-        key="reduxjs"
-        onClick={[Function]}
-        to="/repos/reduxjs"
-      >
-        <Link
-          aria-current={null}
-          className="link"
-          onClick={[Function]}
-          to={
-            Object {
-              "hash": "",
-              "pathname": "/repos/reduxjs",
-              "search": "",
-              "state": null,
-            }
-          }
-        >
-          <LinkAnchor
-            aria-current={null}
-            className="link"
-            href="/repos/reduxjs"
-            navigate={[Function]}
-            onClick={[Function]}
-          >
-            <a
-              aria-current={null}
-              className="link"
-              href="/repos/reduxjs"
-              onClick={[Function]}
-            >
-              <div
-                className="user"
+                <Link
+                  aria-current={null}
+                  className="link"
+                  onClick={[Function]}
+                  to={
+                    Object {
+                      "hash": "",
+                      "pathname": "/repos/facebook",
+                      "search": "",
+                      "state": null,
+                    }
+                  }
+                >
+                  <LinkAnchor
+                    aria-current={null}
+                    className="link"
+                    href="/repos/facebook"
+                    navigate={[Function]}
+                    onClick={[Function]}
+                  >
+                    <a
+                      aria-current={null}
+                      className="link"
+                      href="/repos/facebook"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="user"
+                      >
+                        <i
+                          className="fa fa-user"
+                        />
+                        facebook
+                      </div>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </NavLink>
+              <NavLink
+                activeClassName="linkActive"
+                className="link"
+                key="reduxjs"
+                onClick={[Function]}
+                to="/repos/reduxjs"
               >
-                <i
-                  className="fa fa-user"
-                />
-                reduxjs
-              </div>
-            </a>
-          </LinkAnchor>
-        </Link>
-      </NavLink>
-      <NavLink
-        activeClassName="linkActive"
-        className="link"
-        key="webpack"
-        onClick={[Function]}
-        to="/repos/webpack"
-      >
-        <Link
-          aria-current={null}
-          className="link"
-          onClick={[Function]}
-          to={
-            Object {
-              "hash": "",
-              "pathname": "/repos/webpack",
-              "search": "",
-              "state": null,
-            }
-          }
-        >
-          <LinkAnchor
-            aria-current={null}
-            className="link"
-            href="/repos/webpack"
-            navigate={[Function]}
-            onClick={[Function]}
-          >
-            <a
-              aria-current={null}
-              className="link"
-              href="/repos/webpack"
-              onClick={[Function]}
-            >
-              <div
-                className="user"
+                <Link
+                  aria-current={null}
+                  className="link"
+                  onClick={[Function]}
+                  to={
+                    Object {
+                      "hash": "",
+                      "pathname": "/repos/reduxjs",
+                      "search": "",
+                      "state": null,
+                    }
+                  }
+                >
+                  <LinkAnchor
+                    aria-current={null}
+                    className="link"
+                    href="/repos/reduxjs"
+                    navigate={[Function]}
+                    onClick={[Function]}
+                  >
+                    <a
+                      aria-current={null}
+                      className="link"
+                      href="/repos/reduxjs"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="user"
+                      >
+                        <i
+                          className="fa fa-user"
+                        />
+                        reduxjs
+                      </div>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </NavLink>
+              <NavLink
+                activeClassName="linkActive"
+                className="link"
+                key="webpack"
+                onClick={[Function]}
+                to="/repos/webpack"
               >
-                <i
-                  className="fa fa-user"
-                />
-                webpack
-              </div>
-            </a>
-          </LinkAnchor>
-        </Link>
-      </NavLink>
-    </div>
+                <Link
+                  aria-current={null}
+                  className="link"
+                  onClick={[Function]}
+                  to={
+                    Object {
+                      "hash": "",
+                      "pathname": "/repos/webpack",
+                      "search": "",
+                      "state": null,
+                    }
+                  }
+                >
+                  <LinkAnchor
+                    aria-current={null}
+                    className="link"
+                    href="/repos/webpack"
+                    navigate={[Function]}
+                    onClick={[Function]}
+                  >
+                    <a
+                      aria-current={null}
+                      className="link"
+                      href="/repos/webpack"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="user"
+                      >
+                        <i
+                          className="fa fa-user"
+                        />
+                        webpack
+                      </div>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </NavLink>
+            </div>
+          </div>
+        </ForwardRef(render)>
+      </div>
+    </ForwardRef(render)>
+    <div
+      style={
+        Object {
+          "height": "20px",
+          "width": "100%",
+        }
+      }
+    />
     <div
       className="title"
     >
@@ -265,65 +334,95 @@ exports[`Repos should render coorectly 1`] = `
       <div
         className="repo"
       >
-        <div
-          className="card"
+        <ForwardRef(render)
+          __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+          css={
+            Object {
+              "background": "#fff",
+              "border": "1px solid #E5E8EC",
+              "borderRadius": "3px",
+              "borderTop": undefined,
+              "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.12)",
+              "boxSizing": "border-box",
+              "marginBottom": "15px",
+              "overflow": "hidden",
+              "transition": "all 0.3s cubic-bezier(.25, .8, .25, 1)",
+            }
+          }
         >
-          <a
-            className="name"
-            href="http://localhost:8888/item"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            First Repo
-          </a>
           <div
-            className="githubIcon"
+            className="css-1an3q4h"
           >
-            <i
-              aria-hidden="true"
-              className="fa fa-github"
-            />
-          </div>
-          <div
-            className="desc"
-          >
-            Repository
-          </div>
-          <div
-            className="panel"
-          >
-            <div
-              className="property"
+            <ForwardRef(render)
+              __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+              css={
+                Object {
+                  "padding": "15px",
+                }
+              }
             >
-              <i
-                className="fa fa-circle"
-                style={Object {}}
-              />
-               
-              javascript
-            </div>
-            <div
-              className="size"
-            >
-              <i
-                className="fa fa-file-archive-o"
-              />
-               
-              0.01
-               mb
-            </div>
-            <div
-              className="stars"
-            >
-              <i
-                aria-hidden="true"
-                className="fa fa-star"
-              />
-               
-              10
-            </div>
+              <div
+                className="css-1v1qs4"
+              >
+                <a
+                  className="name"
+                  href="http://localhost:8888/item"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  First Repo
+                </a>
+                <div
+                  className="githubIcon"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="fa fa-github"
+                  />
+                </div>
+                <div
+                  className="desc"
+                >
+                  Repository
+                </div>
+                <div
+                  className="panel"
+                >
+                  <div
+                    className="property"
+                  >
+                    <i
+                      className="fa fa-circle"
+                      style={Object {}}
+                    />
+                     
+                    javascript
+                  </div>
+                  <div
+                    className="size"
+                  >
+                    <i
+                      className="fa fa-file-archive-o"
+                    />
+                     
+                    0.01
+                     mb
+                  </div>
+                  <div
+                    className="stars"
+                  >
+                    <i
+                      aria-hidden="true"
+                      className="fa fa-star"
+                    />
+                     
+                    10
+                  </div>
+                </div>
+              </div>
+            </ForwardRef(render)>
           </div>
-        </div>
+        </ForwardRef(render)>
       </div>
     </div>
     <div
@@ -365,7 +464,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(0 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -388,7 +487,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(30 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -411,7 +510,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(60 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -434,7 +533,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(90 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -457,7 +556,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(120 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -480,7 +579,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(150 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -503,7 +602,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(180 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -526,7 +625,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(210 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -549,7 +648,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(240 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -572,7 +671,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(270 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -595,7 +694,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(300 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"
@@ -618,7 +717,7 @@ exports[`Repos should render coorectly 1`] = `
             transform="rotate(330 50 50)"
           >
             <rect
-              fill="#3d5e61"
+              fill="#3F88C5"
               height="12"
               rx="9.4"
               ry="4.8"

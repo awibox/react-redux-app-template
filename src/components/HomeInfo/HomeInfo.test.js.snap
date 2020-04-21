@@ -4,7 +4,10 @@ exports[`HomeInfo should render correctly 1`] = `
 <div
   className="homeInfo"
 >
-  <Card>
+  <Card
+    padding={15}
+    theme="light"
+  >
     <div
       className="homeLogo"
     >
@@ -29,7 +32,11 @@ exports[`HomeInfo should render correctly 1`] = `
         className="button"
       >
         <Button
-          icon="fa-github"
+          icon={
+            <i
+              className="fa fa-github"
+            />
+          }
           onClick={[Function]}
         >
           Download with Github

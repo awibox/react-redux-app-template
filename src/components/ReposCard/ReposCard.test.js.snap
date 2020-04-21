@@ -4,7 +4,10 @@ exports[`ReposCard should render correctly 1`] = `
 <div
   className="repo"
 >
-  <Card>
+  <Card
+    padding={15}
+    theme="light"
+  >
     <a
       className="name"
       href="http://localhost:8888/item"
