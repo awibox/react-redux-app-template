@@ -36,7 +36,7 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "tigerspack": "^0.1.13"
+    "tigerspack": "^0.1.18"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
