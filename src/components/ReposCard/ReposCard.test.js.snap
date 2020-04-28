@@ -5,6 +5,7 @@ exports[`ReposCard should render correctly 1`] = `
   className="repo"
 >
   <Card
+    indent={15}
     padding={15}
     theme="light"
   >
