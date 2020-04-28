@@ -3,6 +3,7 @@
 exports[`AuthorInfo should render correctly 1`] = `
 <Card
   className="authorInfo"
+  indent={15}
   padding={15}
   theme="light"
 >
@@ -38,6 +39,7 @@ exports[`AuthorInfo should render correctly 1`] = `
           className="fa fa-github"
         />
       }
+      indent={0}
       onClick={[Function]}
     >
       Github page

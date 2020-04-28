@@ -5,6 +5,7 @@ exports[`HomeInfo should render correctly 1`] = `
   className="homeInfo"
 >
   <Card
+    indent={15}
     padding={15}
     theme="light"
   >
@@ -37,6 +38,7 @@ exports[`HomeInfo should render correctly 1`] = `
               className="fa fa-github"
             />
           }
+          indent={0}
           onClick={[Function]}
         >
           Download with Github

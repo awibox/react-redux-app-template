@@ -3,6 +3,7 @@
 exports[`NotFound should render correctly 1`] = `
 <Card
   className="notFound"
+  indent={15}
   padding={15}
   theme="light"
 >
