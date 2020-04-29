@@ -48,7 +48,7 @@
     "autoprefixer": "^9.7.6",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^25.4.0",
+    "babel-jest": "^25.5.0",
     "babel-loader": "^8.1.0",
     "coveralls": "^3.1.0",
     "css-loader": "^3.5.3",
