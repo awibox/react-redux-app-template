@@ -42,7 +42,7 @@
     "@babel/core": "^7.11.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-transform-runtime": "^7.11.0",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-env": "^7.12.17",
     "@babel/preset-react": "^7.10.4",
     "@babel/runtime": "^7.11.2",
     "autoprefixer": "^9.8.5",
