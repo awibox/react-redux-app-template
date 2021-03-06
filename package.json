@@ -84,7 +84,7 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
-    "start": "webpack-dev-server --open",
+    "start": "webpack serve --open",
     "lint": "eslint --report-unused-disable-directives src",
     "fix": "eslint --fix --report-unused-disable-directives src",
     "setup": "cp ./.github/hooks/pre-commit ./.git/hooks/pre-commit && chmod +x ./.git/hooks/pre-commit",
