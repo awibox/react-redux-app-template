@@ -1,484 +1,379 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home should render corectly 1`] = `
-<Connect(HomeContainer)
-  getHomeAction={[Function]}
->
-  <div>
-    <ForwardRef(render)
-      __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
-      css={
-        Object {
-          "background": "#D15130",
-          "border": "1px solid #D15130",
-          "borderRadius": "3px",
-          "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)",
-          "color": "#fff",
-          "marginBottom": "15px",
-          "padding": "15px",
-          "position": "relative",
-          "transition": "all .4s ease",
-          "width": "100%",
-        }
+<div>
+  <div
+    className="css-ciu1tw"
+    style={
+      Object {
+        "display": "block",
       }
-      style={
-        Object {
-          "display": "block",
-        }
-      }
+    }
+  >
+    Fake error
+  </div>
+  <div
+    className="homeInfo"
+  >
+    <div
+      className="css-wk4os9"
     >
       <div
-        className="css-ciu1tw"
-        style={
-          Object {
-            "display": "block",
-          }
-        }
-      >
-        Fake error
-      </div>
-    </ForwardRef(render)>
-    <div
-      className="homeInfo"
-    >
-      <ForwardRef(render)
-        __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
-        css={
-          Object {
-            "background": "#fff",
-            "border": "1px solid #E5E8EC",
-            "borderRadius": "3px",
-            "borderTop": undefined,
-            "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.12)",
-            "boxSizing": "border-box",
-            "marginBottom": "15px",
-            "overflow": "hidden",
-            "transition": "all .4s ease",
-          }
-        }
+        className="css-1v1qs4"
       >
         <div
-          className="css-wk4os9"
+          className="homeLogo"
         >
-          <ForwardRef(render)
-            __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
-            css={
-              Object {
-                "padding": "15px",
-              }
-            }
+          <div
+            className="image"
           >
-            <div
-              className="css-1v1qs4"
+            <i
+              className="fa fa-gears"
+            />
+          </div>
+          <h1
+            className="name"
+          >
+            Finder
+          </h1>
+          <div
+            className="text"
+          >
+            Search engine
+          </div>
+          <div
+            className="button"
+          >
+            <button
+              className="css-1ixngjg"
+              onClick={[Function]}
             >
-              <div
-                className="homeLogo"
+              <span
+                className="css-1dl6nox"
               >
-                <div
-                  className="image"
-                >
-                  <i
-                    className="fa fa-gears"
-                  />
-                </div>
-                <h1
-                  className="name"
-                >
-                  Finder
-                </h1>
-                <div
-                  className="text"
-                >
-                  Search engine
-                </div>
-                <div
-                  className="button"
-                >
-                  <ForwardRef(render)
-                    __EMOTION_TYPE_PLEASE_DO_NOT_USE__="button"
-                    css={
-                      Object {
-                        ":disabled": Object {
-                          ":hover": Object {
-                            "backgroundColor": "#3F88C5",
-                            "color": "#fff",
-                          },
-                          "cursor": "not-allowed",
-                          "opacity": 0.7,
-                        },
-                        ":hover": Object {
-                          "backgroundColor": "#619DCF",
-                          "color": "#fff",
-                          "textDecoration": "none",
-                        },
-                        "backgroundColor": "#3F88C5",
-                        "backgroundImage": "none",
-                        "border": "1px solid transparent",
-                        "borderRadius": "3px",
-                        "boxSizing": "border-box",
-                        "color": "#fff",
-                        "cursor": "pointer",
-                        "display": "inline-block",
-                        "fontSize": "14px",
-                        "fontWeight": 500,
-                        "lineHeight": 1.52857143,
-                        "marginBottom": "0px",
-                        "outline": "none",
-                        "padding": "6px 16px",
-                        "position": "relative",
-                        "textAlign": "center",
-                        "transition": "all .4s ease",
-                        "userSelect": "none",
-                        "verticalAlign": "middle",
-                        "whiteSpace": "nowrap",
-                      }
-                    }
-                    onClick={[Function]}
-                  >
-                    <button
-                      className="css-1ixngjg"
-                      onClick={[Function]}
-                    >
-                      <ForwardRef(render)
-                        __EMOTION_TYPE_PLEASE_DO_NOT_USE__="span"
-                        css={
-                          Object {
-                            "marginLeft": "-4px",
-                            "marginRight": "8px",
-                          }
-                        }
-                      >
-                        <span
-                          className="css-1dl6nox"
-                        >
-                          <i
-                            className="fa fa-github"
-                          />
-                        </span>
-                      </ForwardRef(render)>
-                      Download with Github
-                    </button>
-                  </ForwardRef(render)>
-                </div>
-              </div>
-            </div>
-          </ForwardRef(render)>
+                <i
+                  className="fa fa-github"
+                />
+              </span>
+              Download with Github
+            </button>
+          </div>
         </div>
-      </ForwardRef(render)>
-    </div>
-    <div
-      style={
-        Object {
-          "backfaceVisibility": "hidden",
-          "background": "rgba(255,255,255,.5)",
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-          "zIndex": 10,
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "height": 100,
-            "left": "50%",
-            "position": "absolute",
-            "top": "50%",
-            "transform": "translate(-50%, -50%)",
-            "width": 100,
-          }
-        }
-      >
-        <svg
-          className="lds-spinner"
-          height="100%"
-          preserveAspectRatio="xMidYMid"
-          viewBox="0 0 100 100"
-          width="100%"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            key="rotate(0 50 50)"
-            transform="rotate(0 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.9166666666666666s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(30 50 50)"
-            transform="rotate(30 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.8333333333333334s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(60 50 50)"
-            transform="rotate(60 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.75s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(90 50 50)"
-            transform="rotate(90 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.6666666666666666s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(120 50 50)"
-            transform="rotate(120 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.5833333333333334s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(150 50 50)"
-            transform="rotate(150 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.5s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(180 50 50)"
-            transform="rotate(180 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.4166666666666667s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(210 50 50)"
-            transform="rotate(210 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.3333333333333333s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(240 50 50)"
-            transform="rotate(240 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.25s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(270 50 50)"
-            transform="rotate(270 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.16666666666666666s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(300 50 50)"
-            transform="rotate(300 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="-0.08333333333333333s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-          <g
-            key="rotate(330 50 50)"
-            transform="rotate(330 50 50)"
-          >
-            <rect
-              fill="#3F88C5"
-              height="12"
-              rx="9.4"
-              ry="4.8"
-              width="6"
-              x="47"
-              y="24"
-            >
-              <animate
-                attributeName="opacity"
-                begin="0s"
-                dur="1s"
-                keyTimes="0;1"
-                repeatCount="indefinite"
-                values="1;0"
-              />
-            </rect>
-          </g>
-        </svg>
       </div>
     </div>
   </div>
-</Connect(HomeContainer)>
+  <div
+    style={
+      Object {
+        "backfaceVisibility": "hidden",
+        "background": "rgba(255,255,255,.5)",
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 10,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "height": 100,
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+          "width": 100,
+        }
+      }
+    >
+      <svg
+        className="lds-spinner"
+        height="100%"
+        preserveAspectRatio="xMidYMid"
+        viewBox="0 0 100 100"
+        width="100%"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          key="rotate(0 50 50)"
+          transform="rotate(0 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.9166666666666666s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(30 50 50)"
+          transform="rotate(30 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.8333333333333334s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(60 50 50)"
+          transform="rotate(60 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.75s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(90 50 50)"
+          transform="rotate(90 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.6666666666666666s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(120 50 50)"
+          transform="rotate(120 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.5833333333333334s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(150 50 50)"
+          transform="rotate(150 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.5s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(180 50 50)"
+          transform="rotate(180 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.4166666666666667s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(210 50 50)"
+          transform="rotate(210 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.3333333333333333s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(240 50 50)"
+          transform="rotate(240 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.25s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(270 50 50)"
+          transform="rotate(270 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.16666666666666666s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(300 50 50)"
+          transform="rotate(300 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="-0.08333333333333333s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+        <g
+          key="rotate(330 50 50)"
+          transform="rotate(330 50 50)"
+        >
+          <rect
+            fill="#3F88C5"
+            height="12"
+            rx="9.4"
+            ry="4.8"
+            width="6"
+            x="47"
+            y="24"
+          >
+            <animate
+              attributeName="opacity"
+              begin="0s"
+              dur="1s"
+              keyTimes="0;1"
+              repeatCount="indefinite"
+              values="1;0"
+            />
+          </rect>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
 `;
