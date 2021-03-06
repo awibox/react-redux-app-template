@@ -1,7 +1,9 @@
 import { JSDOM } from 'jsdom';
 
 // Create windows object
-const { window } = new JSDOM('<!doctype html><html><body></body></html>');
+const { window } = new JSDOM('<!doctype html><html><body></body></html>', {
+  url: 'http://localhost',
+});
 
 // Define globals params
 global.window = window;
