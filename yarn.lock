@@ -11092,10 +11092,10 @@ thunky@^1.0.2:
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-1.1.0.tgz#5abaf714a9405db0504732bbccd2cedd9ef9537d"
   integrity sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==
 
-tigerspack@^0.1.19:
-  version "0.1.19"
-  resolved "https://registry.yarnpkg.com/tigerspack/-/tigerspack-0.1.19.tgz#ad9e789fb4d347fd298ae7b06a0fa999b75d3db0"
-  integrity sha512-mOnncJxBthEGUFYAmFvuA7cItNSL+c6s6rq/zlWYX4oZZR2gRw5jnd926BAM/Z3A09P2mfukqJTed1CPhlfk9Q==
+tigerspack@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/tigerspack/-/tigerspack-0.2.0.tgz#ce6512367b9267648809428e65f7a7510a4ac9a9"
+  integrity sha512-8KIEWfmuW2gm38cC/LOIQVL4eVPfBbI7ZttufXNuLSgjYbX2aW0JDUsfBm/+DDF+7/AByZg5WLrBw53Z70PFlQ==
   dependencies:
     "@emotion/core" "^10.0.28"
     prop-types "^15.7.2"
