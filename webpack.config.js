@@ -136,9 +136,7 @@ module.exports = {
     minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
   },
   devServer: {
-    contentBase: './public',
     port: 8888,
     historyApiFallback: true,
-    publicPath: '/',
   },
 };
