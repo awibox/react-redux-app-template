@@ -9537,10 +9537,10 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-promise-loader@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/react-promise-loader/-/react-promise-loader-1.1.2.tgz#3e1af6b69f4096c00385e910704fd91e2df5cbb2"
-  integrity sha512-HEfUoa1uIEU/ClwSeXqmyX/Vi0O8Cc3AgeRuIWtXdu/j3VLlM1xnf6xJldO4POIqn7sMisVziBjWVpyilCPORQ==
+react-promise-loader@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-promise-loader/-/react-promise-loader-1.2.0.tgz#ac46d0d98f82b3faa9ee72eb1bafb6fba5d1df26"
+  integrity sha512-fCgk3T7pPf9dBJCkfyyWygS6TP86MDws1NXZ6PRm1K3NjWW8vZoBqiaSK/IZI46euWIc75mQ9lvkVtjCAlXBUQ==
   dependencies:
     prop-types "^15.7.2"
 
