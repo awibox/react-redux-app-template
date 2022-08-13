@@ -5,107 +5,114 @@ exports[`Repos should render coorectly 1`] = `
   className="repos"
 >
   <div
-    className="css-ciu1tw"
-    style={
-      Object {
-        "display": "block",
-      }
-    }
-  >
-    Fake error
-  </div>
-  <div
     className="title"
   >
     Select the user
   </div>
-  <div
-    className="css-wk4os9"
-  >
-    <div
-      className="css-old1by"
-    >
+  Array [
+    "",
+    Array [
+      "",
       <div
-        className="users"
+        className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
       >
-        <a
-          aria-current={null}
-          className="link"
-          href="/repos/awibox"
-          onClick={[Function]}
+        <div
+          className="users"
         >
-          <div
-            className="user"
+          <a
+            aria-current={null}
+            className="link"
+            href="/repos/microsoft"
+            onClick={[Function]}
           >
-            <i
-              className="fa fa-user"
-            />
-            awibox
-          </div>
-        </a>
-        <a
-          aria-current={null}
-          className="link"
-          href="/repos/angular"
-          onClick={[Function]}
-        >
-          <div
-            className="user"
+            <div
+              className="user"
+            >
+              <i
+                className="fa fa-user"
+              />
+              microsoft
+            </div>
+          </a>
+          <a
+            aria-current={null}
+            className="link"
+            href="/repos/angular"
+            onClick={[Function]}
           >
-            <i
-              className="fa fa-user"
-            />
-            angular
-          </div>
-        </a>
-        <a
-          aria-current={null}
-          className="link"
-          href="/repos/facebook"
-          onClick={[Function]}
-        >
-          <div
-            className="user"
+            <div
+              className="user"
+            >
+              <i
+                className="fa fa-user"
+              />
+              angular
+            </div>
+          </a>
+          <a
+            aria-current={null}
+            className="link"
+            href="/repos/facebook"
+            onClick={[Function]}
           >
-            <i
-              className="fa fa-user"
-            />
-            facebook
-          </div>
-        </a>
-        <a
-          aria-current={null}
-          className="link"
-          href="/repos/reduxjs"
-          onClick={[Function]}
-        >
-          <div
-            className="user"
+            <div
+              className="user"
+            >
+              <i
+                className="fa fa-user"
+              />
+              facebook
+            </div>
+          </a>
+          <a
+            aria-current={null}
+            className="link"
+            href="/repos/reduxjs"
+            onClick={[Function]}
           >
-            <i
-              className="fa fa-user"
-            />
-            reduxjs
-          </div>
-        </a>
-        <a
-          aria-current={null}
-          className="link"
-          href="/repos/webpack"
-          onClick={[Function]}
-        >
-          <div
-            className="user"
+            <div
+              className="user"
+            >
+              <i
+                className="fa fa-user"
+              />
+              reduxjs
+            </div>
+          </a>
+          <a
+            aria-current={null}
+            className="link"
+            href="/repos/webpack"
+            onClick={[Function]}
           >
-            <i
-              className="fa fa-user"
-            />
-            webpack
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
+            <div
+              className="user"
+            >
+              <i
+                className="fa fa-user"
+              />
+              webpack
+            </div>
+          </a>
+          <a
+            aria-current={null}
+            className="link"
+            href="/repos/error_User"
+            onClick={[Function]}
+          >
+            <div
+              className="user"
+            >
+              <i
+                className="fa fa-user"
+              />
+              error_User
+            </div>
+          </a>
+        </div>
+      </div>,
+    ],
+  ]
   <div
     style={
       Object {
@@ -120,75 +127,128 @@ exports[`Repos should render coorectly 1`] = `
     Repositories of 
     test
   </div>
+  Array [
+    "",
+    Array [
+      "",
+      <div
+        className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardError MuiAlert-standard css-xilmwd-MuiPaper-root-MuiAlert-root"
+        role="alert"
+        style={
+          Object {
+            "marginBottom": 15,
+          }
+        }
+      >
+        Array [
+          "",
+          <div
+            className="MuiAlert-icon css-1ytlwq5-MuiAlert-icon"
+          >
+            Array [
+              "",
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                data-testid="ErrorOutlineIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                />
+              </svg>,
+            ]
+          </div>,
+        ]
+        Array [
+          "",
+          <div
+            className="MuiAlert-message css-1pxa9xg-MuiAlert-message"
+          >
+            Fake error
+          </div>,
+        ]
+      </div>,
+    ],
+  ]
   <div
     className="reposList"
   >
     <div
       className="repo"
     >
-      <div
-        className="css-wk4os9"
-      >
-        <div
-          className="css-1v1qs4"
-        >
-          <a
-            className="name"
-            href="http://localhost:8888/item"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            First Repo
-          </a>
+      Array [
+        "",
+        Array [
+          "",
           <div
-            className="githubIcon"
+            className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+            style={
+              Object {
+                "marginBottom": 15,
+                "padding": 15,
+              }
+            }
           >
-            <i
-              aria-hidden="true"
-              className="fa fa-github"
-            />
-          </div>
-          <div
-            className="desc"
-          >
-            Repository
-          </div>
-          <div
-            className="panel"
-          >
-            <div
-              className="property"
+            <a
+              className="name"
+              href="http://localhost:8888/item"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <i
-                className="fa fa-circle"
-                style={Object {}}
-              />
-               
-              javascript
-            </div>
+              First Repo
+            </a>
             <div
-              className="size"
-            >
-              <i
-                className="fa fa-file-archive-o"
-              />
-               
-              0.01
-               mb
-            </div>
-            <div
-              className="stars"
+              className="githubIcon"
             >
               <i
                 aria-hidden="true"
-                className="fa fa-star"
+                className="fa fa-github"
               />
-               
-              10
             </div>
-          </div>
-        </div>
-      </div>
+            <div
+              className="desc"
+            >
+              Repository
+            </div>
+            <div
+              className="panel"
+            >
+              <div
+                className="property"
+              >
+                <i
+                  className="fa fa-circle"
+                  style={Object {}}
+                />
+                 
+                javascript
+              </div>
+              <div
+                className="size"
+              >
+                <i
+                  className="fa fa-file-archive-o"
+                />
+                 
+                0.01
+                 mb
+              </div>
+              <div
+                className="stars"
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-star"
+                />
+                 
+                10
+              </div>
+            </div>
+          </div>,
+        ],
+      ]
     </div>
   </div>
   <div

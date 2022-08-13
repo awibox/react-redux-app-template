@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getReposAction } from 'actions/reposActions';
+import { clearRepos, getReposAction } from 'actions/reposActions';
 import { UserArray, routes } from 'config';
 import { List } from 'immutable';
 import { usePromiseTracker } from 'react-promise-tracker';
@@ -12,7 +12,8 @@ import Loader from 'react-promise-loader';
 import ReposCard from 'components/ReposCard/ReposCard';
 import Title from 'components/Title/Title';
 import User from 'components/User/User';
-import { Alert, Card } from 'tigerspack';
+import Card from '@mui/material/Card';
+import Alert from '@mui/material/Alert';
 // Selectors
 import { getReposSelector } from 'selectors/reposSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
@@ -25,6 +26,7 @@ class ReposContainer extends PureComponent {
       message: PropTypes.string,
     }),
     getReposAction: PropTypes.func.isRequired,
+    clearRepos: PropTypes.func.isRequired,
     match: PropTypes.shape({
       params: PropTypes.shape({
         user: PropTypes.string,
@@ -54,6 +56,7 @@ class ReposContainer extends PureComponent {
 
   changeUser(newUser) {
     const { user } = this.props.match.params;
+    this.props.clearRepos();
     if (typeof newUser !== 'undefined' && newUser !== user) {
       this.props.getReposAction(newUser);
     }
@@ -75,9 +78,8 @@ class ReposContainer extends PureComponent {
     const { user } = this.props.match.params;
     return (
       <div className={styles.repos}>
-        {typeof errors.message !== 'undefined' && <Alert theme={'danger'}>{errors.message}</Alert>}
         <Title>Select the user</Title>
-        <Card theme={'light'} padding={0}>
+        <Card>
           <div className={styles.users}>
             {UserArray.map((userName) => (
               <NavLink className={styles.link}
@@ -92,6 +94,7 @@ class ReposContainer extends PureComponent {
         </Card>
         <div style={{ width: '100%', height: '20px' }}></div>
         {typeof user !== 'undefined' && <Title>Repositories of {user}</Title>}
+        {typeof errors.message !== 'undefined' && <Alert severity="error" style={{ marginBottom: 15 }}>{errors.message}</Alert>}
         <div className={styles.reposList} >
           {typeof user !== 'undefined' && repos.map((repo) => (
             <ReposCard key={`${repo.id}_${repo.name}`} repo={repo} style={this.languageStyle(repo.language)}/>
@@ -108,4 +111,4 @@ const mapStateToProps = (state) => ({
   errors: getErrorsSelector(state),
 });
 
-export default connect(mapStateToProps, { getReposAction })(ReposContainer);
+export default connect(mapStateToProps, { getReposAction, clearRepos })(ReposContainer);

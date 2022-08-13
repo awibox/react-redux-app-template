@@ -4,11 +4,7 @@ exports[`HomeInfo should render correctly 1`] = `
 <div
   className="homeInfo"
 >
-  <Card
-    indent={15}
-    padding={15}
-    theme="light"
-  >
+  <ForwardRef(Card)>
     <div
       className="homeLogo"
     >
@@ -32,19 +28,19 @@ exports[`HomeInfo should render correctly 1`] = `
       <div
         className="button"
       >
-        <Button
-          icon={
+        <ForwardRef(Button)
+          onClick={[Function]}
+          startIcon={
             <i
               className="fa fa-github"
             />
           }
-          indent={0}
-          onClick={[Function]}
+          variant="contained"
         >
           Download with Github
-        </Button>
+        </ForwardRef(Button)>
       </div>
     </div>
-  </Card>
+  </ForwardRef(Card)>
 </div>
 `;

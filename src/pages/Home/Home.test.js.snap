@@ -2,65 +2,132 @@
 
 exports[`Home should render corectly 1`] = `
 <div>
-  <div
-    className="css-ciu1tw"
-    style={
-      Object {
-        "display": "block",
-      }
-    }
-  >
-    Fake error
-  </div>
+  Array [
+    "",
+    Array [
+      "",
+      <div
+        className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardError MuiAlert-standard css-xilmwd-MuiPaper-root-MuiAlert-root"
+        role="alert"
+        style={
+          Object {
+            "marginBottom": 15,
+          }
+        }
+      >
+        Array [
+          "",
+          <div
+            className="MuiAlert-icon css-1ytlwq5-MuiAlert-icon"
+          >
+            Array [
+              "",
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+                data-testid="ErrorOutlineIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                />
+              </svg>,
+            ]
+          </div>,
+        ]
+        Array [
+          "",
+          <div
+            className="MuiAlert-message css-1pxa9xg-MuiAlert-message"
+          >
+            Fake error
+          </div>,
+        ]
+      </div>,
+    ],
+  ]
   <div
     className="homeInfo"
   >
-    <div
-      className="css-wk4os9"
-    >
-      <div
-        className="css-1v1qs4"
-      >
+    Array [
+      "",
+      Array [
+        "",
         <div
-          className="homeLogo"
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
         >
           <div
-            className="image"
+            className="homeLogo"
           >
-            <i
-              className="fa fa-gears"
-            />
-          </div>
-          <h1
-            className="name"
-          >
-            Finder
-          </h1>
-          <div
-            className="text"
-          >
-            Search engine
-          </div>
-          <div
-            className="button"
-          >
-            <button
-              className="css-1ixngjg"
-              onClick={[Function]}
+            <div
+              className="image"
             >
-              <span
-                className="css-1dl6nox"
-              >
-                <i
-                  className="fa fa-github"
-                />
-              </span>
-              Download with Github
-            </button>
+              <i
+                className="fa fa-gears"
+              />
+            </div>
+            <h1
+              className="name"
+            >
+              Finder
+            </h1>
+            <div
+              className="text"
+            >
+              Search engine
+            </div>
+            <div
+              className="button"
+            >
+              Array [
+                "",
+                Array [
+                  "",
+                  <button
+                    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
+                    type="button"
+                  >
+                    Array [
+                      "",
+                      <span
+                        className="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                      >
+                        <i
+                          className="fa fa-github"
+                        />
+                      </span>,
+                    ]
+                    Download with Github
+                    Array [
+                      "",
+                      <span
+                        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />,
+                    ]
+                  </button>,
+                ],
+              ]
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </div>,
+      ],
+    ]
   </div>
   <div
     style={

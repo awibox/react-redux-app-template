@@ -8,7 +8,7 @@ import { usePromiseTracker } from 'react-promise-tracker';
 import Loader from 'react-promise-loader';
 // Components
 import HomeInfo from 'components/HomeInfo/HomeInfo';
-import { Alert } from 'tigerspack';
+import Alert from '@mui/material/Alert';
 // Selectors
 import { getHomeSelector } from 'selectors/homeSelectors';
 import { getErrorsSelector } from 'selectors/errorSelectors';
@@ -28,9 +28,7 @@ class HomeContainer extends Component {
 
   static defaultProps = {
     home: Map({
-      name: '',
-      description: '',
-      html_url: '',
+      name: '', description: '', html_url: '',
     }),
   };
 
@@ -40,19 +38,17 @@ class HomeContainer extends Component {
 
   render() {
     const { home, errors } = this.props;
-    return (
-      <div>
-        {typeof errors.message !== 'undefined' && <Alert theme={'danger'}>{errors.message}</Alert>}
+    return (<div>
+        {typeof errors.message !== 'undefined'
+          && <Alert severity="error" style={{ marginBottom: 15 }}>{errors.message}</Alert>}
         <HomeInfo home={home}/>
         <Loader promiseTracker={usePromiseTracker} color={'#3F88C5'}/>
-      </div>
-    );
+      </div>);
   }
 }
 
 const mapStateToProps = (state) => ({
-  home: getHomeSelector(state),
-  errors: getErrorsSelector(state),
+  home: getHomeSelector(state), errors: getErrorsSelector(state),
 });
 
 export default connect(mapStateToProps, { getHomeAction })(HomeContainer);

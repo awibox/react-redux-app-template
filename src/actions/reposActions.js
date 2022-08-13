@@ -11,6 +11,11 @@ export const getReposSuccess = (repos) => ({
   payload: repos,
 });
 
+export const clearRepos = () => async (dispatch) => {
+  dispatch(getError([]));
+  dispatch(getReposSuccess([]));
+};
+
 export const getReposAction = (user) => async (dispatch) => {
   try {
     const { data } = await trackPromise(axios.get(`${gitHubApiUrl}/${END_POINT}/${user}/repos`));

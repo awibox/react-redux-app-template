@@ -1,6 +1,6 @@
 {
   "name": "react-redux-app-template",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "The template that will help you quickly start developing your project using React.",
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
   "author": "awibox",
   "license": "MIT",
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.0",
     "axios": "^0.27.2",
     "classnames": "^2.2.6",
     "font-awesome": "^4.7.0",
@@ -35,8 +38,7 @@
     "react-router-dom": "^5.2.0",
     "redux": "^4.2.0",
     "redux-thunk": "^2.3.0",
-    "reselect": "^4.1.6",
-    "tigerspack": "^0.1.19"
+    "reselect": "^4.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",

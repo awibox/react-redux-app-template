@@ -7,7 +7,7 @@ export const authorAccount = 'awibox';
 export const gitHubApiUrl = 'https://api.github.com';
 
 // Repos
-export const UserArray = [authorAccount, 'angular', 'facebook', 'reduxjs', 'webpack'];
+export const UserArray = ['microsoft', 'angular', 'facebook', 'reduxjs', 'webpack', 'error_User'];
 
 // Routes
 export const routes = {
