@@ -1,11 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AuthorInfo should render correctly 1`] = `
-<Card
+<ForwardRef(Card)
   className="authorInfo"
-  indent={15}
-  padding={15}
-  theme="light"
 >
   <div
     className="logo"
@@ -33,17 +30,17 @@ exports[`AuthorInfo should render correctly 1`] = `
   <div
     className="button"
   >
-    <Button
-      icon={
+    <ForwardRef(Button)
+      onClick={[Function]}
+      startIcon={
         <i
           className="fa fa-github"
         />
       }
-      indent={0}
-      onClick={[Function]}
+      variant="contained"
     >
       Github page
-    </Button>
+    </ForwardRef(Button)>
   </div>
-</Card>
+</ForwardRef(Card)>
 `;

@@ -4,10 +4,13 @@ exports[`ReposCard should render correctly 1`] = `
 <div
   className="repo"
 >
-  <Card
-    indent={15}
-    padding={15}
-    theme="light"
+  <ForwardRef(Card)
+    style={
+      Object {
+        "marginBottom": 15,
+        "padding": 15,
+      }
+    }
   >
     <a
       className="name"
@@ -63,6 +66,6 @@ exports[`ReposCard should render correctly 1`] = `
         10
       </div>
     </div>
-  </Card>
+  </ForwardRef(Card)>
 </div>
 `;
