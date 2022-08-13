@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
 import configureStore from 'redux-mock-store';
 import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
-import { Alert } from 'tigerspack';
+import Alert from '@mui/material/Alert';
 import { Map } from 'immutable';
 import { getAuthorSuccess } from 'actions/authorActions';
 import AuthorContainer from './Author';

@@ -8,7 +8,7 @@ import { usePromiseTracker } from 'react-promise-tracker';
 import Loader from 'react-promise-loader';
 // Components
 import AuthorInfo from 'components/AuthorInfo/AuthorInfo';
-import { Alert } from 'tigerspack';
+import Alert from '@mui/material/Alert';
 // Selectors
 import { getErrorsSelector } from 'selectors/errorSelectors';
 import { getAuthorSelector } from 'selectors/authorSelectors';
@@ -48,8 +48,9 @@ class AuthorContainer extends Component {
     const { author, errors } = this.props;
     return (
       <div>
-        {typeof errors.message !== 'undefined' && <Alert theme={'danger'}>{errors.message}</Alert>}
-        <AuthorInfo author={author}/>
+        {typeof errors.message !== 'undefined'
+          && <Alert severity="error" style={{ marginBottom: 15 }}>{errors.message}</Alert>}
+        {author.get('name') !== '' && <AuthorInfo author={author}/>}
         <Loader promiseTracker={usePromiseTracker} color={'#3F88C5'}/>
       </div>
     );

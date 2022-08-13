@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
 import configureStore from 'redux-mock-store';
 import ReposCard from 'components/ReposCard/ReposCard';
-import { Alert } from 'tigerspack';
+import Alert from '@mui/material/Alert';
 import { List } from 'immutable';
 import { getReposSuccess } from 'actions/reposActions';
 import ReposContainer from './Repos';
