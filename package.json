@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.5",
     "axios": "^0.27.2",
     "classnames": "^2.2.6",
