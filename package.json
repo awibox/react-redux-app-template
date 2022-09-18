@@ -23,7 +23,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.0",
-    "@mui/material": "^5.10.3",
+    "@mui/material": "^5.10.5",
     "axios": "^0.27.2",
     "classnames": "^2.2.6",
     "font-awesome": "^4.7.0",
@@ -82,7 +82,7 @@
     "url-loader": "^4.1.1",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.10.1"
+    "webpack-dev-server": "^4.11.0"
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
