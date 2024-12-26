@@ -23,7 +23,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
-    "@mui/material": "^5.10.5",
+    "@mui/material": "^6.3.0",
     "axios": "^0.27.2",
     "classnames": "^2.2.6",
     "font-awesome": "^4.7.0",
